@@ -9,8 +9,8 @@ from setuptools import setup
 setup(
     name="taproom",
     entry_points={
-        "benchmarks": [
-            "host_guest_pairs = entry_points:host_guest_pairs"
+        "taproom.benchmarks": [
+            "host_guest_pairs = taproom.entry_points:host_guest_pairs"
         ],
     }
 )
