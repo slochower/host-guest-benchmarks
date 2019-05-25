@@ -1,32 +1,30 @@
+name: cb6
+structure: cb6.mol2
+frcmod: cb6.frcmod
+
 calculation:
   restraints:
     conformational: false
     wall: false
     static:
-        restraint: 
+        - restraint: 
             atoms: ":DM1 :CB6@C"
             force_constant: 5.0
-            target: 6.0
-        restraint: 
+        - restraint: 
             atoms: ":DM2 :DM3 :CB6@C"
             force_constant: 100.0
-            target: 180.0
-        restraint: 
+        - restraint: 
             atoms: ":DM3 :DM2 :DM1 :CB6@C"
             force_constant: 6.0
-            target: 180.0
-        restraint: 
+        - restraint: 
             atoms: ":DM1 :CB6@C :CB6@C31"
             force_constant: 100.0
-            target: 70.47
-        restraint: 
+        - restraint: 
             atoms: ":DM2 :DM1 :CB6@C :CB6@C31"
             force_constant: 100.0
-            target: -123.73
-        restraint: 
+        - restraint: 
             atoms: ":DM1 :CB6@C :CB6@C31 :CB6@C18"
             force_constant: 6.0
-            target: -63.42
   windows:
     attach: 15
     pull: 45

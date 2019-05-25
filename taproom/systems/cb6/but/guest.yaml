@@ -1,3 +1,6 @@
+name: but
+structure: but.mol2
+complex: cb6-but-dum-sol.pdb
 restraints:
   - restraint: 
       atoms: ":DM1 :BUT@C"
