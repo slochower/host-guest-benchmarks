@@ -1,5 +1,6 @@
 name: but
 structure: but.mol2
+frcmod: None
 complex: cb6-but-dum-sol.pdb
 restraints:
   - restraint: 
