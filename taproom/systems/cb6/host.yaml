@@ -11,11 +11,11 @@ calculation:
             atoms: ":DM1 :CB6@C"
             force_constant: 5.0
         - restraint: 
-            atoms: ":DM2 :DM3 :CB6@C"
+            atoms: ":DM2 :DM1 :CB6@C"
             force_constant: 100.0
         - restraint: 
             atoms: ":DM3 :DM2 :DM1 :CB6@C"
-            force_constant: 6.0
+            force_constant: 100.0
         - restraint: 
             atoms: ":DM1 :CB6@C :CB6@C31"
             force_constant: 100.0
@@ -24,7 +24,7 @@ calculation:
             force_constant: 100.0
         - restraint: 
             atoms: ":DM1 :CB6@C :CB6@C31 :CB6@C18"
-            force_constant: 6.0
+            force_constant: 100.0
   windows:
     attach: 15
     pull: 45
