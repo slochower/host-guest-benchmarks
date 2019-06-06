@@ -9,7 +9,7 @@ import logging
 
 logger = logging.getLogger(__name__)
 
-def find_hosts(directory):
+def find_hosts(directory, subdirectory):
     """
     Return the list of hosts that provide a YAML recipe.
 
@@ -24,7 +24,7 @@ def find_hosts(directory):
     """
 
     hosts = {}
-    p = Path(directory).joinpath("systems")
+    p = Path(directory).joinpath(subdirectory)
     for file in p.resolve().glob("*/*.yaml"):
         
         hosts[file.parent.stem] = file.resolve()
@@ -55,16 +55,26 @@ def find_guests(host):
 
 def find_host_guest_pairs():
 
-    host_guest_pairs = {}
+    host_guest_systems = {}
+    host_guest_measurements = {}
 
     installed_module_location = Path(pkg_resources.resource_filename("taproom", "entry_points.py")).parents[0]
-    hosts = find_hosts(installed_module_location)
+    hosts = find_hosts(installed_module_location, subdirectory="systems")
     for host, host_path in hosts.items():
-        host_guest_pairs[host] = {}
-        host_guest_pairs[host]["yaml"] = host_path
+        host_guest_systems[host] = {}
+        host_guest_systems[host]["yaml"] = host_path
         guests = find_guests(host_path)
         for guest, guest_path in guests.items():
-            host_guest_pairs[host][guest] = guest_path
-    return host_guest_pairs
+            host_guest_systems[host][guest] = guest_path
 
-host_guest_pairs = find_host_guest_pairs()
+    hosts = find_hosts(installed_module_location, subdirectory="measurements")
+    for host, host_path in hosts.items():
+        host_guest_measurements[host] = {}
+        host_guest_measurements[host]["yaml"] = host_path
+        guests = find_guests(host_path)
+        for guest, guest_path in guests.items():
+            host_guest_measurements[host][guest] = guest_path
+
+    return host_guest_systems, host_guest_measurements
+
+host_guest_systems, host_guest_measurements = find_host_guest_pairs()

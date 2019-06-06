@@ -10,7 +10,8 @@ setup(
     name="taproom",
     entry_points={
         "taproom.benchmarks": [
-            "host_guest_pairs = taproom.entry_points:host_guest_pairs"
-        ],
-    }
+            "host_guest_systems = taproom.entry_points:host_guest_systems",
+            "host_guest_measurements = taproom.entry_points:host_guest_measurements"
+        ]
+    },
 )
