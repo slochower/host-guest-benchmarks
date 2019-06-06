@@ -2,6 +2,7 @@ name: but
 structure: but.mol2
 frcmod: None
 complex: cb6-but.pdb
+# Remove prmtop dependency and use app.PDBFile
 prmtop: cb6-but.prmtop
 restraints:
   - restraint: 

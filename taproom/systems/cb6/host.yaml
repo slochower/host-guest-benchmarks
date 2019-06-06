@@ -1,6 +1,5 @@
 name: cb6
 structure: cb6.mol2
-frcmod: cb6.frcmod
 
 calculation:
   restraints:
