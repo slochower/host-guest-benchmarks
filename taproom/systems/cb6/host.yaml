@@ -73,7 +73,7 @@ calculation:
             force_constant: 6.0
             target: 8.0
         - restraint:
-            atoms: ":CB6@O5 :CB6@11"
+            atoms: ":CB6@O5 :CB6@O11"
             force_constant: 6.0
             target: 8.0
 
