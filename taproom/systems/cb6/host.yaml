@@ -7,75 +7,75 @@ calculation:
         - restraint:
             atoms: ":CB6@N1 :CB6@N13"
             force_constant: 6.0
-            target: 10.0
+            target: 9.0
         - restraint:
             atoms: ":CB6@N3 :CB6@N15"
             force_constant: 6.0
-            target: 10.0
+            target: 9.0
         - restraint:
             atoms: ":CB6@N5 :CB6@N17"
             force_constant: 6.0
-            target: 10.0
+            target: 9.0
         - restraint:
             atoms: ":CB6@N7 :CB6@N19"
             force_constant: 6.0
-            target: 10.0
+            target: 9.0
         - restraint:
             atoms: ":CB6@N9 :CB6@N21"
             force_constant: 6.0
-            target: 10.0
+            target: 9.0
         - restraint:
             atoms: ":CB6@N11 :CB6@N23"
             force_constant: 6.0
-            target: 10.0
+            target: 9.0
         - restraint:
             atoms: ":CB6@N :CB6@N12"
             force_constant: 6.0
-            target: 10.0
+            target: 9.0
         - restraint:
             atoms: ":CB6@N2 :CB6@N14"
             force_constant: 6.0
-            target: 10.0
+            target: 9.0
         - restraint:
             atoms: ":CB6@N4 :CB6@N16"
             force_constant: 6.0
-            target: 10.0
+            target: 9.0
         - restraint:
             atoms: ":CB6@N6 :CB6@N18"
             force_constant: 6.0
-            target: 10.0
+            target: 9.0
         - restraint:
             atoms: ":CB6@N8 :CB6@N20"
             force_constant: 6.0
-            target: 10.0
+            target: 9.0
         - restraint:
             atoms: ":CB6@N10 :CB6@N22"
             force_constant: 6.0
-            target: 10.0
+            target: 9.0
         - restraint:
             atoms: ":CB6@O :CB6@O6"
             force_constant: 6.0
-            target: 8.0
+            target: 7.5
         - restraint:
             atoms: ":CB6@O2 :CB6@O8"
             force_constant: 6.0
-            target: 8.0
+            target: 7.5
         - restraint:
             atoms: ":CB6@O4 :CB6@O10"
             force_constant: 6.0
-            target: 8.0
+            target: 7.5
         - restraint:
             atoms: ":CB6@O1 :CB6@O7"
             force_constant: 6.0
-            target: 8.0
+            target: 7.5
         - restraint:
             atoms: ":CB6@O3 :CB6@O9"
             force_constant: 6.0
-            target: 8.0
+            target: 7.5
         - restraint:
             atoms: ":CB6@O5 :CB6@O11"
             force_constant: 6.0
-            target: 8.0
+            target: 7.5
 
     wall: false
     static:
