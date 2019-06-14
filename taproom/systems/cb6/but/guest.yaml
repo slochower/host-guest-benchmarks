@@ -33,3 +33,8 @@ restraints:
       pull:
         force_constant: 100.0
         target: 180.0
+
+symmetry_correction:
+      - restraint:
+          atoms: ":DM1 :BUT@C :BUT@C3"
+          force_constant: 100.0
