@@ -5,3 +5,4 @@ state:
   - solvent:
     - "SMILES 1" : mole fraction
     - "SMILES 2" : mole fraction
+  comment: "aldksfjlkasdjflJ"

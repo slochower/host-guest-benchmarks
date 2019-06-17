@@ -1,9 +1,7 @@
 name: but
 structure: but.mol2
-frcmod: None
 complex: cb6-but.pdb
-# Remove prmtop dependency and use app.PDBFile
-prmtop: cb6-but.prmtop
+net_charge: 0
 restraints:
   - restraint:
       atoms: ":DM1 :BUT@C"
