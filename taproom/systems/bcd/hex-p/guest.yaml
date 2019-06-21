@@ -1,0 +1,100 @@
+name: hex
+structure: hex.mol2
+complex: bcd-hex-p.pdb
+net_charge: 0
+restraints:
+  - restraint:
+      atoms: ":DM1 :HEX@C6"
+      attach:
+        # During the attach phase, the `force_constant` argument is the
+        # final force constant.
+        force_constant: 5.0
+        target: 6.0
+      pull:
+        # During the pull phase, the `target` argument is the final value of
+        # the restraint.
+        force_constant: 5.0
+        target: 24.0
+  - restraint:
+      atoms: ":DM2 :DM1 :HEX@C6"
+      attach:
+        force_constant: 100.0
+        target: 180.0
+      pull:
+        force_constant: 100.0
+        target: 180.0
+  - restraint:
+      atoms: ":DM1 :HEX@C6 :HEX@O1"
+      attach:
+        force_constant: 100.0
+        target: 180.0
+      pull:
+        force_constant: 100.0
+        target: 180.0
+
+wall_restraints:
+    - restraint:
+      atoms: ":1@C1 :HEX@C6"
+      force_constant: 50.0
+      target: 12.5
+    - restraint:
+      atoms: ":2@C1 :HEX@C6"
+      force_constant: 50.0
+      target: 12.5
+    - restraint:
+      atoms: ":3@C1 :HEX@C6"
+      force_constant: 50.0
+      target: 12.5
+    - restraint:
+      atoms: ":4@C1 :HEX@C6"
+      force_constant: 50.0
+      target: 12.5
+    - restraint:
+      atoms: ":5@C1 :HEX@C6"
+      force_constant: 50.0
+      target: 12.5
+    - restraint:
+      atoms: ":6@C1 :HEX@C6"
+      force_constant: 50.0
+      target: 12.5
+    - restraint:
+      atoms: ":7@C1 :HEX@C6"
+      force_constant: 50.0
+      target: 12.5
+    - restraint:
+      atoms: ":1@O1 :HEX@C6"
+      force_constant: 50.0
+      target: 14.5
+    - restraint:
+      atoms: ":2@O1 :HEX@C6"
+      force_constant: 50.0
+      target: 14.5
+    - restraint:
+      atoms: ":3@O1 :HEX@C6"
+      force_constant: 50.0
+      target: 14.5
+    - restraint:
+      atoms: ":4@O1 :HEX@C6"
+      force_constant: 50.0
+      target: 14.5
+    - restraint:
+      atoms: ":5@O1 :HEX@C6"
+      force_constant: 50.0
+      target: 14.5
+    - restraint:
+      atoms: ":6@O1 :HEX@C6"
+      force_constant: 50.0
+      target: 14.5
+    - restraint:
+      atoms: ":7@O1 :HEX@C6"
+      force_constant: 50.0
+      target: 14.5
+symmetry_correction: false
+  restraints:
+      - restraint:
+        atoms: ":DM1 :HEX@C6 :HEX@O1"
+        force_constant: 200.0
+  # Do not attempt to automatically correct for the symmetry restraint by adding -RT \ln (microstates).
+  # Instead, we will apply the symmetry restraint, which locks in a particular binding orientation, and then
+  # perform separate calculations.
+  microstates: 1

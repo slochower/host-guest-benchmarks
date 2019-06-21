@@ -1,0 +1,93 @@
+name: bcd
+structure: bcd.mol2
+net_charge: 0
+calculation:
+  restraints:
+    conformational:
+      - restraint:
+          atoms: ":1@O5 :1@C1 :1@O1 :2@C4"
+          force_constant: 6.0
+          target: 104.3
+      - restraint:
+          atoms: ":2@O5 :2@C1 :2@O1 :3@C4"
+          force_constant: 6.0
+          target: 104.3
+      - restraint:
+          atoms: ":3@O5 :3@C1 :3@O1 :4@C4"
+          force_constant: 6.0
+          target: 104.3
+      - restraint:
+          atoms: ":4@O5 :4@C1 :4@O1 :5@C4"
+          force_constant: 6.0
+          target: 104.3
+      - restraint:
+          atoms: ":5@O5 :5@C1 :5@O1 :6@C4"
+          force_constant: 6.0
+          target: 104.3
+      - restraint:
+          atoms: ":6@O5 :6@C1 :6@O1 :6@C4"
+          force_constant: 6.0
+          target: 104.3
+      - restraint:
+          atoms: ":7@O5 :7@C1 :7@O1 :1@C4"
+          force_constant: 6.0
+          target: 104.3
+      - restraint:
+          atoms: ":1@C1 :1@O1 :2@C4 :2@C5"
+          force_constant: 6.0
+          target: -108.8
+      - restraint:
+          atoms: ":2@C1 :2@O1 :3@C4 :3@C5"
+          force_constant: 6.0
+          target: -108.8
+      - restraint:
+          atoms: ":3@C1 :3@O1 :4@C4 :4@C5"
+          force_constant: 6.0
+          target: -108.8
+        - restraint:
+          atoms: ":4@C1 :4@O1 :5@C4 :5@C5"
+          force_constant: 6.0
+          target: -108.8
+        - restraint:
+          atoms: ":5@C1 :5@O1 :6@C4 :6@C5"
+          force_constant: 6.0
+          target: -108.8
+        - restraint:
+          atoms: ":6@C1 :6@O1 :7@C4 :7@C5"
+          force_constant: 6.0
+          target: -108.8
+        - restraint:
+          atoms: ":7@C1 :7@O1 :1@C4 :1@C5"
+          force_constant: 6.0
+          target: -108.8
+    static:
+      - restraint:
+          atoms: ":DM1 :1@O3"
+          force_constant: 5.0
+      - restraint:
+          atoms: ":DM2 :DM1 :1@O3"
+          force_constant: 100.0
+      - restraint:
+          atoms: ":DM3 :DM2 :DM1 :1@O3"
+          force_constant: 100.0
+      - restraint:
+          atoms: ":DM1 :3@O1 :5@C6"
+          force_constant: 100.0
+      - restraint:
+          atoms: ":DM2 :DM1 :3@O1 :5@C6"
+          force_constant: 100.0
+      - restraint:
+          atoms: ":DM1 :1@O3 :3@C1 :5@C6"
+          force_constant: 100.0
+  windows:
+    attach: 15
+    pull: 45
+    release: 15
+  lambda:
+    attach: [0.0, 0.004, 0.008, 0.016, 0.024, 0.04, 0.055, 0.0865, 0.118, 0.181, 0.244, 0.37, 0.496, 0.748, 1.0]
+    release: [1.0, 0.748, 0.496, 0.37, 0.244, 0.181, 0.118, 0.0865, 0.055, 0.04, 0.024, 0.016, 0.008, 0.004, 0.0]
+  target:
+    pull: 24.0
+  system:
+  waters: 2000
+  model: "TIP3P"
