@@ -1,6 +1,7 @@
 # Taproom
 
 A repository of host-guest systems available for benchmarking force fields.
+![US Patent 664824](tap.png)
 
 ## Installation
 
