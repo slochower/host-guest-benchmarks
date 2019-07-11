@@ -13,14 +13,18 @@ except ImportError as e:
           f"provided by `taproom`.")
 
 # https://github.com/openforcefield/nistdataselection/blob/a111537902db4fff249e0602ccd124d6832333e0/nistdataselection/nistdataselection.py
-def find_smirks_parameters(smiles_list, term="vdW"):
-    """Finds those Van der Waal force field parameters which would
-    be assigned to a list of molecules defined by the proved
-    smiles patterns.
+def find_smirks_parameters(smiles_list, molecule_paths, term="vdW"):
+    """Finds the force field parameters which would
+    be assigned to a list of molecules defined by the provided
+    SMILES patterns.
+
     Parameters
     ----------
     smiles_list: list of str
-        The smiles patterns of the target molecules
+        The SMILES patterns of the target molecules
+    molecule_paths: list of Path
+        The list of molecules that correspond to the SMILES strings (to make it easier to see which molecules
+        utilize which parameters)
     term: str
         The force field term (must be one of `vdW`, `Bonds`, `Angles`, `ProperTorsions`, `ImproperTorsions`,
         `Electrostatics`)
@@ -28,9 +32,9 @@ def find_smirks_parameters(smiles_list, term="vdW"):
     Returns
     -------
     dict of str and list of str
-        A dictionary with keys of smirks patterns, and
-        values of lists of smiles patterns which would utilize
-        those  patterns.
+        A dictionary with keys of SMIRKS patterns, and
+        values of lists of SMILES patterns which would utilize
+        those patterns, and the parameter ID in the force field.
     """
     allowed_terms = ["vdW", "Bonds", "Angles", "ProperTorsions", "ImproperTorsions", "Electrostatics"]
     if term not in allowed_terms:
@@ -51,9 +55,10 @@ def find_smirks_parameters(smiles_list, term="vdW"):
         smiles_by_smirks[parameter.smirks] = {}
         smiles_by_smirks[parameter.smirks]["id"] = parameter.id
         smiles_by_smirks[parameter.smirks]["smiles"] = []
+        smiles_by_smirks[parameter.smirks]["molecules"] = []
 
     # Populate the dictionary using the open force field toolkit.
-    for smiles in smiles_list:
+    for index, smiles in enumerate(smiles_list):
 
         molecule = Molecule.from_smiles(smiles, allow_undefined_stereo=True)
         topology = Topology.from_molecules([molecule])
@@ -64,12 +69,13 @@ def find_smirks_parameters(smiles_list, term="vdW"):
         for parameter in parameters.values():
 
             smiles_by_smirks[parameter.smirks]["smiles"].append(smiles)
+            smiles_by_smirks[parameter.smirks]["molecules"].append(str(molecule_paths[index]))
 
     # Find terms exercised by the SMILES.
     terms_used = []
     for key, value in smiles_by_smirks.items():
-        for subkey, subvalue in value.items():
-            if subkey == "smiles" and subvalue != []:
+        for sub_key, sub_value in value.items():
+            if sub_key == "smiles" and sub_value != []:
                 terms_used.append(value["id"])
 
     return smiles_by_smirks, terms_used
@@ -131,6 +137,6 @@ if __name__ == "__main__":
 
     for term in ["vdW", "Bonds", "Angles", "ProperTorsions", "ImproperTorsions"]:
 
-        smiles_by_smirks, terms_used = find_smirks_parameters(smiles_list, term=term)
+        smiles_by_smirks, terms_used = find_smirks_parameters(smiles_list, molecule_paths, term=term)
         logging.debug(json.dumps(smiles_by_smirks, indent=2))
         print(f"{term:<20} {terms_used}")
