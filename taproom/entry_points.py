@@ -16,6 +16,9 @@ def find_hosts(directory, subdirectory):
     Parameters
     ----------
     directory : Path
+        The root path for the benchmarks
+    subdirectory : Path
+        The path that contains the benchmark systems
 
     Returns
     -------
@@ -25,10 +28,13 @@ def find_hosts(directory, subdirectory):
 
     hosts = {}
     p = Path(directory).joinpath(subdirectory)
-    for file in p.resolve().glob("*/*.yaml"):
-        
-        hosts[file.parent.stem] = file.resolve()
-        logger.debug(f"Found host: {file.resolve()}")
+    for host in p.resolve().glob("*"):
+        hosts[host.stem] = {}
+        hosts[host.stem]["path"] = host
+        hosts[host.stem]["yaml"] = []
+        for instructions in host.glob("*.yaml"):
+            hosts[host.stem]["yaml"].append(instructions.resolve())
+            logger.debug(f"Found host YAML: {instructions.resolve()}")
     return hosts
 
 
@@ -38,7 +44,8 @@ def find_guests(host):
 
     Parameters
     ----------
-    directory : Path
+    host : List
+        A list of YAML files for a given host.
 
     Returns
     -------
@@ -47,13 +54,26 @@ def find_guests(host):
     """
 
     guests = {}
-    for file in Path(host).parents[0].glob("*/*.yaml"):
-        guests[file.parent.stem] = file.resolve()
-        logger.debug(f"Found guest: {file.resolve()}")
+    for file in Path(host["path"]).glob("*/*.yaml"):
+        guests[file.parent.stem] = {}
+        guests[file.parent.stem]["path"] = file.parent.resolve()
+        guests[file.parent.stem]["yaml"] = file.resolve()
+        logger.debug(f"Found guest YAML: {file.resolve()}")
     return guests
 
 
 def find_host_guest_pairs():
+    """
+    Determine host:guest pairs available to simulate.
+
+    Returns
+    -------
+    host_guest_systems : Dict
+        Directory paths containing YAML recipes for simulations.
+    host_guest_measurements : Dict
+        Directory paths containing YAML recipes for experimental data.
+
+    """
 
     host_guest_systems = {}
     host_guest_measurements = {}
@@ -62,15 +82,17 @@ def find_host_guest_pairs():
     hosts = find_hosts(installed_module_location, subdirectory="systems")
     for host, host_path in hosts.items():
         host_guest_systems[host] = {}
-        host_guest_systems[host]["yaml"] = host_path
+        host_guest_systems[host]["yaml"] = host_path["yaml"]
+        host_guest_systems[host]["path"] = host_path["path"]
         guests = find_guests(host_path)
         for guest, guest_path in guests.items():
             host_guest_systems[host][guest] = guest_path
 
     hosts = find_hosts(installed_module_location, subdirectory="measurements")
+    # `host_path` is going to be empty if there is a not top-level YAML file for each host in the "measurements"
+    # subdirectory.
     for host, host_path in hosts.items():
         host_guest_measurements[host] = {}
-        host_guest_measurements[host]["yaml"] = host_path
         guests = find_guests(host_path)
         for guest, guest_path in guests.items():
             host_guest_measurements[host][guest] = guest_path
