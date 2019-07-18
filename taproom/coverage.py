@@ -140,16 +140,11 @@ if __name__ == "__main__":
     installed_benchmarks = _get_installed_benchmarks()
     yaml_list = list(_find_key("yaml", installed_benchmarks))
     molecule_paths = []
-    # for file in yaml_list:
-    #     with open(file, "r") as f:
-    #         yaml_data = yaml.safe_load(f)
-    #
-    #     molecule_paths.append(file.parent.joinpath(yaml_data["structure"]))
-    #
+    for file in yaml_list:
+        with open(file, "r") as f:
+            yaml_data = yaml.safe_load(f)
 
-
-    molecule_paths = ["/Users/dslochower/Documents/projects/host-guest-benchmarks/taproom/systems/bcd/bcd.mol2"]
-
+        molecule_paths.append(file.parent.joinpath(yaml_data["structure"]))
 
 
     smiles_list = []
