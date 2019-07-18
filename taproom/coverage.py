@@ -2,6 +2,7 @@ import pkg_resources
 import yaml
 import json
 import logging
+from openeye import oechem
 
 logger = logging.getLogger(__name__)
 
@@ -13,7 +14,7 @@ except ImportError as e:
           f"provided by `taproom`.")
 
 # https://github.com/openforcefield/nistdataselection/blob/a111537902db4fff249e0602ccd124d6832333e0/nistdataselection/nistdataselection.py
-def find_smirks_parameters(smiles_list, molecule_paths, term="vdW"):
+def find_smirks_parameters(smiles_list, molecule_paths):
     """Finds the force field parameters which would
     be assigned to a list of molecules defined by the provided
     SMILES patterns.
@@ -25,9 +26,6 @@ def find_smirks_parameters(smiles_list, molecule_paths, term="vdW"):
     molecule_paths: list of Path
         The list of molecules that correspond to the SMILES strings (to make it easier to see which molecules
         utilize which parameters)
-    term: str
-        The force field term (must be one of `vdW`, `Bonds`, `Angles`, `ProperTorsions`, `ImproperTorsions`,
-        `Electrostatics`)
 
     Returns
     -------
@@ -36,49 +34,66 @@ def find_smirks_parameters(smiles_list, molecule_paths, term="vdW"):
         values of lists of SMILES patterns which would utilize
         those patterns, and the parameter ID in the force field.
     """
-    allowed_terms = ["vdW", "Bonds", "Angles", "ProperTorsions", "ImproperTorsions", "Electrostatics"]
-    if term not in allowed_terms:
-        raise Exception(f"{term}: not a known force field term ({[allowed_term for allowed_term in allowed_terms]})")
 
     force_field = smirnoff.ForceField('smirnoff99Frosst-1.0.9.offxml')
-    handler = force_field.get_parameter_handler(term)
 
     smiles_by_smirks = {}
-
-    # Initialize the array with all possible smirks pattern
-    # to make it easier to identify which are missing.
-    for parameter in handler.parameters:
-
-        if parameter.smirks in smiles_by_smirks:
-            continue
-
-        smiles_by_smirks[parameter.smirks] = {}
-        smiles_by_smirks[parameter.smirks]["id"] = parameter.id
-        smiles_by_smirks[parameter.smirks]["smiles"] = []
-        smiles_by_smirks[parameter.smirks]["molecules"] = []
+    smiles_by_smirks["Bonds"] = {}
+    smiles_by_smirks["Angles"] = {}
+    smiles_by_smirks["ProperTorsions"] = {}
+    smiles_by_smirks["vdW"] = {}
+    smiles_by_smirks["ImproperTorsions"] = {}
+    smiles_by_smirks["Electrostatics"] = {}
 
     # Populate the dictionary using the open force field toolkit.
     for index, smiles in enumerate(smiles_list):
 
-        molecule = Molecule.from_smiles(smiles, allow_undefined_stereo=True)
+        ifs = oechem.oemolistream()
+        if not ifs.open(molecule_paths[index]):
+            logging.error(f'Unable to open {molecule_paths[index]} for reading...')
+
+        ifs.open(molecule_paths[index])
+        oe_mols = []
+        for mol in ifs.GetOEMols():
+            oe_mols.append(oechem.OEMol(mol))
+        oechem.OE3DToAtomStereo(oe_mols[0])
+        molecule = Molecule.from_openeye(oe_mols[0])
+
+        # molecule = Molecule.from_smiles(smiles, allow_undefined_stereo=True)
         topology = Topology.from_molecules([molecule])
 
-        assigned_parameters = force_field.label_molecules(topology)[0]
-        parameters = assigned_parameters[term]
+        molecule_force_list = force_field.label_molecules(topology)
 
-        for parameter in parameters.values():
+        for molecule_index, molecule_forces in enumerate(molecule_force_list):
+            print(f'Forces for molecule {molecule_index}')
+            for force_name, force_dict in molecule_forces.items():
+                print(f"\n{force_name}:")
+                for (atom_indices, parameter) in force_dict.items():
+                    atomstr = ''
+                    for idx in atom_indices:
+                        atomstr += '%5s' % idx
+                    print("atoms: %s  parameter_id: %s  smirks %s" % ([oe_mols[0].GetAtom(oechem.OEHasAtomIdx(i)).GetName()
+                                                                                     for i in atom_indices], parameter.id, parameter.smirks))
 
-            smiles_by_smirks[parameter.smirks]["smiles"].append(smiles)
-            smiles_by_smirks[parameter.smirks]["molecules"].append(str(molecule_paths[index]))
 
-    # Find terms exercised by the SMILES.
-    terms_used = []
-    for key, value in smiles_by_smirks.items():
-        for sub_key, sub_value in value.items():
-            if sub_key == "smiles" and sub_value != []:
-                terms_used.append(value["id"])
+                    # This is not catching _all_ the atoms that hit a certain parameter.
+                    # I think these need to be initialized in the outer loop.
+                    # Each parameter is getting a list of length 1.
 
-    return smiles_by_smirks, terms_used
+                    if parameter.id not in smiles_by_smirks[force_name]:
+                        smiles_by_smirks[force_name][parameter.id] = {}
+                    if "atom_indices" not in smiles_by_smirks[force_name]:
+                        smiles_by_smirks[force_name][parameter.id]["atom_indices"] = []
+                    if "atom_names" not in smiles_by_smirks[force_name]:
+                        smiles_by_smirks[force_name][parameter.id]["atom_names"] = []
+
+                    smiles_by_smirks[force_name][parameter.id]["atom_indices"].append(atom_indices)
+                    smiles_by_smirks[force_name][parameter.id]["atom_names"].append([oe_mols[0].GetAtom(oechem.OEHasAtomIdx(i)).GetName()
+                                                                                     for i in atom_indices])
+                    smiles_by_smirks[force_name][parameter.id]["smirks"] = parameter.smirks
+
+
+    return smiles_by_smirks
 
 def mol2_to_smiles(file_path):
     """Loads a receptor from a mol2 file.
@@ -125,18 +140,21 @@ if __name__ == "__main__":
     installed_benchmarks = _get_installed_benchmarks()
     yaml_list = list(_find_key("yaml", installed_benchmarks))
     molecule_paths = []
-    for file in yaml_list:
-        with open(file, "r") as f:
-            yaml_data = yaml.safe_load(f)
+    # for file in yaml_list:
+    #     with open(file, "r") as f:
+    #         yaml_data = yaml.safe_load(f)
+    #
+    #     molecule_paths.append(file.parent.joinpath(yaml_data["structure"]))
+    #
 
-        molecule_paths.append(file.parent.joinpath(yaml_data["structure"]))
+
+    molecule_paths = ["/Users/dslochower/Documents/projects/host-guest-benchmarks/taproom/systems/bcd/bcd.mol2"]
+
+
 
     smiles_list = []
     for molecule in molecule_paths:
         smiles_list.append(mol2_to_smiles(str(molecule)))
 
-    for term in ["vdW", "Bonds", "Angles", "ProperTorsions", "ImproperTorsions"]:
-
-        smiles_by_smirks, terms_used = find_smirks_parameters(smiles_list, molecule_paths, term=term)
-        logging.debug(json.dumps(smiles_by_smirks, indent=2))
-        print(f"{term:<20} {terms_used}")
+    smiles_by_smirks = find_smirks_parameters(smiles_list, molecule_paths)
+    print(json.dumps(smiles_by_smirks, indent=2))
