@@ -3,34 +3,35 @@ structure: but.mol2
 complex: cb6-but.pdb
 net_charge: 0
 restraints:
-  - restraint:
-      atoms: ":DM1 :BUT@C"
-      attach:
-        # During the attach phase, the `force_constant` argument is the
-        # final force constant.
-        force_constant: 5.0
-        target: 6.0
-      pull:
-        # During the pull phase, the `target` argument is the final value of
-        # the restraint.
-        force_constant: 5.0
-        target: 24.0
-  - restraint:
-      atoms: ":DM2 :DM1 :BUT@C"
-      attach:
-        force_constant: 100.0
-        target: 180.0
-      pull:
-        force_constant: 100.0
-        target: 180.0
-  - restraint:
-      atoms: ":DM1 :BUT@C :BUT@C3"
-      attach:
-        force_constant: 100.0
-        target: 180.0
-      pull:
-        force_constant: 100.0
-        target: 180.0
+  guest:
+    - restraint:
+        atoms: ":DM1 :BUT@C"
+        attach:
+          # During the attach phase, the `force_constant` argument is the
+          # final force constant.
+          force_constant: 5.0
+          target: 6.0
+        pull:
+          # During the pull phase, the `target` argument is the final value of
+          # the restraint.
+          force_constant: 5.0
+          target: 24.0
+    - restraint:
+        atoms: ":DM2 :DM1 :BUT@C"
+        attach:
+          force_constant: 100.0
+          target: 180.0
+        pull:
+          force_constant: 100.0
+          target: 180.0
+    - restraint:
+        atoms: ":DM1 :BUT@C :BUT@C3"
+        attach:
+          force_constant: 100.0
+          target: 180.0
+        pull:
+          force_constant: 100.0
+          target: 180.0
 
 symmetry_correction:
   restraints:
