@@ -1,3 +1,5 @@
+from functools import reduce
+
 import pkg_resources
 import yaml
 import json
@@ -49,10 +51,11 @@ def find_smirks_parameters(smiles_list, molecule_paths):
     for index, smiles in enumerate(smiles_list):
 
         ifs = oechem.oemolistream()
-        if not ifs.open(molecule_paths[index]):
+
+        if not ifs.open(str(molecule_paths[index])):
             logging.error(f'Unable to open {molecule_paths[index]} for reading...')
 
-        ifs.open(molecule_paths[index])
+        ifs.open(str(molecule_paths[index]))
         oe_mols = []
         for mol in ifs.GetOEMols():
             oe_mols.append(oechem.OEMol(mol))
@@ -73,7 +76,8 @@ def find_smirks_parameters(smiles_list, molecule_paths):
                     for idx in atom_indices:
                         atomstr += '%5s' % idx
                     print("atoms: %s  parameter_id: %s  smirks %s" % ([oe_mols[0].GetAtom(oechem.OEHasAtomIdx(i)).GetName()
-                                                                                     for i in atom_indices], parameter.id, parameter.smirks))
+                                                                      for i in atom_indices],
+                                                                      parameter.id, parameter.smirks))
 
 
                     # This is not catching _all_ the atoms that hit a certain parameter.
@@ -136,16 +140,26 @@ def _find_key(key, dictionary):
                     yield result
 
 
+# https://stackoverflow.com/posts/10824420/revisions
+def flatten(container):
+    for i in container:
+        if isinstance(i, (list,tuple)):
+            for j in flatten(i):
+                yield j
+        else:
+            yield i
+
+
 if __name__ == "__main__":
     installed_benchmarks = _get_installed_benchmarks()
-    yaml_list = list(_find_key("yaml", installed_benchmarks))
+    yaml_list = list(_find_key("yaml", installed_benchmarks["host_guest_systems"]))
+    yaml_list = list(flatten(yaml_list))
     molecule_paths = []
     for file in yaml_list:
         with open(file, "r") as f:
             yaml_data = yaml.safe_load(f)
 
         molecule_paths.append(file.parent.joinpath(yaml_data["structure"]))
-
 
     smiles_list = []
     for molecule in molecule_paths:

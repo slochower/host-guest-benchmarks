@@ -1,7 +1,7 @@
 from openforcefield.typing.engines import smirnoff
 from simtk import unit
 
-force_field = smirnoff.ForceField('smirnoff99Frosst-1.0.9.offxml')
+force_field = smirnoff.ForceField('smirnoff99Frosst_experimental.offxml')
 
 # t9
 # [#1:1]-[#6X4:2]-[#6X4:3]-[#8X2:4]
@@ -34,6 +34,7 @@ assert(parameter.periodicity[1] == 1)
 parameter.k = [0.16 * unit.kilocalorie_per_mole]
 parameter.periodicity = [3]
 parameter.phase = [0 * unit.degrees]
+parameter.idivf = [1]
 
 # t87
 # [#6X4:1]-[#6X4:2]-[#8X2H0:3]-[#6X4:4]
@@ -68,6 +69,7 @@ assert(parameter.periodicity[1] == 2)
 parameter.k = [0.16 * unit.kilocalorie_per_mole, 0.24 * unit.kilocalorie_per_mole]
 parameter.periodicity = [2, 3]
 parameter.phase = [0 * unit.degrees, 0 * unit.degrees]
+parameter.idivf = [1, 1]
 
 # t5
 # O1-C4-C3-O3
@@ -101,5 +103,8 @@ assert(parameter.periodicity[1] == 2)
 parameter.k = [0.02 * unit.kilocalorie_per_mole, 1.01 * unit.kilocalorie_per_mole]
 parameter.periodicity = [1, 3]
 parameter.phase = [0 * unit.degrees, 0 * unit.degrees]
+parameter.idivf = [1, 1]
 
-force_field.to_file("smirnoff99Frosst-1.0.9-t5-t9-t87-modified.offxml")
+force_field.to_file("smirnoff99Frosst-experimental-t5-t9-t87-modified.offxml")
+
+force_field = smirnoff.ForceField("smirnoff99Frosst-experimental-t5-t9-t87-modified.offxml")
