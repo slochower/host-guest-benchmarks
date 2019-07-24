@@ -1,5 +1,6 @@
 name: bcd
 structure: bcd.mol2
+resname: MGO
 net_charge: 0
 aliases:
   - D1: ":DM1"
@@ -50,7 +51,7 @@ restraints:
         force_constant: 6.0
         target: 104.3
     - restraint:
-        atoms: ":6@O5 :6@C1 :6@O1 :6@C4"
+        atoms: ":6@O5 :6@C1 :6@O1 :7@C4"
         force_constant: 6.0
         target: 104.3
     - restraint:

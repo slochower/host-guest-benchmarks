@@ -1,0 +1,16 @@
+MGO = loadmol2 MGO.mol2
+set MGO name "MGO"
+set MGO head MGO.1.C4
+set MGO tail MGO.1.O1
+set MGO.1 connect0 MGO.1.C4
+set MGO.1 connect1 MGO.1.O1
+set MGO.1 restype saccharide
+set MGO.1 name "MGO"
+
+BCDOH = sequence {MGO MGO MGO MGO MGO MGO MGO}
+set BCDOH head BCDOH.1.C4
+set BCDOH tail BCDOH.7.O1
+impose BCDOH {1 2 3 4 5 6 7} {{O5 C1 O1 C4 98.0}{C1 O1 C4 C5 -103.00}}
+bond BCDOH.1.C4 BCDOH.7.O1
+
+savemol2 BCDOH bcd.gaff.mol2 1

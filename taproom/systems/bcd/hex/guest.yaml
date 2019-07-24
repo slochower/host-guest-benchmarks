@@ -1,6 +1,6 @@
 name: hex
 structure: hex.mol2
-complex: bcd-hex.pdb
+complex: b-hex.pdb
 net_charge: 0
 aliases:
   - D1: ":DM1"
