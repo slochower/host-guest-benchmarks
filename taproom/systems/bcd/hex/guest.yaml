@@ -3,11 +3,11 @@ structure: hex.mol2
 complex: b-hex.pdb
 net_charge: 0
 aliases:
-  - D1: ":DM1"
-  - D2: ":DM2"
-  - D3: ":DM3"
-  - G1: ":HEX@C6"
-  - G2: ":HEX@O1"
+    - D1: :9
+    - D2: :10
+    - D3: :11
+    - G1: :8@C6
+    - G2: :8@O1
 restraints:
   guest:
     - restraint:

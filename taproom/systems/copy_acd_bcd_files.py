@@ -145,7 +145,7 @@ def write_mol2(ligand_residue, output_file, directory_path):
 
     # 2. Use `antechamber` to make sure we get SYBYL atom types.
     command = \
-    f""" antechamber -i {ligand_residue}.tmp.mol2 -fi mol2 -o {output_file} -fo mol2 -at sybyl
+    f""" antechamber -i {ligand_residue}.tmp.mol2 -fi mol2 -o {output_file} -fo mol2 -at sybyl -dr no
     """
     p = sp.Popen(command, cwd=directory_path, shell=True)
     p.communicate()
@@ -186,16 +186,16 @@ def write_guest_yaml_header(template_file, anchor_atoms, output_file):
     """
 
     string = [
-    f"name: {guest}",
-    f"structure: {guest}.mol2",
-    f"complex: {host}-{guest}.pdb",
-    "net_charge: 0",
-    "aliases:",
-    f"    - D1: {anchor_atoms['D1']}",
-    f"    - D2: {anchor_atoms['D2']}",
-    f"    - D3: {anchor_atoms['D3']}",
-    f"    - G1: {anchor_atoms['G1']}",
-    f"    - G2: {anchor_atoms['G2']}",
+    f"name: {guest}" + "\n",
+    f"structure: {guest}.mol2" + "\n",
+    f"complex: {host}-{guest}.pdb" + "\n",
+    "net_charge: 0" + "\n",
+    "aliases:" + "\n",
+    f"    - D1: {anchor_atoms['D1']}" + "\n",
+    f"    - D2: {anchor_atoms['D2']}" + "\n",
+    f"    - D3: {anchor_atoms['D3']}" + "\n",
+    f"    - G1: {anchor_atoms['G1']}" + "\n",
+    f"    - G2: {anchor_atoms['G2']}" + "\n",
     ]
 
 
@@ -206,7 +206,8 @@ def write_guest_yaml_header(template_file, anchor_atoms, output_file):
         guest_yaml[line_number] = string[line_number]
 
     with open(output_file, "w") as file:
-        file.write(guest_yaml)
+        for line in guest_yaml:
+            file.write(line)
 
 for system in systems:
 
@@ -228,16 +229,17 @@ for system in systems:
     taproom_root = Path("/home/davids4/data/projects/host-guest-benchmarks/taproom/systems")
     taproom_host = taproom_root.joinpath("acd") if "a" in host else taproom_root.joinpath("bcd")
     taproom_directory = taproom_host.joinpath(guest)
-    if not taproom_directory:
+    if not os.path.exists(taproom_directory):
         os.mkdir(taproom_directory)
 
     if not os.path.exists(taproom_directory.joinpath("guest.mol2")):
-        sp.call(f"cp {directory_path.joinpath(guest + '.mol2')} {taproom_directory}", shell=True)
+        sp.call(f"cp {directory_path.joinpath(guest + '.mol2')} {taproom_directory}/", shell=True)
 
-    if not os.path.exists(taproom_directory.joinpath("guest.yaml")):
+    # if not os.path.exists(taproom_directory.joinpath("guest.yaml")):
+    if 1:
         anchor_atoms = grep_anchor_atoms(root_path, system)
         write_guest_yaml_header(template_file=taproom_host.joinpath("hex").joinpath("guest.yaml"),
                                 anchor_atoms=anchor_atoms,
                                 output_file=taproom_directory.joinpath("guest.yaml"))
 
-    sp.call(f"cp {directory_path.joinpath(system + '.pdb')} {taproom_directory}", shell=True)
+    sp.call(f"cp {directory_path.joinpath(system + '.pdb')} {taproom_directory}/", shell=True)

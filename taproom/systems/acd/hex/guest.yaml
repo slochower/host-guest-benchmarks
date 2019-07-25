@@ -1,13 +1,13 @@
 name: hex
 structure: hex.mol2
-complex: acd-hex.pdb
+complex: a-hex.pdb
 net_charge: 0
 aliases:
-  - D1: ":DM1"
-  - D2: ":DM2"
-  - D3: ":DM3"
-  - G1: ":HEX@C6"
-  - G2: ":HEX@O1"
+    - D1: :8
+    - D2: :9
+    - D3: :10
+    - G1: :7@C6
+    - G2: :7@O1
 restraints:
   guest:
     - restraint:
