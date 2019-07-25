@@ -101,7 +101,7 @@ def write_pdb(output_file, directory_path):
 
     input = \
     f"""
-    parm smrinoff.prmtop
+    parm smirnoff.prmtop
     trajin smirnoff.inpcrd
 
     strip :DUM,:Na+,:Cl-,:WAT
@@ -109,14 +109,13 @@ def write_pdb(output_file, directory_path):
     run
     quit
     """
-    with open(directory_path.join("tmp.in"), "w") as f:
+    with open(directory_path.joinpath("tmp.in"), "w") as f:
         f.write(input)
     command = \
-    f"""
-    cpptraj -i tmp.in"""
-    p = sp.Popen(command, cwd=directory_path)
+    f"""cpptraj -i tmp.in"""
+    p = sp.Popen(command, cwd=directory_path, shell=True)
     p.communicate()
-    os.remove(directory_path.join("tmp.in"))
+    os.remove(directory_path.joinpath("tmp.in"))
 
 def write_mol2(ligand_residue, output_file, directory_path):
     """
@@ -127,45 +126,43 @@ def write_mol2(ligand_residue, output_file, directory_path):
 
     input = \
     f"""
-    parm smrinoff.prmtop
+    parm smirnoff.prmtop
     trajin smirnoff.inpcrd
 
-    strip !:{ligand_residue}
-    crdout {ligand_residue}.tmp.mol2
+    strip :MGO,:Na+,:Cl-,:WAT,:DUM
+    trajout {ligand_residue}.tmp.mol2
     run
     quit
     """
 
-    with open(directory_path.join("tmp.in"), "w") as f:
+    with open(directory_path.joinpath("tmp.in"), "w") as f:
         f.write(input)
     command = \
-    f"""
-    cpptraj -i tmp.in"""
-    p = sp.Popen(command, cwd=directory_path)
+    f"""cpptraj -i tmp.in"""
+    p = sp.Popen(command, cwd=directory_path, shell=True)
     p.communicate()
-    os.remove(directory_path.join("tmp.in"))
+    os.remove(directory_path.joinpath("tmp.in"))
 
     # 2. Use `antechamber` to make sure we get SYBYL atom types.
     command = \
-    f"""
-    antechamber -i {ligand_residue}.tmp.mol2 -fi mol2 -o {output_file} -fo mol2 -at sybyl
+    f""" antechamber -i {ligand_residue}.tmp.mol2 -fi mol2 -o {output_file} -fo mol2 -at sybyl
     """
-    p = sp.Popen(command, cwd=directory_path)
+    p = sp.Popen(command, cwd=directory_path, shell=True)
     p.communicate()
 
-def grep_anchor_atoms(system):
+def grep_anchor_atoms(path, system):
     """
     Create a dictionary of anchor atoms from existing files.
     """
 
-    pdb = os.path.join("systems", system, "bgbg-tip3p", system + ".pdb")
+    pdb = path.joinpath(system, "bgbg-tip3p", f"{system}.pdb")
     with open(pdb, "r") as file:
         remark = file.readline()
     remark = remark.rstrip()
     remark = remark.split(" ")
 
     prmtop = pmd.load_file(
-        os.path.join("systems", system, "smirnoff", "smirnoff.prmtop")
+        str(path.joinpath(system, "smirnoff", "smirnoff.prmtop"))
     )
     dummy_residues = prmtop[":DUM"].residues
     host_residue = prmtop[":MGO"].residues[0].number + 1
@@ -213,6 +210,8 @@ def write_guest_yaml_header(template_file, anchor_atoms, output_file):
 
 for system in systems:
 
+    print(system)
+
     # Inputs
     host, guest, orientation = system.split("-")
     root_path = Path("/home/davids4/gpfs/smirnoff-host-guest-simulations-data/systems")
@@ -226,17 +225,17 @@ for system in systems:
                directory_path=directory_path)
 
     # Outputs for `taproom`
-    taproom_root = Path("/home/davids4/projects/host-guest-benchmarks/taproom/systems")
-    taproom_host = taproom_root.joinpath("acd") if "a" in host else taproom_root.joinpath("bcd") if "b" in host
+    taproom_root = Path("/home/davids4/data/projects/host-guest-benchmarks/taproom/systems")
+    taproom_host = taproom_root.joinpath("acd") if "a" in host else taproom_root.joinpath("bcd")
     taproom_directory = taproom_host.joinpath(guest)
     if not taproom_directory:
         os.mkdir(taproom_directory)
 
-    if not os.path.exists(taproom_directory.join("guest.mol2")):
-        sp.call(f"cp {directory_path.joinpath(guest + 'mol2')} {taproom_directory}", shell=True)
+    if not os.path.exists(taproom_directory.joinpath("guest.mol2")):
+        sp.call(f"cp {directory_path.joinpath(guest + '.mol2')} {taproom_directory}", shell=True)
 
-    if not os.path.exists(taproom_directory.join("guest.yaml")):
-        anchor_atoms = grep_anchor_atoms(system)
+    if not os.path.exists(taproom_directory.joinpath("guest.yaml")):
+        anchor_atoms = grep_anchor_atoms(root_path, system)
         write_guest_yaml_header(template_file=taproom_host.joinpath("hex").joinpath("guest.yaml"),
                                 anchor_atoms=anchor_atoms,
                                 output_file=taproom_directory.joinpath("guest.yaml"))
