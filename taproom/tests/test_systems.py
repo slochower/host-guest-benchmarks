@@ -7,6 +7,8 @@ from taproom.entry_points import find_host_guest_pairs
 
 logger = logging.getLogger(__name__)
 
+# Systems
+
 def test_cb6():
     """ Test that we can find one host YAML for CB6. """
     host_guest_systems, host_guest_measurements = find_host_guest_pairs()
@@ -25,7 +27,11 @@ def test_cb6_but():
     host_guest_systems, host_guest_measurements = find_host_guest_pairs()
     assert host_guest_systems["cb6"]["yaml"][0].name == "host.yaml"
     assert host_guest_systems["cb6"]["but"]["yaml"].name == "guest.yaml"
-    assert host_guest_measurements["cb6"]["but"]["yaml"].name == "measurement.yaml"
+
+# Test `measurements`
+def test_acd_bam_measurements():
+    host_guest_systems, host_guest_measurements = find_host_guest_pairs()
+    assert host_guest_measurements["acd"]["bam"]["yaml"].name == "measurement.yaml"
 
 if __name__ == "__main__":
-    test_cb6()
+    test_acd_bam_measurements()
