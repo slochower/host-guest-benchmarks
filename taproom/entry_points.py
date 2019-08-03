@@ -38,7 +38,7 @@ def find_hosts(directory, subdirectory):
     return hosts
 
 
-def find_guests(host):
+def find_guests(host, wildcard="*"):
     """
     Return the list of guests that provide a YAML recipe, for a given host.
 
@@ -54,7 +54,7 @@ def find_guests(host):
     """
 
     guests = {}
-    for file in Path(host["path"]).glob("*/*.yaml"):
+    for file in Path(host["path"]).glob(f"*/{wildcard}.yaml"):
         guests[file.parent.stem] = {}
         guests[file.parent.stem]["path"] = file.parent.resolve()
         guests[file.parent.stem]["yaml"] = file.resolve()
@@ -84,16 +84,12 @@ def find_host_guest_pairs():
         host_guest_systems[host] = {}
         host_guest_systems[host]["yaml"] = host_path["yaml"]
         host_guest_systems[host]["path"] = host_path["path"]
-        guests = find_guests(host_path)
+        guests = find_guests(host_path, wildcard="guest")
         for guest, guest_path in guests.items():
             host_guest_systems[host][guest] = guest_path
 
-    hosts = find_hosts(installed_module_location, subdirectory="measurements")
-    # `host_path` is going to be empty if there is a not top-level YAML file for each host in the "measurements"
-    # subdirectory.
-    for host, host_path in hosts.items():
         host_guest_measurements[host] = {}
-        guests = find_guests(host_path)
+        guests = find_guests(host_path, wildcard="measurement")
         for guest, guest_path in guests.items():
             host_guest_measurements[host][guest] = guest_path
 
