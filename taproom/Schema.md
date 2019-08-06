@@ -1,12 +1,18 @@
-# Specifications
+# Specifications for YAML files
+
+asdfasd...
 
 ## YAML host file schema
 
 - name (`str`):
 - structure (`str`):
 - net_charge (`int`):
+- aliases (`dict`, optional):
 - restraints (`list`):
-    - restraint_group (`str`)
+    - restraint_group (`str`) (e.g. static... )
+    
+    
+    
 - calculation (`list`)
     - windows (`list`)
         - attach (`int`)
@@ -26,14 +32,5 @@
 
 ## YAML measurements file schema
 
-## Units
-
-Unless otherwise specified... 
-
-- 
-
-We plan to add unit parsing.
-
 
 ## Version history
-
