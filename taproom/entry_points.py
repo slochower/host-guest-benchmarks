@@ -31,10 +31,14 @@ def find_hosts(directory, subdirectory):
     for host in p.resolve().glob("*"):
         hosts[host.stem] = {}
         hosts[host.stem]["path"] = host
-        hosts[host.stem]["yaml"] = []
-        for instructions in host.glob("*.yaml"):
-            hosts[host.stem]["yaml"].append(instructions.resolve())
-            logger.debug(f"Found host YAML: {instructions.resolve()}")
+        hosts[host.stem]["yaml"] = {}
+        for file in host.glob("*.yaml"):
+            try:
+                orientation = file.stem.split("-")[1]
+            except IndexError:
+                orientation = "p"
+            hosts[host.stem]["yaml"][orientation] = file.resolve()
+            logger.debug(f"Found host YAML: {file.resolve()}")
     return hosts
 
 
