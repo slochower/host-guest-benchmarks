@@ -81,7 +81,7 @@ restraints:
 calculation:
   windows:
     attach: 2
-    pull: 1
+    pull: 2
     release: 2
   lambda:
     attach: [0.0, 1.0]

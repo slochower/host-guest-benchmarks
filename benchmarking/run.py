@@ -38,7 +38,7 @@ def main():
     for substance, orientation in zip(host_guest_substances, host_guest_orientations):
 
         # Create the protocol which will run the attach pull calculations
-        host_guest_protocol = OpenMMPaprikaProtocol('host_guest')
+        host_guest_protocol = OpenMMPaprikaProtocol(f'host_guest-{orientation}')
 
         host_guest_protocol.substance = substance
         host_guest_protocol.taproom_guest_orientation = orientation
@@ -53,6 +53,7 @@ def main():
         host_guest_protocol.number_of_production_steps = 50
         host_guest_protocol.equilibration_output_frequency = 25
         host_guest_protocol.production_output_frequency = 25
+        host_guest_protocol.number_of_solvent_molecules = 512
 
         host_guest_protocol.taproom_host_name = host
         host_guest_protocol.taproom_guest_name = guest
@@ -66,7 +67,7 @@ def main():
             logging.info(f'The attach / pull calculations failed with error: {result.message}')
             return
 
-        substance_results.append(result)
+        substance_results.append(host_guest_protocol)
 
     if len(host_guest_substances) > 1:
 
@@ -74,7 +75,13 @@ def main():
 
         sum_protocol = AddBindingFreeEnergies("add_binding_free_energies")
 
-        free_energies = [result.attach_free_energy + result.pull_free_energy + result.release_free_energy for result in substance_results]
+        free_energies = [result.attach_free_energy + result.pull_free_energy for result in substance_results]
+        for result in substance_results:
+            logging.info(f"Attach = {result.attach_free_energy.value.to(unit.kilocalorie / unit.mole)} ± {result.attach_free_energy.uncertainty.to(unit.kilocalorie / unit.mole)}",
+                         f"Pull={result.pull_free_energy.value.to(unit.kilocalorie / unit.mole)} ± {result.pull_free_energy.uncertainty.to(unit.kilocalorie / unit.mole)}")
+
+        logging.info(f"Combined Attach = {free_energies[0].value.to(unit.kilocalorie / unit.mole)} ± {free_energies[0].uncertainty.to(unit.kilocalorie / unit.mole)}")
+        logging.info(f"Combined Pull = {free_energies[1].value.to(unit.kilocalorie / unit.mole)} ± {free_energies[1].uncertainty.to(unit.kilocalorie / unit.mole)}")
 
         sum_protocol.values = free_energies
         sum_protocol.thermodynamic_state = thermodynamic_state
@@ -107,11 +114,11 @@ def main():
         logging.info(f'The release calculations failed with error: {result.message}')
         return
 
-    logging.info(f'Attach={host_guest_protocol.attach_free_energy} '
-                 f'Pull={host_guest_protocol.pull_free_energy} '
-                 f'Release={host_protocol.release_free_energy} '
-                 f'Reference={host_guest_protocol.reference_free_energy}')
-
+    # logging.info(f'Attach={host_guest_protocol.attach_free_energy} '
+    #              f'Pull={host_guest_protocol.pull_free_energy} '
+    #              f'Release={host_protocol.release_free_energy} '
+    #              f'Reference={host_guest_protocol.reference_free_energy}')
+    logging.info(sum_protocol)
 
 if __name__ == "__main__":
     main()
