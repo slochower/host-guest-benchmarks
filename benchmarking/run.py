@@ -32,7 +32,7 @@ def main():
 
     # Set up the substance definitions.
     host_guest_substances, host_guest_orientations = get_paprika_host_guest_substance(host, guest)
-    host_substance = get_paprika_host_guest_substance(host, None)
+    host_substance, _ = get_paprika_host_guest_substance(host, None)[0]
 
     substance_results = []
     for substance, orientation in zip(host_guest_substances, host_guest_orientations):
@@ -114,11 +114,9 @@ def main():
         logging.info(f'The release calculations failed with error: {result.message}')
         return
 
-    # logging.info(f'Attach={host_guest_protocol.attach_free_energy} '
-    #              f'Pull={host_guest_protocol.pull_free_energy} '
-    #              f'Release={host_protocol.release_free_energy} '
-    #              f'Reference={host_guest_protocol.reference_free_energy}')
-    logging.info(sum_protocol)
+    logging.info(f"Attach and Pull={sum_protocol.result} "
+                 f"Release={host_protocol.release_free_energy} "
+                 f'Reference={host_guest_protocol.reference_free_energy}')
 
 if __name__ == "__main__":
     main()
