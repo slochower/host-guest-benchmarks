@@ -1,0 +1,30 @@
+state:
+  temperature: 298.15 K
+  pressure: 1 atm
+  pH: 6.90
+
+substance:
+  name: 1-hexylamine
+  SMILES: '[H]C([H])([H])C([H])([H])C([H])([H])C([H])([H])C([H])([H])C([H])([H])[N+]([H])([H])[H]'
+  buffer:
+    - "[Na+].OP(O)([O-])=O": 0.025 mol kg-1
+    - "[Na+].[Na+].OP([O-])([O-])=O": 0.025 mol kg-1
+
+measurement:
+  technique: ITC
+  delta_G: -10.4 kJ/mol
+  # This paper reports the uncertainty as two times the SEM. Therefore I am dividing the reported value by 2.
+  # Reported ΔG° uncertainty = 0.7 kJ/mol
+  delta_G_uncertainty: 0.35 kJ/mol
+  delta_H: 2.5 kJ/mol
+  # This paper reports the uncertainty as two times the SEM. Therefore I am dividing the reported value by 2.
+  # Reported ΔH uncertainty = 0.4 kJ/mol
+  delta_H_uncertainty: 0.2 kJ/mol
+  stoichiometry: "1:1"
+  comment: "The results and uncertainties for the equilibrium constants and standard molar enthalpies of reaction in Tables 1 and 2 were obtained as weighted averages of the results of the titration experiments done for each (ligand + cyclodextrin) pair. These uncertainties refer to two estimated standard deviations of the mean. However, in some cases (see below), these uncertainties were increased to allow either for a minimal error in the calorimetric measurements or for impurities in the samples. The standard deviations of the mean are based on the scatter of the data in a single titration experiment and were obtained from the computer program “Origin”29 used to calculate the equilibrium constants and the standard molar enthalpies of reaction."
+
+provenance:
+  comment: "Table 2"
+  doi: 10.1021/jp962715n
+
+unusual: False
