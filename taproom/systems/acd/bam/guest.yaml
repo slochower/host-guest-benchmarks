@@ -3,9 +3,9 @@ structure: bam.mol2
 complex: a-bam.pdb
 net_charge: 0
 aliases:
-    - D1: :8
-    - D2: :9
-    - D3: :10
+    - D1: :DM1
+    - D2: :DM2
+    - D3: :DM3
     - G1: :7@C4
     - G2: :7@N1
 restraints:

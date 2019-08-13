@@ -3,9 +3,9 @@ structure: oam.mol2
 complex: b-oam.pdb
 net_charge: 0
 aliases:
-    - D1: :9
-    - D2: :10
-    - D3: :11
+    - D1: :DM1
+    - D2: :DM2
+    - D3: :DM3
     - G1: :8@C1
     - G2: :8@N1
 restraints:

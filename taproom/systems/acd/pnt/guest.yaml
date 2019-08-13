@@ -3,9 +3,9 @@ structure: pnt.mol2
 complex: a-pnt.pdb
 net_charge: 0
 aliases:
-    - D1: :8
-    - D2: :9
-    - D3: :10
+    - D1: :DM1
+    - D2: :DM2
+    - D3: :DM3
     - G1: :7@C5
     - G2: :7@C1
 restraints:
