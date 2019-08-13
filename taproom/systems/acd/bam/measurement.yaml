@@ -4,6 +4,7 @@ state:
   pH: 6.90
 
 substance:
+  name: 1-butylamine
   SMILES: "[H]C([H])([H])C([H])([H])C([H])([H])C([H])([H])[N+]([H])([H])[H]"
   buffer:
     - "[Na+].OP(O)([O-])=O": 0.025 mol kg-1

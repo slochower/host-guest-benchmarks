@@ -4,6 +4,7 @@ state:
   pH: 6.90
 
 substance:
+  name: cyclooctanol
   SMILES: '[H]C1(C(C(C(C(C(C(C1([H])[H])([H])[H])([H])[H])([H])O[H])([H])[H])([H])[H])([H])[H])[H]'
   buffer:
     - "[Na+].OP(O)([O-])=O": 0.025 mol kg-1

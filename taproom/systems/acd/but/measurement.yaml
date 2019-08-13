@@ -4,6 +4,7 @@ state:
   pH: 6.90
 
 substance:
+  name: butanoate
   SMILES: '[H]C([H])([H])C([H])([H])C([H])([H])[C-]([O-])[O-]'
   buffer:
     - "[Na+].OP(O)([O-])=O": 0.025 mol kg-1
