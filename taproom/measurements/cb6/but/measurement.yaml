@@ -1,8 +1,0 @@
-state:
-  - temperature: 298.15
-  - pressure: 1
-  - pH: 6.90
-  - solvent:
-    - "SMILES 1" : mole fraction
-    - "SMILES 2" : mole fraction
-  comment: "aldksfjlkasdjflJ"

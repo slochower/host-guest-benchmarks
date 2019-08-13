@@ -4,18 +4,18 @@ state:
   pH: 6.90
 
 substance:
-  SMILES: "[H]C([H])([H])C([H])([H])C([H])([H])C([H])([H])[N+]([H])([H])[H]"
+  SMILES: '[H]C1(C(C(C1([H])[H])([H])O[H])([H])[H])[H]'
   buffer:
     - "[Na+].OP(O)([O-])=O": 0.025 mol kg-1
     - "[Na+].[Na+].OP([O-])([O-])=O": 0.025 mol kg-1
 
 measurement:
   technique: ITC
-  delta_G: -6.59 kJ/mol
+  delta_G: -8.46
   # This paper reports the uncertainty as two times the SEM. Therefore I am dividing the reported value by 2.
-  # Reported ΔG° uncertainty = 0.16 kJ/mol
-  delta_G_uncertainty: 0.08 kJ/mol
-  delta_H: -9.1 kJ/mol
+  # Reported ΔG° uncertainty = 0.13 kJ/mol
+  delta_G_uncertainty: 0.065 kJ/mol
+  delta_H: -11.5 kJ/mol
   # This paper reports the uncertainty as two times the SEM. Therefore I am dividing the reported value by 2.
   # Reported ΔH uncertainty = 0.4 kJ/mol
   delta_H_uncertainty: 0.2 kJ/mol
