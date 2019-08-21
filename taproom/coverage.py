@@ -1,4 +1,5 @@
 from functools import reduce
+from pathlib import PosixPath
 
 import pkg_resources
 import yaml
@@ -153,9 +154,23 @@ def flatten(container):
 if __name__ == "__main__":
     installed_benchmarks = _get_installed_benchmarks()
     yaml_list = list(_find_key("yaml", installed_benchmarks["host_guest_systems"]))
-    yaml_list = list(flatten(yaml_list))
+    yaml_paths = []
+
+    # for entry in yaml_list:
+    #     if isinstance(entry, PosixPath):
+    #         yaml_paths.append(entry)
+    #     elif isinstance(entry, dict):
+    #         try:
+    #             for key, value in entry:
+    #                 yaml_paths.append(value)
+    #         except ValueError:
+    #             # I'm not sure why, but we have a few empty dictionaries here.
+    #             pass
+
+    yaml_paths = [PosixPath("/Users/dslochower/Documents/projects/host-guest-benchmarks/taproom/systems/acd/host-p.yaml")]
+
     molecule_paths = []
-    for file in yaml_list:
+    for file in yaml_paths:
         with open(file, "r") as f:
             yaml_data = yaml.safe_load(f)
 
