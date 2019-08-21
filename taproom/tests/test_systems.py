@@ -35,3 +35,7 @@ def test_acd_bam_measurements():
 
 if __name__ == "__main__":
     test_acd_bam_measurements()
+
+
+
+    # Test using the class validation...
