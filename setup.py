@@ -13,5 +13,5 @@ setup(
             "host_guest_systems = taproom.entry_points:host_guest_systems",
             "host_guest_measurements = taproom.entry_points:host_guest_measurements"
         ]
-    },
+    }, install_requires=['pydantic']
 )
