@@ -28,7 +28,9 @@ def find_hosts(directory, subdirectory):
 
     hosts = {}
     p = Path(directory).joinpath(subdirectory)
-    for host in p.resolve().glob("*"):
+    files = p.resolve().glob("*")
+    directories = [i for i in files if i.is_dir()]
+    for host in directories:
         hosts[host.stem] = {}
         hosts[host.stem]["path"] = host
         hosts[host.stem]["yaml"] = {}
