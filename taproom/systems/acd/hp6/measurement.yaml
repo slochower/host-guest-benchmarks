@@ -5,7 +5,7 @@ state:
 
 substance:
   name: 6-heptenoate
-  SMILES: '[H]C(=C([H])C([H])([H])C([H])([H])C([H])([H])C([H])([H])[C-]([O-])[O-])[H]'
+  SMILES: "C=CCCCCC(=O)[O-]"
   buffer:
     - "[Na+].OP(O)([O-])=O": 0.025 mol kg-1
     - "[Na+].[Na+].OP([O-])([O-])=O": 0.025 mol kg-1

@@ -5,7 +5,7 @@ state:
 
 substance:
   name: 3-phenylbutanoate
-  SMILES: '[H]c1c(c(c(c(c1[H])[H])[C@]([H])(C([H])([H])[H])C([H])([H])[C-]([O-])[O-])[H])[H]'
+  SMILES: "C[C@H](CC(=O)[O-])c1ccccc1"
   buffer:
     - "[Na+].OP(O)([O-])=O": 0.025 mol kg-1
     - "[Na+].[Na+].OP([O-])([O-])=O": 0.025 mol kg-1

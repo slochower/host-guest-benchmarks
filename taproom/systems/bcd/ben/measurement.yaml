@@ -5,7 +5,7 @@ state:
 
 substance:
   name: benzoate
-  SMILES: '[H]c1c(c(c(c(c1[H])[H])[C-]([O-])[O-])[H])[H]'
+  SMILES: "c1ccc(cc1)C(=O)[O-]"
   buffer:
     - "[Na+].OP(O)([O-])=O": 0.025 mol kg-1
     - "[Na+].[Na+].OP([O-])([O-])=O": 0.025 mol kg-1
