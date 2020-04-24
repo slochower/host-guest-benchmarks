@@ -12,7 +12,7 @@ substance:
 
 measurement:
   technique: ITC
-  delta_G: -8.46
+  delta_G: -8.46 kJ/mol
   # This paper reports the uncertainty as two times the SEM. Therefore I am dividing the reported value by 2.
   # Reported ΔG° uncertainty = 0.13 kJ/mol
   delta_G_uncertainty: 0.065 kJ/mol
