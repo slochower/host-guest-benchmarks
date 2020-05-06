@@ -45,3 +45,4 @@ Copyright (c) 2019, Open Force Field Consortium
 - David R. Slochower
 - Simon Boothroyd
 - Katy Kellett
+- Jeff Setiadi
