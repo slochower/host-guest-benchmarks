@@ -24,7 +24,7 @@ restraints:
         atoms: D1 H1 H2
         force_constant: 100.0
     - restraint:
-        atoms: D2 D1 H2 H3
+        atoms: D2 D1 H1 H2
         force_constant: 100.0
     - restraint:
         atoms: D1 H1 H2 H3
