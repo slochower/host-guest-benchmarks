@@ -71,31 +71,31 @@ restraints:
     - restraint:
         atoms: ":1@O1 G1"
         force_constant: 50.0
-        target: 14.5
+        target: 13.0
     - restraint:
         atoms: ":2@O1 G1"
         force_constant: 50.0
-        target: 14.5
+        target: 13.0
     - restraint:
         atoms: ":3@O1 G1"
         force_constant: 50.0
-        target: 14.5
+        target: 13.0
     - restraint:
         atoms: ":4@O1 G1"
         force_constant: 50.0
-        target: 14.5
+        target: 13.0
     - restraint:
         atoms: ":5@O1 G1"
         force_constant: 50.0
-        target: 14.5
+        target: 13.0
     - restraint:
         atoms: ":6@O1 G1"
         force_constant: 50.0
-        target: 14.5
+        target: 13.0
     - restraint:
         atoms: ":7@O1 G1"
         force_constant: 50.0
-        target: 14.5
+        target: 13.0
 
 symmetry_correction:
   restraints:
