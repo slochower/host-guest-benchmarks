@@ -1,13 +1,15 @@
 """
-This module contains the function that generates the entry point used by pAPRika to run benchmark calculations.
+This module contains the function that generates the entry point used by pAPRika to
+run benchmark calculations.
 """
 
-from pathlib import Path
-import yaml
-import pkg_resources
 import logging
+from pathlib import Path
+
+import pkg_resources
 
 logger = logging.getLogger(__name__)
+
 
 def find_hosts(directory, subdirectory):
     """
@@ -15,9 +17,9 @@ def find_hosts(directory, subdirectory):
 
     Parameters
     ----------
-    directory : Path
+    directory : PathLike
         The root path for the benchmarks
-    subdirectory : Path
+    subdirectory : PathLike
         The path that contains the benchmark systems
 
     Returns
@@ -52,6 +54,7 @@ def find_guests(host, wildcard="*"):
     ----------
     host : List
         A list of YAML files for a given host.
+    wildcard
 
     Returns
     -------
@@ -78,27 +81,29 @@ def find_host_guest_pairs():
         Directory paths containing YAML recipes for simulations.
     host_guest_measurements : Dict
         Directory paths containing YAML recipes for experimental data.
-
     """
 
-    host_guest_systems = {}
-    host_guest_measurements = {}
+    systems = {}
+    measurements = {}
 
-    installed_module_location = Path(pkg_resources.resource_filename("taproom", "entry_points.py")).parents[0]
+    installed_module_location = Path(
+        pkg_resources.resource_filename("taproom", "entry_points.py")
+    ).parents[0]
     hosts = find_hosts(installed_module_location, subdirectory="systems")
     for host, host_path in hosts.items():
-        host_guest_systems[host] = {}
-        host_guest_systems[host]["yaml"] = host_path["yaml"]
-        host_guest_systems[host]["path"] = host_path["path"]
+        systems[host] = {}
+        systems[host]["yaml"] = host_path["yaml"]
+        systems[host]["path"] = host_path["path"]
         guests = find_guests(host_path, wildcard="guest")
         for guest, guest_path in guests.items():
-            host_guest_systems[host][guest] = guest_path
+            systems[host][guest] = guest_path
 
-        host_guest_measurements[host] = {}
+        measurements[host] = {}
         guests = find_guests(host_path, wildcard="measurement")
         for guest, guest_path in guests.items():
-            host_guest_measurements[host][guest] = guest_path
+            measurements[host][guest] = guest_path
 
-    return host_guest_systems, host_guest_measurements
+    return systems, measurements
+
 
 host_guest_systems, host_guest_measurements = find_host_guest_pairs()
