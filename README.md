@@ -15,6 +15,8 @@ The dictionary `host_guest_measurements` contains YAML-formatted experimental da
 The following snippet can be used to expose the installed benchmarks.
 
 ```python
+import pkg_resources
+
 def _get_installed_benchmarks():
     _installed_benchmarks = {}
 
@@ -23,13 +25,9 @@ def _get_installed_benchmarks():
     return _installed_benchmarks
 ```
 
-## Coverage
-
-If the `openforcefield` toolkit is installed, running `coverage.py` will expose the parameters exercised by the installed benchmarks.
-
 ## Schema
 
-For information on the YAML formatting, see [`Schema.md`](taproom/Schema.md).
+For information on the YAML formatting, see [`Schema.md`](docs/Schema.md).
 
 ## License
 

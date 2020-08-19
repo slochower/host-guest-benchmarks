@@ -3,7 +3,7 @@ from openeye import oechem
 from glob import glob
 
 
-guests = glob("../systems/*/*")
+guests = glob("../taproom/systems/*/*")
 guests = [i for i in guests if os.path.isdir(i)]
 
 for guest in guests:
@@ -37,4 +37,3 @@ for guest in guests:
     if os.path.exists(os.path.join(guest, "tmp.mol2")):
         os.rename(os.path.join(guest, "tmp.mol2"),
                   os.path.join(guest, guest_mol2))
-
