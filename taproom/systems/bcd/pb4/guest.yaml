@@ -1,7 +1,7 @@
 name: pb4
 structure: pb4.mol2
 complex: b-pb4.pdb
-net_charge: 0
+net_charge: -1
 aliases:
     - D1: :DM1
     - D2: :DM2

@@ -1,7 +1,7 @@
 name: pb3
 structure: pb3.mol2
 complex: b-pb3.pdb
-net_charge: 0
+net_charge: -1
 aliases:
     - D1: :DM1
     - D2: :DM2

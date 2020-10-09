@@ -1,7 +1,7 @@
 name: hx3
 structure: hx3.mol2
 complex: a-hx3.pdb
-net_charge: 0
+net_charge: -1
 aliases:
     - D1: :DM1
     - D2: :DM2
