@@ -1,7 +1,7 @@
 name: hp6
 structure: hp6.mol2
 complex: a-hp6.pdb
-net_charge: 0
+net_charge: -1
 aliases:
     - D1: :DM1
     - D2: :DM2

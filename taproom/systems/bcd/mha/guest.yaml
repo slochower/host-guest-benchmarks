@@ -1,7 +1,7 @@
 name: mha
 structure: mha.mol2
 complex: b-mha.pdb
-net_charge: 0
+net_charge: +1
 aliases:
     - D1: :DM1
     - D2: :DM2
