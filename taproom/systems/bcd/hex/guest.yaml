@@ -100,7 +100,7 @@ restraints:
 symmetry_correction:
   restraints:
       - restraint:
-        atoms: D1 G1 G2
+        atoms: D2 G1 G2
         force_constant: 200.0
   # Do not attempt to automatically correct for the symmetry restraint by adding -RT \ln (microstates).
   # Instead, we will apply the symmetry restraint, which locks in a particular binding orientation, and then
