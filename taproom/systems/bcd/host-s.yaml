@@ -1,5 +1,6 @@
 name: bcd
 structure: bcd.mol2
+monomer: MGO.mol2
 net_charge: 0
 resname: MGO
 aliases:
