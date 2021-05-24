@@ -4,7 +4,7 @@ state:
   pH: 6.90
 
 substance:
-  name: cyclopentaol
+  name: cyclopentanol
   SMILES: "C1CCC(C1)O"
   buffer:
     - "[Na+].OP(O)([O-])=O": 0.025 mol kg-1
