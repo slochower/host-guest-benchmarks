@@ -1,0 +1,71 @@
+name: cpa
+structure: cpa.mol2
+complex: oah-cpa.pdb
+data_set:
+  - SAMPL: 6
+  - guest_id: G0
+net_charge: -1
+aliases:
+    - D1: :DM1
+    - D2: :DM2
+    - D3: :DM3
+    - G1: :2@C3
+    - G2: :2@C1
+restraints:
+  guest:
+    - restraint:
+        atoms: D1 G1
+        attach:
+          # During the attach phase, the `force_constant` argument is the
+          # final force constant.
+          force_constant: 5.0
+          target: 6.0
+        pull:
+          # During the pull phase, the `target` argument is the final value of
+          # the restraint.
+          force_constant: 5.0
+          target: 24.0
+    - restraint:
+        atoms: D2 D1 G1
+        attach:
+          force_constant: 100.0
+          target: 180.0
+        pull:
+          force_constant: 100.0
+          target: 180.0
+    - restraint:
+        atoms: D1 G1 G2
+        attach:
+          force_constant: 100.0
+          target: 180.0
+        pull:
+          force_constant: 100.0
+          target: 180.0
+
+  wall_restraints:
+    - restraint:
+        atoms: ":1@C45 G1"
+        force_constant: 50.0
+        target: 13.5
+    - restraint:
+        atoms: ":1@51 G1"
+        force_constant: 50.0
+        target: 13.5
+    - restraint:
+        atoms: ":1@C57 G1"
+        force_constant: 50.0
+        target: 13.5
+    - restraint:
+        atoms: ":1@63 G1"
+        force_constant: 50.0
+        target: 13.5
+
+symmetry_correction:
+  restraints:
+      - restraint:
+        atoms: D2 G1 G2
+        force_constant: 200.0
+  # Do not attempt to automatically correct for the symmetry restraint by adding -RT \ln (microstates).
+  # Instead, we will apply the symmetry restraint, which locks in a particular binding orientation, and then
+  # perform separate calculations.
+  microstates: 1
