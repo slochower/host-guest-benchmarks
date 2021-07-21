@@ -33,59 +33,59 @@ restraints:
     - restraint:
         atoms: ":CB7@N1 :CB7@N8"
         force_constant: 15.0
-        target: 15.0
+        target: 13.5
     - restraint:
         atoms: ":CB7@N2 :CB7@N9"
         force_constant: 15.0
-        target: 15.0
+        target: 13.5
     - restraint:
         atoms: ":CB7@N3 :CB7@N10"
         force_constant: 15.0
-        target: 15.0
+        target: 13.5
     - restraint:
         atoms: ":CB7@N4 :CB7@N11"
         force_constant: 15.0
-        target: 15.0
+        target: 13.5
     - restraint:
         atoms: ":CB7@N5 :CB7@N12"
         force_constant: 15.0
-        target: 15.0
+        target: 13.5
     - restraint:
         atoms: ":CB7@N6 :CB7@N13"
         force_constant: 15.0
-        target: 15.0
+        target: 13.5
     - restraint:
         atoms: ":CB7@N7 :CB7@N14"
         force_constant: 15.0
-        target: 15.0
+        target: 13.5
     - restraint:
         atoms: ":CB7@N15 :CB7@N22"
         force_constant: 15.0
-        target: 15.0
+        target: 13.5
     - restraint:
         atoms: ":CB7@N16 :CB7@N23"
         force_constant: 15.0
-        target: 15.0
+        target: 13.5
     - restraint:
         atoms: ":CB7@N17 :CB7@N24"
         force_constant: 15.0
-        target: 15.0
+        target: 13.5
     - restraint:
         atoms: ":CB7@N18 :CB7@N25"
         force_constant: 15.0
-        target: 15.0
+        target: 13.5
     - restraint:
         atoms: ":CB7@N19 :CB7@N26"
         force_constant: 15.0
-        target: 15.0
+        target: 13.5
     - restraint:
         atoms: ":CB7@N20 :CB7@N27"
         force_constant: 15.0
-        target: 15.0
+        target: 13.5
     - restraint:
         atoms: ":CB7@N21 :CB7@N28"
         force_constant: 15.0
-        target: 15.0
+        target: 13.5
 calculation:
   windows:
     attach: 15
