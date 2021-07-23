@@ -2,8 +2,8 @@ name: cpa
 structure: cpa.mol2
 complex: oah-cpa.pdb
 data_set:
-  - SAMPL: 6
-  - guest_id: G0
+  SAMPL: 6
+  guest_id: G0
 net_charge: -1
 aliases:
     - D1: :DM1

@@ -2,8 +2,8 @@ name: crl
 structure: crl.mol2
 complex: oah-crl.pdb
 data_set:
-  - SAMPL: 6
-  - guest_id: G4
+  SAMPL: 6
+  guest_id: G4
 net_charge: -1
 aliases:
     - D1: :DM1

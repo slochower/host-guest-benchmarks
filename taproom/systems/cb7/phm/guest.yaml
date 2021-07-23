@@ -2,8 +2,8 @@ name: phm
 structure: phm.mol2
 complex: cb7-phm.pdb
 data_set:
-  - SAMPL: 4
-  - guest_id: C1
+  SAMPL: 4
+  guest_id: C1
 net_charge: +1
 aliases:
     - D1: :DM1

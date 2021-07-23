@@ -2,8 +2,8 @@ name: ben
 structure: ben.mol2
 complex: oah-ben.pdb
 data_set:
-  - SAMPL: 4
-  - guest_id: O1
+  SAMPL: 4
+  guest_id: O1
 net_charge: -1
 aliases:
     - D1: :DM1

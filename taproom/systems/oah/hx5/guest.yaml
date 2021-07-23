@@ -2,8 +2,8 @@ name: hx5
 structure: hx5.mol2
 complex: oah-hx5.pdb
 data_set:
-  - SAMPL: 6
-  - guest_id: G3
+  SAMPL: 6
+  guest_id: G3
 net_charge: -1
 aliases:
     - D1: :DM1

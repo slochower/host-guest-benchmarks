@@ -2,8 +2,8 @@ name: c7m
 structure: c7m.mol2
 complex: cb7-c7m.pdb
 data_set:
-  - SAMPL: 4
-  - guest_id: C8
+  SAMPL: 4
+  guest_id: C8
 net_charge: +1
 aliases:
     - D1: :DM1

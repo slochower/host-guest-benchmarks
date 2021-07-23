@@ -2,8 +2,8 @@ name: c4b
 structure: c4b.mol2
 complex: oah-c4b.pdb
 data_set:
-  - SAMPL: 4
-  - guest_id: O4
+  SAMPL: 4
+  guest_id: O4
 net_charge: -1
 aliases:
     - D1: :DM1

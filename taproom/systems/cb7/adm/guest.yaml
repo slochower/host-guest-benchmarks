@@ -2,8 +2,8 @@ name: adm
 structure: adm.mol2
 complex: cb7-adm.pdb
 data_set:
-  - SAMPL: 4
-  - guest_id: C13
+  SAMPL: 4
+  guest_id: C13
 net_charge: +1
 aliases:
     - D1: :DM1

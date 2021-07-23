@@ -2,8 +2,8 @@ name: mbn
 structure: mbn.mol2
 complex: oah-mbn.pdb
 data_set:
-  - SAMPL: 4
-  - guest_id: O2
+  SAMPL: 4
+  guest_id: O2
 net_charge: -1
 aliases:
     - D1: :DM1

@@ -2,8 +2,8 @@ name: hxa
 structure: hxa.mol2
 complex: oah-hxa.pdb
 data_set:
-  - SAMPL: 5
-  - guest_id: G3
+  SAMPL: 5
+  guest_id: G3
 net_charge: +1
 aliases:
     - D1: :DM1

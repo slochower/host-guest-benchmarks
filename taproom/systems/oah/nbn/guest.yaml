@@ -2,8 +2,8 @@ name: nbn
 structure: nbn.mol2
 complex: oah-nbn.pdb
 data_set:
-  - SAMPL: 5
-  - guest_id: G6
+  SAMPL: 5
+  guest_id: G6
 net_charge: -1
 aliases:
     - D1: :DM1

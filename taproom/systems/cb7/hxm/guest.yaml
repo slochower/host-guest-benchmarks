@@ -2,8 +2,8 @@ name: hxm
 structure: hxm.mol2
 complex: cb7-hxm.pdb
 data_set:
-  - SAMPL: 4
-  - guest_id: C3
+  SAMPL: 4
+  guest_id: C3
 net_charge: +1
 aliases:
     - D1: :DM1

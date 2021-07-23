@@ -2,8 +2,8 @@ name: mpe
 structure: mpe.mol2
 complex: oah-mpe.pdb
 data_set:
-  - SAMPL: 6
-  - guest_id: G6
+  SAMPL: 6
+  guest_id: G6
 net_charge: -1
 aliases:
     - D1: :DM1

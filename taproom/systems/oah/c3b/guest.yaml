@@ -2,8 +2,8 @@ name: c3b
 structure: c3b.mol2
 complex: oah-c3b.pdb
 data_set:
-  - SAMPL: 4
-  - guest_id: O5
+  SAMPL: 4
+  guest_id: O5
 net_charge: -1
 aliases:
     - D1: :DM1

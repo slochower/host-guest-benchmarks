@@ -2,8 +2,8 @@ name: axm
 structure: axm.mol2
 complex: cb7-axm.pdb
 data_set:
-  - SAMPL: 4
-  - guest_id: C4
+  SAMPL: 4
+  guest_id: C4
 net_charge: +1
 aliases:
     - D1: :DM1

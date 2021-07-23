@@ -2,8 +2,8 @@ name: dpm
 structure: dpm.mol2
 complex: cb7-dpm.pdb
 data_set:
-  - SAMPL: 4
-  - guest_id: C2
+  SAMPL: 4
+  guest_id: C2
 net_charge: +1
 aliases:
     - D1: :DM1

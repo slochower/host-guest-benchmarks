@@ -2,8 +2,8 @@ name: t2h
 structure: t2h.mol2
 complex: oah-t2h.pdb
 data_set:
-  - SAMPL: 6
-  - guest_id: G1
+  SAMPL: 6
+  guest_id: G1
 net_charge: -1
 aliases:
     - D1: :DM1

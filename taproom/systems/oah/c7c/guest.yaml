@@ -2,8 +2,8 @@ name: c7c
 structure: c7c.mol2
 complex: oah-c7c.pdb
 data_set:
-  - SAMPL: 4
-  - guest_id: O9
+  SAMPL: 4
+  guest_id: O9
 net_charge: -1
 aliases:
     - D1: :DM1

@@ -2,8 +2,8 @@ name: mhc
 structure: mhc.mol2
 complex: oah-mhc.pdb
 data_set:
-  - SAMPL: 4
-  - guest_id: O7
+  SAMPL: 4
+  guest_id: O7
 net_charge: -1
 aliases:
     - D1: :DM1

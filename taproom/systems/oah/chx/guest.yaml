@@ -2,8 +2,8 @@ name: chx
 structure: chx.mol2
 complex: oah-chx.pdb
 data_set:
-  - SAMPL: 4
-  - guest_id: O6
+  SAMPL: 4
+  guest_id: O6
 net_charge: -1
 aliases:
     - D1: :DM1

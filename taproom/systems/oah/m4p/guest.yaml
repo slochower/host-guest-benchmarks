@@ -2,8 +2,8 @@ name: m4p
 structure: m4p.mol2
 complex: oah-m4p.pdb
 data_set:
-  - SAMPL: 6
-  - guest_id: G5
+  SAMPL: 6
+  guest_id: G5
 net_charge: -1
 aliases:
     - D1: :DM1

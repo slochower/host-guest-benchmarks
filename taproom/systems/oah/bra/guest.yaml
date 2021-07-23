@@ -2,8 +2,8 @@ name: bra
 structure: bra.mol2
 complex: oah-bra.pdb
 data_set:
-  - SAMPL: 5
-  - guest_id: O4
+  SAMPL: 5
+  guest_id: O4
 net_charge: -1
 aliases:
     - D1: :DM1

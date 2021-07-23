@@ -2,8 +2,8 @@ name: hxy
 structure: hxy.mol2
 complex: oah-hxy.pdb
 data_set:
-  - SAMPL: 5
-  - guest_id: G1
+  SAMPL: 5
+  guest_id: G1
 net_charge: -1
 aliases:
     - D1: :DM1

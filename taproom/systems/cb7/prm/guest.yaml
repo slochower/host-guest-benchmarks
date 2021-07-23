@@ -2,8 +2,8 @@ name: prm
 structure: prm.mol2
 complex: cb7-prm.pdb
 data_set:
-  - SAMPL: 4
-  - guest_id: C10
+  SAMPL: 4
+  guest_id: C10
 net_charge: +1
 aliases:
     - D1: :DM1

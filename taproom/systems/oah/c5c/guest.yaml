@@ -2,8 +2,8 @@ name: c5c
 structure: c5c.mol2
 complex: oah-c5c.pdb
 data_set:
-  - SAMPL: 4
-  - guest_id: O8
+  SAMPL: 4
+  guest_id: O8
 net_charge: -1
 aliases:
     - D1: :DM1

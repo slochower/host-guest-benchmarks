@@ -2,8 +2,8 @@ name: haz
 structure: haz.mol2
 complex: cb7-haz.pdb
 data_set:
-  - SAMPL: 4
-  - guest_id: C14
+  SAMPL: 4
+  guest_id: C14
 net_charge: +1
 aliases:
     - D1: :DM1

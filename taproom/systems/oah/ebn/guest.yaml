@@ -2,8 +2,8 @@ name: ebn
 structure: ebn.mol2
 complex: oah-ebn.pdb
 data_set:
-  - SAMPL: 4
-  - guest_id: O3
+  SAMPL: 4
+  guest_id: O3
 net_charge: -1
 aliases:
     - D1: :DM1

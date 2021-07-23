@@ -2,8 +2,8 @@ name: dpe
 structure: dpe.mol2
 complex: oah-dpe.pdb
 data_set:
-  - SAMPL: 6
-  - guest_id: G7
+  SAMPL: 6
+  guest_id: G7
 net_charge: -1
 aliases:
     - D1: :DM1

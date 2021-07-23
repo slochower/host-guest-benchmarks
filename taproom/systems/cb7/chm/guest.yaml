@@ -2,8 +2,8 @@ name: chm
 structure: chm.mol2
 complex: cb7-chm.pdb
 data_set:
-  - SAMPL: 4
-  - guest_id: C6
+  SAMPL: 4
+  guest_id: C6
 net_charge: +1
 aliases:
     - D1: :DM1

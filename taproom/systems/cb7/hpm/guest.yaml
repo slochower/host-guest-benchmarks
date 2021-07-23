@@ -2,8 +2,8 @@ name: hpm
 structure: hpm.mol2
 complex: cb7-hpm.pdb
 data_set:
-  - SAMPL: 4
-  - guest_id: C12
+  SAMPL: 4
+  guest_id: C12
 net_charge: +1
 aliases:
     - D1: :DM1
