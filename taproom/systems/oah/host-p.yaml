@@ -31,37 +31,53 @@ restraints:
         force_constant: 100.0
   conformational:
     - restraint:
-        atoms: ":OAH@O15 :OAH@O17"
-        force_constant: 15.0
-        target: 14.0
+        atoms: ":OAH@O13 :OAH@O18"
+        force_constant: 25.0
+        target: 15.0
     - restraint:
-        atoms: ":OAH@O14 :OAH@O16"
-        force_constant: 15.0
-        target: 14.0
+        atoms: ":OAH@O14 :OAH@O17"
+        force_constant: 25.0
+        target: 15.0
     - restraint:
-        atoms: ":OAH@O18 :OAH@O20"
-        force_constant: 15.0
-        target: 14.0
+        atoms: ":OAH@O15 :OAH@O16"
+        force_constant: 25.0
+        target: 15.0
     - restraint:
-        atoms: ":OAH@O13 :OAH@O19"
-        force_constant: 15.0
-        target: 14.0
+        atoms: ":OAH@O19 :OAH@O20"
+        force_constant: 25.0
+        target: 15.0
     - restraint:
-        atoms: ":OAH@C55 :OAH@C67"
-        force_constant: 15.0
-        target: 14.0
+        atoms: ":OAH@C49 :OAH@C62"
+        force_constant: 25.0
+        target: 15.0
     - restraint:
-        atoms: ":OAH@C56 :OAH@C68"
-        force_constant: 15.0
-        target: 14.0
+        atoms: ":OAH@C50 :OAH@C61"
+        force_constant: 25.0
+        target: 15.0
     - restraint:
-        atoms: ":OAH@C50 :OAH@C62"
-        force_constant: 15.0
-        target: 14.0
+        atoms: ":OAH@C55 :OAH@C68"
+        force_constant: 25.0
+        target: 15.0
     - restraint:
-        atoms: ":OAH@C49 :OAH@C61"
-        force_constant: 15.0
-        target: 14.0
+        atoms: ":OAH@C56 :OAH@C67"
+        force_constant: 25.0
+        target: 15.0
+    - restraint:
+        atoms: ":OAH@C69 :OAH@C91"
+        force_constant: 25.0
+        target: 15.0
+    - restraint:
+        atoms: ":OAH@C74 :OAH@C96"
+        force_constant: 25.0
+        target: 15.0
+    - restraint:
+        atoms: ":OAH@C75 :OAH@C81"
+        force_constant: 25.0
+        target: 15.0
+    - restraint:
+        atoms: ":OAH@C79 :OAH@C85"
+        force_constant: 25.0
+        target: 15.0
 
 calculation:
   windows:
