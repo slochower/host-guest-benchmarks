@@ -89,7 +89,7 @@ restraints:
 calculation:
   windows:
     attach: 15
-    pull: 45
+    pull: 46
     release: 15
   lambda:
     attach: [0.0, 0.004, 0.008, 0.016, 0.024, 0.04, 0.055, 0.0865, 0.118, 0.181, 0.244, 0.37, 0.496, 0.748, 1.0]
