@@ -1,8 +1,8 @@
 @<TRIPOS>MOLECULE
-*****
+HXY
    15    14     0     0     0
 SMALL
-USER_CHARGES
+bcc
 
 @<TRIPOS>ATOM
       1 C1         -0.1557    0.0643    0.6056 C.1       1 HXY        -0.2292

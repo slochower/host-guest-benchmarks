@@ -1,8 +1,8 @@
 @<TRIPOS>MOLECULE
-*****
+C4B
    14    14     0     0     0
 SMALL
-USER_CHARGES
+bcc
 
 @<TRIPOS>ATOM
       1 C1         -1.0671    1.3763   -3.1344 C.ar      1 C4B        -0.1020

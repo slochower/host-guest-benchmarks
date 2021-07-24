@@ -1,8 +1,8 @@
 @<TRIPOS>MOLECULE
-*****
+TRZ
    30    30     0     0     0
 SMALL
-USER_CHARGES
+bcc
 
 @<TRIPOS>ATOM
       1 C1         -0.7487    0.1840    0.2291 C.ar      1 TRZ        -0.1037

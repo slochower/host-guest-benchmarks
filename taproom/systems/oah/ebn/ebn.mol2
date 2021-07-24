@@ -1,8 +1,8 @@
 @<TRIPOS>MOLECULE
-*****
+EBN
    20    20     0     0     0
 SMALL
-USER_CHARGES
+bcc
 
 @<TRIPOS>ATOM
       1 C1         -0.4180   -1.1828   -3.5867 C.ar      1 EBN        -0.1081

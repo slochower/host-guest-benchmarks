@@ -1,8 +1,8 @@
 @<TRIPOS>MOLECULE
-*****
+CBN
    15    15     0     0     0
 SMALL
-USER_CHARGES
+bcc
 
 @<TRIPOS>ATOM
       1 C1          0.1932   -0.2527    0.0236 C.1       1 CBN         0.2713

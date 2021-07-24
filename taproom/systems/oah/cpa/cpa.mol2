@@ -1,8 +1,8 @@
 @<TRIPOS>MOLECULE
-*****
+CPA
    20    20     0     0     0
 SMALL
-USER_CHARGES
+bcc
 
 @<TRIPOS>ATOM
       1 C1         -0.7955    1.2297   -3.7854 C.2       1 CPA         0.9081

@@ -1,8 +1,8 @@
 @<TRIPOS>MOLECULE
-*****
+T2H
    17    16     0     0     0
 SMALL
-USER_CHARGES
+bcc
 
 @<TRIPOS>ATOM
       1 C1         -1.0006   -0.7469   -3.8833 C.2       1 T2H        -0.1854

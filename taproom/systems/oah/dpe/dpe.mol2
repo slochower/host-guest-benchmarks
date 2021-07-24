@@ -1,8 +1,8 @@
 @<TRIPOS>MOLECULE
-*****
+DPE
    20    19     0     0     0
 SMALL
-USER_CHARGES
+bcc
 
 @<TRIPOS>ATOM
       1 C1         -0.2866    0.4967    0.4235 C.2       1 DPE        -0.2722
