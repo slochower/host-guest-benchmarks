@@ -1,0 +1,18 @@
+state:
+  temperature: 298 K
+  pressure: 1 atm
+  pH: 9.2
+substance:
+  name: olterodine
+  SMILES: Cc1ccc(c(c1)[C@H](CC[NH+](C(C)C)C(C)C)c2ccccc2)O
+  buffer:
+  - B1(OB2OB(OB(O1)O2)O)O.[Na].[Na]: 0.01 molar
+measurement:
+  technique: NMR
+  delta_G: -32.01 kJ/mol
+  delta_G_uncertainty: 0.17 kJ/mol
+  stoichiometry: '1:1'
+provenance:
+  comment: Table 1
+  doi: 10.1007/s10822-014-9735-1
+unusual: false

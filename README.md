@@ -1,8 +1,24 @@
 # Taproom
 
-A repository of host-guest systems available for benchmarking force fields.
+A repository of host-guest systems available for benchmarking force fields used in the 
+[OpenFF-Evaluator](https://github.com/openforcefield/openff-evaluator) program.
 
 ![US Patent 664824](tap.png)
+
+## Host-guest systems
+Taproom includes the following host-guest systems with YAML files containing information necessary to perform 
+free energy calculation with the attach-pull-release (APR) method.
+
+* `alpha-cyclodextrin` (acd):
+    * Data set from [Rekharsky et al.](https://pubs.acs.org/doi/abs/10.1021/jp962715n)
+* `beta-cyclodextrin` (bcd):
+    * Data set from [Rekharsky et al.](https://pubs.acs.org/doi/abs/10.1021/jp962715n)
+* `cucurbit[7]uril` (cb7):
+    * SAMPL4 data set
+* `octa-acid` (oah):
+    * SAMPL(4,5,6) data set
+* `tetra-endo-methyl octa-acid` (oam):
+    * SAMPL(5,6) data set
 
 ## Installation
 
