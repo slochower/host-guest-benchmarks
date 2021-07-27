@@ -1,18 +1,22 @@
 state:
   temperature: 298 K
   pressure: 1 atm
-  pH: 9.2
+  pH: 7.4
+
 substance:
-  name: 2R,3as,5S,6as)-hexahydro-2,5-methanopentalen-3a(1H)-amine
-  SMILES: C1[C@@H]2CC3C[C@H]1CC3(C2)[NH3+]
+  name: "(2R,3as,5S,6as)-hexahydro-2,5-methanopentalen-3a(1H)-amine"
+  SMILES: "C1[C@@H]2CC3C[C@H]1CC3(C2)[NH3+]"
   buffer:
-  - B1(OB2OB(OB(O1)O2)O)O.[Na].[Na]: 0.01 molar
+  - B1(OB2OB(OB(O1)O2)O)O.[Na].[Na]: 0.025 molar
+
 measurement:
   technique: NMR
   delta_G: -36.32 kJ/mol
   delta_G_uncertainty: 0.33 kJ/mol
   stoichiometry: '1:1'
+
 provenance:
   comment: Table 1
-  doi: 10.1007/s10822-014-9735-1
+  doi: 10.1007/s10822-018-0170-6
+
 unusual: false

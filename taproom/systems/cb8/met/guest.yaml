@@ -4,107 +4,116 @@ complex: cb8-met.pdb
 data_set:
   SAMPL: 8
   guest_id: G1
-net_charge: '+1'
+net_charge: +1
 aliases:
-- :DM1
-- :DM2
-- :DM3
-- :2@C1
-- :2@N1
+    - D1: :DM1
+    - D2: :DM2
+    - D3: :DM3
+    - G1: :2@C1
+    - G2: :2@N1
 restraints:
   guest:
-  - restraint:
-      atoms: D1 G1
-      attach:
-        force_constant: 5.0
-        target: 6.0
-      pull:
-        force_constant: 5.0
-        target: 24.0
-  - restraint:
-      atoms: D2 D1 G1
-      attach:
-        force_constant: 100.0
-        target: 180.0
-      pull:
-        force_constant: 100.0
-        target: 180.0
-  - restraint:
-      atoms: D1 G1 G2
-      attach:
-        force_constant: 100.0
-        target: 180.0
-      pull:
-        force_constant: 100.0
-        target: 180.0
+    - restraint:
+        atoms: D1 G1
+        attach:
+          # During the attach phase, the `force_constant` argument is the
+          # final force constant.
+          force_constant: 5.0
+          target: 6.0
+        pull:
+          # During the pull phase, the `target` argument is the final value of
+          # the restraint.
+          force_constant: 5.0
+          target: 24.0
+    - restraint:
+        atoms: D2 D1 G1
+        attach:
+          force_constant: 100.0
+          target: 180.0
+        pull:
+          force_constant: 100.0
+          target: 180.0
+    - restraint:
+        atoms: D1 G1 G2
+        attach:
+          force_constant: 100.0
+          target: 180.0
+        pull:
+          force_constant: 100.0
+          target: 180.0
+
   wall_restraints:
-  - restraint:
-      atoms: :1@C2 G1
-      force_constant: 50.0
-      target: 15.0
-  - restraint:
-      atoms: :1@C4 G1
-      force_constant: 50.0
-      target: 15.0
-  - restraint:
-      atoms: :1@C6 G1
-      force_constant: 50.0
-      target: 15.0
-  - restraint:
-      atoms: :1@C80 G1
-      force_constant: 50.0
-      target: 15.0
-  - restraint:
-      atoms: :1@C10 G1
-      force_constant: 50.0
-      target: 15.0
-  - restraint:
-      atoms: :1@C12 G1
-      force_constant: 50.0
-      target: 15.0
-  - restraint:
-      atoms: :1@C14 G1
-      force_constant: 50.0
-      target: 15.0
-  - restraint:
-      atoms: :1@C16 G1
-      force_constant: 50.0
-      target: 15.0
-  - restraint:
-      atoms: :1@C18 G1
-      force_constant: 50.0
-      target: 15.0
-  - restraint:
-      atoms: :1@C20 G1
-      force_constant: 50.0
-      target: 15.0
-  - restraint:
-      atoms: :1@C22 G1
-      force_constant: 50.0
-      target: 15.0
-  - restraint:
-      atoms: :1@C24 G1
-      force_constant: 50.0
-      target: 15.0
-  - restraint:
-      atoms: :1@C26 G1
-      force_constant: 50.0
-      target: 15.0
-  - restraint:
-      atoms: :1@C28 G1
-      force_constant: 50.0
-      target: 15.0
-  - restraint:
-      atoms: :1@C31 G1
-      force_constant: 50.0
-      target: 15.0
-  - restraint:
-      atoms: :1@C32 G1
-      force_constant: 50.0
-      target: 15.0
+    - restraint:
+        atoms: ":1@C2 G1"
+        force_constant: 50.0
+        target: 15.0
+    - restraint:
+        atoms: ":1@C4 G1"
+        force_constant: 50.0
+        target: 15.0
+    - restraint:
+        atoms: ":1@C6 G1"
+        force_constant: 50.0
+        target: 15.0
+    - restraint:
+        atoms: ":1@C80 G1"
+        force_constant: 50.0
+        target: 15.0
+    - restraint:
+        atoms: ":1@C10 G1"
+        force_constant: 50.0
+        target: 15.0
+    - restraint:
+        atoms: ":1@C12 G1"
+        force_constant: 50.0
+        target: 15.0
+    - restraint:
+        atoms: ":1@C14 G1"
+        force_constant: 50.0
+        target: 15.0
+    - restraint:
+        atoms: ":1@C16 G1"
+        force_constant: 50.0
+        target: 15.0
+    - restraint:
+        atoms: ":1@C18 G1"
+        force_constant: 50.0
+        target: 15.0
+    - restraint:
+        atoms: ":1@C20 G1"
+        force_constant: 50.0
+        target: 15.0
+    - restraint:
+        atoms: ":1@C22 G1"
+        force_constant: 50.0
+        target: 15.0
+    - restraint:
+        atoms: ":1@C24 G1"
+        force_constant: 50.0
+        target: 15.0
+    - restraint:
+        atoms: ":1@C26 G1"
+        force_constant: 50.0
+        target: 15.0
+    - restraint:
+        atoms: ":1@C28 G1"
+        force_constant: 50.0
+        target: 15.0
+    - restraint:
+        atoms: ":1@C31 G1"
+        force_constant: 50.0
+        target: 15.0
+    - restraint:
+        atoms: ":1@C32 G1"
+        force_constant: 50.0
+        target: 15.0
+
 symmetry_correction:
   restraints:
-  - restraint: null
-    atoms: D2 G1 G2
-    force_constant: 200.0
+      - restraint:
+        atoms: D2 G1 G2
+        force_constant: 200.0
+  # Do not attempt to automatically correct for the symmetry restraint by adding -RT \ln (microstates).
+  # Instead, we will apply the symmetry restraint, which locks in a particular binding orientation, and then
+  # perform separate calculations.
   microstates: 1
