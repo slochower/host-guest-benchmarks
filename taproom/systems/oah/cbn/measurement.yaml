@@ -4,7 +4,7 @@ state:
   pH: 9.2
 
 substance:
-  name: 4-cyanobenzoate
+  name: "4-cyanobenzoate"
   SMILES: "O=C([O-])c1ccc(C#N)cc1"
   buffer:
     - "B1(OB2OB(OB(O1)O2)O)O.[Na].[Na]": 0.01 molar

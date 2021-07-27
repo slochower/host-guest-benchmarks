@@ -4,13 +4,13 @@ state:
   pH: 9.2
 
 substance:
-  name: cycloheptanecarboxylic acid
+  name: "cycloheptanecarboxylic acid"
   SMILES: "C1CCCC(CC1)C(=O)[O-]"
   buffer:
     - "B1(OB2OB(OB(O1)O2)O)O.[Na].[Na]": 0.01 molar
 
 measurement:
-  technique: NMR
+  technique: ITC
   delta_G: -27.42 kJ/mol
   delta_G_uncertainty: 0.08 kJ/mol
   stoichiometry: "1:1"

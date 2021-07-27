@@ -4,7 +4,7 @@ state:
   pH: 9.2
 
 substance:
-  name: (s)-(-)-perillic acid
+  name: "(s)-(-)-perillic acid"
   SMILES: "CC(=C)[C@H]1CCC(=CC1)C(=O)[O-]"
   buffer:
     - "B1(OB2OB(OB(O1)O2)O)O.[Na].[Na]": 0.01 molar

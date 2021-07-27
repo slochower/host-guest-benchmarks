@@ -4,7 +4,7 @@ state:
   pH: 9.2
 
 substance:
-  name: 4-Bromo-1-adamantanecarboxylic acid
+  name: "4-Bromo-1-adamantanecarboxylic acid"
   SMILES: "BrC1[C@H]2CC3(C(=O)[O-])C[C@@H]1CC(C3)C2"
   buffer:
     - "B1(OB2OB(OB(O1)O2)O)O.[Na].[Na]": 0.01 molar

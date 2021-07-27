@@ -4,7 +4,7 @@ state:
   pH: 9.2
 
 substance:
-  name: 4-chlorobenzoic acid
+  name: "4-chlorobenzoic acid"
   SMILES: "c1cc(ccc1C(=O)[O-])Cl"
   buffer:
     - "B1(OB2OB(OB(O1)O2)O)O.[Na].[Na]": 0.01 molar

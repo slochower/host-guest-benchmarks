@@ -4,7 +4,7 @@ state:
   pH: 9.2
 
 substance:
-  name: 2-methyly-4-pentenoic acid
+  name: "2-methyly-4-pentenoic acid"
   SMILES: "C[C@H](CC=C)C(=O)[O-]"
   buffer:
     - "B1(OB2OB(OB(O1)O2)O)O.[Na].[Na]": 0.01 molar
