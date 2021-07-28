@@ -1,4 +1,4 @@
-REMARK   1 CREATED WITH OPENMM 7.5, 2021-07-23
+REMARK   1 CREATED WITH OPENMM 7.5, 2021-07-27
 CRYST1   45.000   45.000   60.000  90.00  90.00  90.00 P 1           1 
 HETATM    1  C1  OAM     1      -1.760  -2.709  -3.279  1.00  0.00           C  
 HETATM    2  C2  OAM     1      -3.779  -1.123  -2.102  1.00  0.00           C  
@@ -197,27 +197,6 @@ HETATM  194  H62 OAM     1       3.303   1.687   3.392  1.00  0.00           H
 HETATM  195  H63 OAM     1       4.481   1.500   4.719  1.00  0.00           H  
 HETATM  196  H64 OAM     1       3.353   2.828   4.761  1.00  0.00           H  
 TER     197      OAM     1
-HETATM  198  C1  CPA     2      -0.000   0.000   4.463  1.00  0.00           C  
-HETATM  199  C2  CPA     2       0.000   0.000   0.000  1.00  0.00           C  
-HETATM  200  C3  CPA     2      -1.223   0.625   0.669  1.00  0.00           C  
-HETATM  201  C4  CPA     2       1.215   0.522   0.763  1.00  0.00           C  
-HETATM  202  C5  CPA     2      -0.690   1.488   1.810  1.00  0.00           C  
-HETATM  203  C6  CPA     2       0.682   0.905   2.142  1.00  0.00           C  
-HETATM  204  C7  CPA     2       0.588  -0.296   3.082  1.00  0.00           C  
-HETATM  205  O1  CPA     2       0.221   1.147   4.939  1.00  0.00           O  
-HETATM  206  O2  CPA     2      -0.649  -0.965   4.963  1.00  0.00           O  
-HETATM  207  H1  CPA     2      -0.040  -1.094   0.018  1.00  0.00           H  
-HETATM  208  H2  CPA     2       0.048   0.310  -1.051  1.00  0.00           H  
-HETATM  209  H3  CPA     2      -1.767   1.243  -0.055  1.00  0.00           H  
-HETATM  210  H4  CPA     2      -1.921  -0.135   1.037  1.00  0.00           H  
-HETATM  211  H5  CPA     2       1.971  -0.275   0.844  1.00  0.00           H  
-HETATM  212  H6  CPA     2       1.688   1.369   0.250  1.00  0.00           H  
-HETATM  213  H7  CPA     2      -0.635   2.549   1.528  1.00  0.00           H  
-HETATM  214  H8  CPA     2      -1.366   1.415   2.676  1.00  0.00           H  
-HETATM  215  H9  CPA     2       1.312   1.666   2.589  1.00  0.00           H  
-HETATM  216  H10 CPA     2       1.590  -0.715   3.222  1.00  0.00           H  
-HETATM  217  H11 CPA     2      -0.029  -1.069   2.609  1.00  0.00           H  
-TER     218      CPA     2
 CONECT    1    3    4   24
 CONECT    2    5    6    7
 CONECT    3    1    6  133
@@ -414,24 +393,4 @@ CONECT  193  131
 CONECT  194  132
 CONECT  195  132
 CONECT  196  132
-CONECT  198  204  205  206
-CONECT  199  200  201  207  208
-CONECT  200  199  202  209  210
-CONECT  201  199  203  211  212
-CONECT  202  200  203  213  214
-CONECT  203  201  202  204  215
-CONECT  204  198  203  216  217
-CONECT  205  198
-CONECT  206  198
-CONECT  207  199
-CONECT  208  199
-CONECT  209  200
-CONECT  210  200
-CONECT  211  201
-CONECT  212  201
-CONECT  213  202
-CONECT  214  202
-CONECT  215  203
-CONECT  216  204
-CONECT  217  204
 END
