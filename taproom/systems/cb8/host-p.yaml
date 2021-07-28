@@ -7,7 +7,7 @@ aliases:
   - D2: ":DM2"
   - D3: ":DM3"
   - H1: ":CB8@C10"
-  - H2: ":CB8@C22"
+  - H2: ":CB8@C20"
   - H3: ":CB8@C28"
 restraints:
   static:
@@ -59,7 +59,7 @@ restraints:
         force_constant: 15.0
         target: 15.0
     - restraint:
-        atoms: ":CB8@N7 :CB8@N16"
+        atoms: ":CB8@N8 :CB8@N16"
         force_constant: 15.0
         target: 15.0
     - restraint:
