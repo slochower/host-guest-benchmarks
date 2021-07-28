@@ -56,7 +56,7 @@ restraints:
         force_constant: 50.0
         target: 15.0
     - restraint:
-        atoms: ":1@C80 G1"
+        atoms: ":1@C8 G1"
         force_constant: 50.0
         target: 15.0
     - restraint:
