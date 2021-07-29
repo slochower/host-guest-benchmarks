@@ -1,0 +1,102 @@
+name: mgl23
+structure: mgl23.mol2
+net_charge: -2
+resname: MGL
+aliases:
+  - D1: ":DM1"
+  - D2: ":DM2"
+  - D3: ":DM3"
+  - H1: ":1@C8"
+  - H2: ":1@C20"
+  - H3: ":1@C32"
+restraints:
+  static:
+    - restraint:
+        atoms: D1 H1
+        force_constant: 5.0
+    - restraint:
+        atoms: D2 D1 H1
+        force_constant: 100.0
+    - restraint:
+        atoms: D3 D2 D1 H1
+        force_constant: 100.0
+    - restraint:
+        atoms: D1 H1 H2
+        force_constant: 100.0
+    - restraint:
+        atoms: D2 D1 H1 H2
+        force_constant: 100.0
+    - restraint:
+        atoms: D1 H1 H2 H3
+        force_constant: 100.0
+  conformational:
+    - restraint:
+        atoms: ":1@O16 :1@C17 :1@O13 :1@C26"
+        force_constant: 6.0
+        target: 108.7
+    - restraint:
+        atoms: ":1@O21 :1@C23 :1@O18 :1@C32"
+        force_constant: 6.0
+        target: 108.7
+    - restraint:
+        atoms: ":1@O26 :1@C29 :1@O23 :1@C38"
+        force_constant: 6.0
+        target: 108.7
+    - restraint:
+        atoms: ":1@O30 :1@C35 :1@O28 :1@C48"
+        force_constant: 6.0
+        target: 108.7
+    - restraint:
+        atoms: ":1@C8 :1@O34 :1@C45 :1@O37"
+        force_constant: 6.0
+        target: 108.7
+    - restraint:
+        atoms: ":1@O6 :1@C5 :1@O3 :1@C14"
+        force_constant: 6.0
+        target: 108.7
+    - restraint:
+        atoms: ":1@O11 :1@C11 :1@O8 :1@C20"
+        force_constant: 6.0
+        target: 108.7
+    - restraint:
+        atoms: ":1@C17 :1@O13 :1@C26 :1@C27"
+        force_constant: 6.0
+        target: -112.5
+    - restraint:
+        atoms: ":1@C23 :1@O18 :1@C32 :1@C33"
+        force_constant: 6.0
+        target: -112.5
+    - restraint:
+        atoms: ":1@C29 :1@O23 :1@C38 :1@C39"
+        force_constant: 6.0
+        target: -112.5
+    - restraint:
+        atoms: ":1@C35 :1@O28 :1@C48 :1@C49"
+        force_constant: 6.0
+        target: -112.5
+    - restraint:
+        atoms: ":1@C9 :1@C8 :1@O34 :1@C45"
+        force_constant: 6.0
+        target: -112.5
+    - restraint:
+        atoms: ":1@C5 :1@O3 :1@C14 :1@C15"
+        force_constant: 6.0
+        target: -112.5
+    - restraint:
+        atoms: ":1@C11 :1@O8 :1@C20 :1@C21"
+        force_constant: 6.0
+        target: -112.5
+
+calculation:
+  windows:
+    attach: 15
+    pull: 46
+    release: 15
+  lambda:
+    attach: [0.0, 0.004, 0.008, 0.016, 0.024, 0.04, 0.055, 0.0865, 0.118, 0.181, 0.244, 0.37, 0.496, 0.748, 1.0]
+    release: [1.0, 0.748, 0.496, 0.37, 0.244, 0.181, 0.118, 0.0865, 0.055, 0.04, 0.024, 0.016, 0.008, 0.004, 0.0]
+  target:
+    pull: 24.0
+  system:
+    waters: 2500
+    model: "TIP3P"

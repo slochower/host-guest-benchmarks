@@ -1,0 +1,111 @@
+name: m4t
+structure: m4t.mol2
+complex: mgl23-m4t.pdb
+data_set:
+  SAMPL: 7
+  guest_id: g1
+net_charge: 0
+aliases:
+    - D1: :DM1
+    - D2: :DM2
+    - D3: :DM3
+    - G1: :M4T@C7
+    - G2: :M4T@O1
+restraints:
+  guest:
+    - restraint:
+        atoms: D1 G1
+        attach:
+          # During the attach phase, the `force_constant` argument is the
+          # final force constant.
+          force_constant: 5.0
+          target: 6.0
+        pull:
+          # During the pull phase, the `target` argument is the final value of
+          # the restraint.
+          force_constant: 5.0
+          target: 24.0
+    - restraint:
+        atoms: D2 D1 G1
+        attach:
+          force_constant: 100.0
+          target: 180.0
+        pull:
+          force_constant: 100.0
+          target: 180.0
+    - restraint:
+        atoms: D1 G1 G2
+        attach:
+          force_constant: 100.0
+          target: 180.0
+        pull:
+          force_constant: 100.0
+          target: 180.0
+
+  wall_restraints:
+    - restraint:
+        atoms: ":1@O4 G1"
+        force_constant: 50.0
+        target: 10.5
+    - restraint:
+        atoms: ":1@O9 G1"
+        force_constant: 50.0
+        target: 10.5
+    - restraint:
+        atoms: ":1@O14 G1"
+        force_constant: 50.0
+        target: 10.5
+    - restraint:
+        atoms: ":1@O19 G1"
+        force_constant: 50.0
+        target: 10.5
+    - restraint:
+        atoms: ":1@O24 G1"
+        force_constant: 50.0
+        target: 10.5
+    - restraint:
+        atoms: ":1@O29 G1"
+        force_constant: 50.0
+        target: 10.5
+    - restraint:
+        atoms: ":1@O35 G1"
+        force_constant: 50.0
+        target: 10.5
+    - restraint:
+        atoms: ":1@O7 G1"
+        force_constant: 50.0
+        target: 12.5
+    - restraint:
+        atoms: ":1@O12 G1"
+        force_constant: 50.0
+        target: 12.5
+    - restraint:
+        atoms: ":1@O17 G1"
+        force_constant: 50.0
+        target: 12.5
+    - restraint:
+        atoms: ":1@O22 G1"
+        force_constant: 50.0
+        target: 12.5
+    - restraint:
+        atoms: ":1@O27 G1"
+        force_constant: 50.0
+        target: 12.5
+    - restraint:
+        atoms: ":1@O31 G1"
+        force_constant: 50.0
+        target: 12.5
+    - restraint:
+        atoms: ":1@O38 G1"
+        force_constant: 50.0
+        target: 12.5
+
+symmetry_correction:
+  restraints:
+      - restraint:
+        atoms: D2 G1 G2
+        force_constant: 200.0
+  # Do not attempt to automatically correct for the symmetry restraint by adding -RT \ln (microstates).
+  # Instead, we will apply the symmetry restraint, which locks in a particular binding orientation, and then
+  # perform separate calculations.
+  microstates: 1
