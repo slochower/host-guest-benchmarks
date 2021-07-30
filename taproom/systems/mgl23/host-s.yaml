@@ -6,9 +6,9 @@ aliases:
   - D1: ":DM1"
   - D2: ":DM2"
   - D3: ":DM3"
-  - H1: ":1@C8"
-  - H2: ":1@C20"
-  - H3: ":1@C32"
+  - H1: ":MGL@C8"
+  - H2: ":MGL@C20"
+  - H3: ":MGL@C32"
 restraints:
   static:
     - restraint:
@@ -31,59 +31,59 @@ restraints:
         force_constant: 100.0
   conformational:
     - restraint:
-        atoms: ":1@O16 :1@C17 :1@O13 :1@C26"
+        atoms: ":MGL@O16 :MGL@C17 :MGL@O13 :MGL@C26"
         force_constant: 6.0
         target: 108.7
     - restraint:
-        atoms: ":1@O21 :1@C23 :1@O18 :1@C32"
+        atoms: ":MGL@O21 :MGL@C23 :MGL@O18 :MGL@C32"
         force_constant: 6.0
         target: 108.7
     - restraint:
-        atoms: ":1@O26 :1@C29 :1@O23 :1@C38"
+        atoms: ":MGL@O26 :MGL@C29 :MGL@O23 :MGL@C38"
         force_constant: 6.0
         target: 108.7
     - restraint:
-        atoms: ":1@O30 :1@C35 :1@O28 :1@C48"
+        atoms: ":MGL@O30 :MGL@C35 :MGL@O28 :MGL@C48"
         force_constant: 6.0
         target: 108.7
     - restraint:
-        atoms: ":1@C8 :1@O34 :1@C45 :1@O37"
+        atoms: ":MGL@C8 :MGL@O34 :MGL@C45 :MGL@O37"
         force_constant: 6.0
         target: 108.7
     - restraint:
-        atoms: ":1@O6 :1@C5 :1@O3 :1@C14"
+        atoms: ":MGL@O6 :MGL@C5 :MGL@O3 :MGL@C14"
         force_constant: 6.0
         target: 108.7
     - restraint:
-        atoms: ":1@O11 :1@C11 :1@O8 :1@C20"
+        atoms: ":MGL@O11 :MGL@C11 :MGL@O8 :MGL@C20"
         force_constant: 6.0
         target: 108.7
     - restraint:
-        atoms: ":1@C17 :1@O13 :1@C26 :1@C27"
+        atoms: ":MGL@C17 :MGL@O13 :MGL@C26 :MGL@C27"
         force_constant: 6.0
         target: -112.5
     - restraint:
-        atoms: ":1@C23 :1@O18 :1@C32 :1@C33"
+        atoms: ":MGL@C23 :MGL@O18 :MGL@C32 :MGL@C33"
         force_constant: 6.0
         target: -112.5
     - restraint:
-        atoms: ":1@C29 :1@O23 :1@C38 :1@C39"
+        atoms: ":MGL@C29 :MGL@O23 :MGL@C38 :MGL@C39"
         force_constant: 6.0
         target: -112.5
     - restraint:
-        atoms: ":1@C35 :1@O28 :1@C48 :1@C49"
+        atoms: ":MGL@C35 :MGL@O28 :MGL@C48 :MGL@C49"
         force_constant: 6.0
         target: -112.5
     - restraint:
-        atoms: ":1@C9 :1@C8 :1@O34 :1@C45"
+        atoms: ":MGL@C9 :MGL@C8 :MGL@O34 :MGL@C45"
         force_constant: 6.0
         target: -112.5
     - restraint:
-        atoms: ":1@C5 :1@O3 :1@C14 :1@C15"
+        atoms: ":MGL@C5 :MGL@O3 :MGL@C14 :MGL@C15"
         force_constant: 6.0
         target: -112.5
     - restraint:
-        atoms: ":1@C11 :1@O8 :1@C20 :1@C21"
+        atoms: ":MGL@C11 :MGL@O8 :MGL@C20 :MGL@C21"
         force_constant: 6.0
         target: -112.5
 

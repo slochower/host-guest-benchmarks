@@ -12,10 +12,10 @@ substance:
 
 measurement:
   technique: ITC
-  delta_G: -16.65 kJ/mol
-  delta_G_uncertainty: 0.17 kJ/mol
-  delta_H: -28.87 kJ/mol
-  delta_H_uncertainty: 2.09 kJ/mol
+  delta_G: -14.8 kJ/mol
+  delta_G_uncertainty: 0.1 kJ/mol
+  delta_H: -45.5 kJ/mol
+  delta_H_uncertainty: 3.7 kJ/mol
   stoichiometry: "1:1"
 
 provenance:

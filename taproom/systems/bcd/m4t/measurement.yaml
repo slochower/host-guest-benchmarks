@@ -5,7 +5,7 @@ state:
 
 substance:
   name: trans-4-methylcyclohexanol
-  SMILES: "CC1CCC(CC1)O"
+  SMILES: "C[C@H]1CC[C@H](O)CC1"
   buffer:
     - "[Na+].OP(O)([O-])=O": 0.025 mol kg-1
     - "[Na+].[Na+].OP([O-])([O-])=O": 0.025 mol kg-1

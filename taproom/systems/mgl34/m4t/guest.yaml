@@ -44,59 +44,59 @@ restraints:
 
   wall_restraints:
     - restraint:
-        atoms: ":1@O2 G1"
+        atoms: ":MGL@O2 G1"
         force_constant: 50.0
         target: 10.5
     - restraint:
-        atoms: ":1@O7 G1"
+        atoms: ":MGL@O7 G1"
         force_constant: 50.0
         target: 10.5
     - restraint:
-        atoms: ":1@O12 G1"
+        atoms: ":MGL@O12 G1"
         force_constant: 50.0
         target: 10.5
     - restraint:
-        atoms: ":1@O17 G1"
+        atoms: ":MGL@O17 G1"
         force_constant: 50.0
         target: 10.5
     - restraint:
-        atoms: ":1@O22 G1"
+        atoms: ":MGL@O22 G1"
         force_constant: 50.0
         target: 10.5
     - restraint:
-        atoms: ":1@O27 G1"
+        atoms: ":MGL@O27 G1"
         force_constant: 50.0
         target: 10.5
     - restraint:
-        atoms: ":1@O33 G1"
+        atoms: ":MGL@O33 G1"
         force_constant: 50.0
         target: 10.5
     - restraint:
-        atoms: ":1@O5 G1"
+        atoms: ":MGL@O5 G1"
         force_constant: 50.0
         target: 12.5
     - restraint:
-        atoms: ":1@O10 G1"
+        atoms: ":MGL@O10 G1"
         force_constant: 50.0
         target: 12.5
     - restraint:
-        atoms: ":1@O15 G1"
+        atoms: ":MGL@O15 G1"
         force_constant: 50.0
         target: 12.5
     - restraint:
-        atoms: ":1@O20 G1"
+        atoms: ":MGL@O20 G1"
         force_constant: 50.0
         target: 12.5
     - restraint:
-        atoms: ":1@O25 G1"
+        atoms: ":MGL@O25 G1"
         force_constant: 50.0
         target: 12.5
     - restraint:
-        atoms: ":1@O36 G1"
+        atoms: ":MGL@O36 G1"
         force_constant: 50.0
         target: 12.5
     - restraint:
-        atoms: ":1@N1 G1"
+        atoms: ":MGL@N1 G1"
         force_constant: 50.0
         target: 12.5
 
