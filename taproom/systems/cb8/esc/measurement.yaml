@@ -1,0 +1,22 @@
+state:
+  temperature: 298 K
+  pressure: 1 atm
+  pH: 7.4
+
+substance:
+  name: escitalopram
+  SMILES: "C[NH+](C)CCC[C@@]1(c2ccc(cc2CO1)C#N)c3ccc(cc3)F"
+  buffer:
+  - B1(OB2OB(OB(O1)O2)O)O.[Na].[Na]: 0.025 molar
+
+measurement:
+  technique: NMR
+  delta_G: -27.99 kJ/mol
+  delta_G_uncertainty: 0.21 kJ/mol
+  stoichiometry: '1:1'
+
+provenance:
+  comment: Table 1
+  doi: 10.1007/s10822-018-0170-6
+
+unusual: false

@@ -1,16 +1,16 @@
-name: pcp
-structure: pcp.mol2
-complex: cb8-pcp.pdb
+iname: hxd
+structure: hxd.mol2
+complex: cb8-hxd.pdb
 data_set:
-  SAMPL: 8
-  guest_id: G6
+  SAMPL: 6
+  guest_id: G11
 net_charge: +1
 aliases:
     - D1: :DM1
     - D2: :DM2
     - D3: :DM3
-    - G1: :PCP@C1
-    - G2: :PCP@N1
+    - G1: :HXD@N2
+    - G2: :HXD@N1
 restraints:
   guest:
     - restraint:
@@ -56,7 +56,7 @@ restraints:
         force_constant: 50.0
         target: 15.0
     - restraint:
-        atoms: ":CB8@C8 G1"
+        atoms: ":CB8@C80 G1"
         force_constant: 50.0
         target: 15.0
     - restraint:
