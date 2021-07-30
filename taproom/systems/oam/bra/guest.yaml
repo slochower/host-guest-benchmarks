@@ -44,19 +44,19 @@ restraints:
 
   wall_restraints:
     - restraint:
-        atoms: ":1@C45 G1"
+        atoms: ":OAM@C45 G1"
         force_constant: 50.0
         target: 13.5
     - restraint:
-        atoms: ":1@51 G1"
+        atoms: ":OAM@51 G1"
         force_constant: 50.0
         target: 13.5
     - restraint:
-        atoms: ":1@C57 G1"
+        atoms: ":OAM@C57 G1"
         force_constant: 50.0
         target: 13.5
     - restraint:
-        atoms: ":1@63 G1"
+        atoms: ":OAM@63 G1"
         force_constant: 50.0
         target: 13.5
 
