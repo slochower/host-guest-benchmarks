@@ -64,3 +64,5 @@ Below are the specification for the `host`, `guest` and `measurement` YAML files
 - unusual (`bool`, optional)
 
 ## Version history
+* 0.2 - Fix bugs and adjusted the coordinates of some guest molecules.
+* 0.1 - This version of taproom was used in benchmarking Open Force Field (OpenFF) Parsley Force Field (v1.0.0).

@@ -6,19 +6,35 @@ A repository of host-guest systems available for benchmarking force fields used 
 ![US Patent 664824](tap.png)
 
 ## Host-guest systems
-Taproom includes the following host-guest systems with YAML files containing information necessary to perform 
-free energy calculation with the attach-pull-release (APR) method.
+Taproom includes the following host-guest systems (131 in total) with YAML files containing information necessary to 
+perform free energy calculation with the attach-pull-release (APR) method.
 
-* `alpha-cyclodextrin` (acd):
-    * Data set from [Rekharsky et al.](https://pubs.acs.org/doi/abs/10.1021/jp962715n)
-* `beta-cyclodextrin` (bcd):
-    * Data set from [Rekharsky et al.](https://pubs.acs.org/doi/abs/10.1021/jp962715n)
-* `cucurbit[7]uril` (cb7):
-    * SAMPL4 data set
-* `octa-acid` (oah):
-    * SAMPL(4,5,6) data set
-* `tetra-endo-methyl octa-acid` (oam):
-    * SAMPL(5,6) data set
+* [`alpha-cyclodextrin`](taproom/systems/acd):
+    * Data set from [Rekharsky et al.](https://pubs.acs.org/doi/abs/10.1021/jp962715n) - 22 host-guest systems
+    * host key = `acd`
+* [`beta-cyclodextrin`](taproom/systems/bcd):
+    * Data set from [Rekharsky et al.](https://pubs.acs.org/doi/abs/10.1021/jp962715n) - 21 host-guest systems
+    * bCD-R-rimantadine from [SAMPL7](https://github.com/samplchallenges/SAMPL7/tree/master/host_guest/cyclodextrin_derivatives)
+    * host key = `bcd`
+* `cyclodextrin derivatives`:
+    * [SAMPL7](https://github.com/samplchallenges/SAMPL7/tree/master/host_guest/cyclodextrin_derivatives) - 16 host-guest systems (2 guest molecules with 8 host molecules)
+    * host key = `[mgl8, mgl9, mgl19, mgl23, mgl24, mgl34, mgl35, mgl36]`
+* [`cucurbit[7]uril`](taproom/systems/cb7):
+    * SAMPL4 - 14 host-guest systems
+    * host key = `cb7`
+* [`cucurbit[8]uril`](taproom/systems/cb8):
+    * [SAMPL6](https://github.com/samplchallenges/SAMPL6/tree/master/host_guest/CB8AndGuests) - 13 host-guest systems (G13 not included)
+    * [SAMPL8](https://github.com/samplchallenges/SAMPL8/tree/master/host_guest/CB8) - 7 host-guest systems
+    * host key = `cb8`
+* [`octa-acid`](taproom/systems/oah):
+    * SAMPL4 - 9 host-guest systems
+    * SAMPL5 - 6 host-guest systems
+    * [SAMPL6](https://github.com/samplchallenges/SAMPL6/tree/master/host_guest/OctaAcidsAndGuests) - 8 host-guest systems
+    * host key = `oah`
+* [`tetra-endo-methyl octa-acid`](taproom/systems/oam):
+    * SAMPL5 - 6 host-guest systems
+    * [SAMPL6](https://github.com/samplchallenges/SAMPL6/tree/master/host_guest/OctaAcidsAndGuests) - 8 host-guest systems
+    * host key = `oam`
 
 ## Installation
 
@@ -51,7 +67,7 @@ MIT. See [License](LICENSE) for more information.
 
 ## Copyright
 
-Copyright (c) 2019, Open Force Field Consortium
+Copyright (c) 2021, Open Force Field Consortium
 
 
 ## Contributors
