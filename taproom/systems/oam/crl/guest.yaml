@@ -9,8 +9,8 @@ aliases:
     - D1: :DM1
     - D2: :DM2
     - D3: :DM3
-    - G1: :2@C4
-    - G2: :2@C3
+    - G1: :CRL@C4
+    - G2: :CRL@C3
 restraints:
   guest:
     - restraint:
