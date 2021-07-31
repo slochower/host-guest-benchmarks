@@ -1,13 +1,13 @@
 state:
-  temperature: 298 K
+  temperature: 278 K
   pressure: 1 atm
-  pH: 9.2
+  pH: 11.5
 
 substance:
   name: "4-Bromo-1-adamantanecarboxylic acid"
   SMILES: "BrC1[C@H]2CC3(C(=O)[O-])C[C@@H]1CC(C3)C2"
   buffer:
-    - "B1(OB2OB(OB(O1)O2)O)O.[Na].[Na]": 0.01 molar
+    - "OP(=O)(O)[O-].[Na+]": 0.05 molar
 
 measurement:
   technique: ITC

@@ -1,13 +1,13 @@
 state:
   temperature: 298 K
   pressure: 1 atm
-  pH: 9.2
+  pH: 11.7
 
 substance:
   name: "(s)-(-)-citronellic acid"
   SMILES: "C[C@@H](CCC=C(C)C)CC(=O)[O-]"
   buffer:
-    - "B1(OB2OB(OB(O1)O2)O)O.[Na].[Na]": 0.01 molar
+    - "OP(=O)(O)[O-].[Na+]": 0.01 molar
 
 measurement:
   technique: ITC

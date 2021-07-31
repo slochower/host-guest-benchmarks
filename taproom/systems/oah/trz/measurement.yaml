@@ -1,13 +1,13 @@
 state:
   temperature: 298 K
   pressure: 1 atm
-  pH: 9.2
+  pH: 11.3
 
 substance:
   name: "trimethyl(2-phenylethyl)azanium"
   SMILES: "[N+](CCc1ccccc1)(C)(C)C"
   buffer:
-    - "B1(OB2OB(OB(O1)O2)O)O.[Na].[Na]": 0.01 molar
+    - "OP(=O)(O)[O-].[Na+]": 0.01 molar
 
 measurement:
   technique: NMR
