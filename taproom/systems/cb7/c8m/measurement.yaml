@@ -5,7 +5,7 @@ state:
 
 substance:
   name: cyclooctylazanium
-  SMILES: "C1CCCCC(CC1)[NH3+]"
+  SMILES: "C1CCCC(CCC1)[NH3+]"
   buffer:
     - "B1(OB2OB(OB(O1)O2)O)O.[Na].[Na]": 0.01 molar
 
