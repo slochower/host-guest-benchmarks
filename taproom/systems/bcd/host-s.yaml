@@ -98,5 +98,5 @@ calculation:
   target:
     pull: 24.0
   system:
-  waters: 2210
-  model: "TIP3P"
+    waters: 2210
+    model: "TIP3P"
