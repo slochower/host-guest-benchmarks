@@ -2,8 +2,8 @@ name: mpe
 structure: mpe.mol2
 complex: oam-mpe.pdb
 data_set:
-  - SAMPL: 6
-  - guest_id: G6
+  SAMPL: 6
+  guest_id: G6
 net_charge: -1
 aliases:
     - D1: :DM1
@@ -48,7 +48,7 @@ restraints:
         force_constant: 50.0
         target: 13.5
     - restraint:
-        atoms: ":OAM@51 G1"
+        atoms: ":OAM@C51 G1"
         force_constant: 50.0
         target: 13.5
     - restraint:
@@ -56,7 +56,7 @@ restraints:
         force_constant: 50.0
         target: 13.5
     - restraint:
-        atoms: ":OAM@63 G1"
+        atoms: ":OAM@C63 G1"
         force_constant: 50.0
         target: 13.5
 
