@@ -144,200 +144,198 @@ HETATM  141  H45 CB8     1       4.583  -3.711   2.957  1.00  0.00           H
 HETATM  142  H46 CB8     1       5.640  -4.680   1.874  1.00  0.00           H  
 HETATM  143  H47 CB8     1       6.265   0.621   2.892  1.00  0.00           H  
 HETATM  144  H48 CB8     1       7.617   0.692   1.711  1.00  0.00           H  
-TER     145      CB8     1
-HETATM  146  C1  GTR     2      -3.913  -0.609  -0.182  1.00  0.00           C  
-HETATM  147  C2  GTR     2      -3.383  -0.171  -1.396  1.00  0.00           C  
-HETATM  148  C3  GTR     2      -3.293  -0.259   1.017  1.00  0.00           C  
-HETATM  149  C4  GTR     2      -2.233   0.617  -1.409  1.00  0.00           C  
-HETATM  150  C5  GTR     2      -2.143   0.529   1.003  1.00  0.00           C  
-HETATM  151  C6  GTR     2      -1.612   0.967  -0.210  1.00  0.00           C  
-HETATM  152  C7  GTR     2      -2.314  -0.715  -8.051  1.00  0.00           C  
-HETATM  153  C8  GTR     2       0.789   0.621  -7.137  1.00  0.00           C  
-HETATM  154  C9  GTR     2      -0.583  -2.530  -4.576  1.00  0.00           C  
-HETATM  155  C10 GTR     2      -0.219  -2.666   6.506  1.00  0.00           C  
-HETATM  156  C11 GTR     2       0.665   0.678   6.924  1.00  0.00           C  
-HETATM  157  C12 GTR     2      -3.467   0.003   5.841  1.00  0.00           C  
-HETATM  158  C13 GTR     2       5.062   0.634  -1.181  1.00  0.00           C  
-HETATM  159  C14 GTR     2       4.370   3.171   1.106  1.00  0.00           C  
-HETATM  160  C15 GTR     2       2.354  -0.578   1.871  1.00  0.00           C  
-HETATM  161  C16 GTR     2      -2.066   0.163  -6.843  1.00  0.00           C  
-HETATM  162  C17 GTR     2       0.253  -0.722  -6.691  1.00  0.00           C  
-HETATM  163  C18 GTR     2      -1.595  -1.862  -5.482  1.00  0.00           C  
-HETATM  164  C19 GTR     2      -0.055  -1.665   5.382  1.00  0.00           C  
-HETATM  165  C20 GTR     2      -0.751   0.149   6.932  1.00  0.00           C  
-HETATM  166  C21 GTR     2      -2.464  -1.111   5.645  1.00  0.00           C  
-HETATM  167  C22 GTR     2       3.754   1.392  -1.094  1.00  0.00           C  
-HETATM  168  C23 GTR     2       4.123   1.697   1.345  1.00  0.00           C  
-HETATM  169  C24 GTR     2       2.964  -0.336   0.509  1.00  0.00           C  
-HETATM  170  C25 GTR     2      -0.797   0.364  -4.717  1.00  0.00           C  
-HETATM  171  C26 GTR     2      -0.945   0.471   4.476  1.00  0.00           C  
-HETATM  172  C27 GTR     2       1.831   1.873   0.404  1.00  0.00           C  
-HETATM  173  C28 GTR     2      -1.937   0.199  -3.732  1.00  0.00           C  
-HETATM  174  C29 GTR     2      -1.675  -0.063   3.259  1.00  0.00           C  
-HETATM  175  C30 GTR     2       0.763   1.053  -0.294  1.00  0.00           C  
-HETATM  176  N1  GTR     2      -1.052  -0.514  -5.933  1.00  0.00           N  
-HETATM  177  N2  GTR     2      -1.052  -0.514   5.581  1.00  0.00           N  
-HETATM  178  N3  GTR     2       3.135   1.174   0.293  1.00  0.00           N  
-HETATM  179  O1  GTR     2      -1.723   1.043  -2.609  1.00  0.00           O  
-HETATM  180  O2  GTR     2      -1.547   0.864   2.182  1.00  0.00           O  
-HETATM  181  O3  GTR     2      -0.486   1.737  -0.224  1.00  0.00           O  
-HETATM  182  H1  GTR     2      -4.809  -1.223  -0.172  1.00  0.00           H  
-HETATM  183  H2  GTR     2      -3.870  -0.446  -2.327  1.00  0.00           H  
-HETATM  184  H3  GTR     2      -3.711  -0.604   1.958  1.00  0.00           H  
-HETATM  185  H4  GTR     2      -1.388  -0.847  -8.620  1.00  0.00           H  
-HETATM  186  H5  GTR     2      -2.672  -1.707  -7.753  1.00  0.00           H  
-HETATM  187  H6  GTR     2      -3.061  -0.270  -8.717  1.00  0.00           H  
-HETATM  188  H7  GTR     2       0.079   1.105  -7.816  1.00  0.00           H  
-HETATM  189  H8  GTR     2       0.947   1.288  -6.284  1.00  0.00           H  
-HETATM  190  H9  GTR     2       1.742   0.512  -7.664  1.00  0.00           H  
-HETATM  191  H10 GTR     2       0.349  -2.710  -5.120  1.00  0.00           H  
-HETATM  192  H11 GTR     2      -0.352  -1.902  -3.709  1.00  0.00           H  
-HETATM  193  H12 GTR     2      -0.954  -3.494  -4.210  1.00  0.00           H  
-HETATM  194  H13 GTR     2       0.001  -2.194   7.467  1.00  0.00           H  
-HETATM  195  H14 GTR     2      -1.243  -3.051   6.544  1.00  0.00           H  
-HETATM  196  H15 GTR     2       0.461  -3.515   6.381  1.00  0.00           H  
-HETATM  197  H16 GTR     2       1.376  -0.143   6.789  1.00  0.00           H  
-HETATM  198  H17 GTR     2       0.816   1.393   6.108  1.00  0.00           H  
-HETATM  199  H18 GTR     2       0.905   1.182   7.866  1.00  0.00           H  
-HETATM  200  H19 GTR     2      -3.279   0.519   6.787  1.00  0.00           H  
-HETATM  201  H20 GTR     2      -3.402   0.741   5.035  1.00  0.00           H  
-HETATM  202  H21 GTR     2      -4.491  -0.385   5.865  1.00  0.00           H  
-HETATM  203  H22 GTR     2       5.768   1.013  -0.435  1.00  0.00           H  
-HETATM  204  H23 GTR     2       4.913  -0.434  -0.993  1.00  0.00           H  
-HETATM  205  H24 GTR     2       5.519   0.746  -2.168  1.00  0.00           H  
-HETATM  206  H25 GTR     2       4.818   3.325   0.120  1.00  0.00           H  
-HETATM  207  H26 GTR     2       3.436   3.741   1.146  1.00  0.00           H  
-HETATM  208  H27 GTR     2       5.053   3.585   1.857  1.00  0.00           H  
-HETATM  209  H28 GTR     2       3.018  -0.202   2.656  1.00  0.00           H  
-HETATM  210  H29 GTR     2       1.390  -0.068   1.971  1.00  0.00           H  
-HETATM  211  H30 GTR     2       2.194  -1.648   2.049  1.00  0.00           H  
-HETATM  212  H31 GTR     2      -2.976   0.311  -6.256  1.00  0.00           H  
-HETATM  213  H32 GTR     2      -1.645   1.132  -7.128  1.00  0.00           H  
-HETATM  214  H33 GTR     2       0.943  -1.226  -6.009  1.00  0.00           H  
-HETATM  215  H34 GTR     2       0.030  -1.371  -7.542  1.00  0.00           H  
-HETATM  216  H35 GTR     2      -2.538  -1.670  -4.962  1.00  0.00           H  
-HETATM  217  H36 GTR     2      -1.782  -2.451  -6.382  1.00  0.00           H  
-HETATM  218  H37 GTR     2      -0.270  -2.111   4.408  1.00  0.00           H  
-HETATM  219  H38 GTR     2       0.946  -1.225   5.376  1.00  0.00           H  
-HETATM  220  H39 GTR     2      -1.483   0.950   7.065  1.00  0.00           H  
-HETATM  221  H40 GTR     2      -0.893  -0.614   7.703  1.00  0.00           H  
-HETATM  222  H41 GTR     2      -2.629  -1.645   4.705  1.00  0.00           H  
-HETATM  223  H42 GTR     2      -2.476  -1.819   6.479  1.00  0.00           H  
-HETATM  224  H43 GTR     2       3.029   1.033  -1.828  1.00  0.00           H  
-HETATM  225  H44 GTR     2       3.903   2.469  -1.214  1.00  0.00           H  
-HETATM  226  H45 GTR     2       3.674   1.516   2.326  1.00  0.00           H  
-HETATM  227  H46 GTR     2       5.040   1.112   1.243  1.00  0.00           H  
-HETATM  228  H47 GTR     2       2.321  -0.704  -0.295  1.00  0.00           H  
-HETATM  229  H48 GTR     2       3.957  -0.787   0.424  1.00  0.00           H  
-HETATM  230  H49 GTR     2       0.160   0.040  -4.298  1.00  0.00           H  
-HETATM  231  H50 GTR     2      -0.724   1.392  -5.082  1.00  0.00           H  
-HETATM  232  H51 GTR     2      -1.387   1.400   4.848  1.00  0.00           H  
-HETATM  233  H52 GTR     2       0.121   0.609   4.279  1.00  0.00           H  
-HETATM  234  H53 GTR     2       1.629   1.987   1.473  1.00  0.00           H  
-HETATM  235  H54 GTR     2       1.958   2.852  -0.065  1.00  0.00           H  
-HETATM  236  H55 GTR     2      -2.880   0.493  -4.202  1.00  0.00           H  
-HETATM  237  H56 GTR     2      -2.025  -0.837  -3.386  1.00  0.00           H  
-HETATM  238  H57 GTR     2      -1.229  -1.010   2.944  1.00  0.00           H  
-HETATM  239  H58 GTR     2      -2.738  -0.225   3.464  1.00  0.00           H  
-HETATM  240  H59 GTR     2       1.021   0.929  -1.351  1.00  0.00           H  
-HETATM  241  H60 GTR     2       0.653   0.062   0.160  1.00  0.00           H  
-TER     242      GTR     2
-CONECT    1    2
-CONECT    2    1   55    3
+HETATM  145  C1  GTR     2      -2.998  -0.750   0.215  1.00  0.00           C  
+HETATM  146  C2  GTR     2      -2.800   0.020  -0.918  1.00  0.00           C  
+HETATM  147  C3  GTR     2      -2.553  -0.323   1.456  1.00  0.00           C  
+HETATM  148  C4  GTR     2      -2.051   1.186  -0.830  1.00  0.00           C  
+HETATM  149  C5  GTR     2      -1.845   0.869   1.559  1.00  0.00           C  
+HETATM  150  C6  GTR     2      -1.547   1.605   0.406  1.00  0.00           C  
+HETATM  151  C7  GTR     2      -3.411   2.701  -6.982  1.00  0.00           C  
+HETATM  152  C8  GTR     2      -0.351   4.205  -6.204  1.00  0.00           C  
+HETATM  153  C9  GTR     2      -0.263  -0.203  -6.061  1.00  0.00           C  
+HETATM  154  C10 GTR     2      -0.043  -2.499   4.864  1.00  0.00           C  
+HETATM  155  C11 GTR     2       1.397   0.321   6.353  1.00  0.00           C  
+HETATM  156  C12 GTR     2      -2.988  -0.090   7.072  1.00  0.00           C  
+HETATM  157  C13 GTR     2       2.140   0.045  -2.874  1.00  0.00           C  
+HETATM  158  C14 GTR     2       2.079   0.404   2.138  1.00  0.00           C  
+HETATM  159  C15 GTR     2       0.824  -2.243   0.398  1.00  0.00           C  
+HETATM  160  C16 GTR     2      -2.761   2.679  -5.584  1.00  0.00           C  
+HETATM  161  C17 GTR     2      -0.443   2.702  -6.536  1.00  0.00           C  
+HETATM  162  C18 GTR     2      -1.597   0.568  -6.083  1.00  0.00           C  
+HETATM  163  C19 GTR     2      -0.385  -1.056   4.459  1.00  0.00           C  
+HETATM  164  C20 GTR     2       0.030  -0.256   6.775  1.00  0.00           C  
+HETATM  165  C21 GTR     2      -2.215  -0.956   6.060  1.00  0.00           C  
+HETATM  166  C22 GTR     2       2.797   0.404  -1.526  1.00  0.00           C  
+HETATM  167  C23 GTR     2       2.870   0.065   0.853  1.00  0.00           C  
+HETATM  168  C24 GTR     2       1.830  -1.633  -0.593  1.00  0.00           C  
+HETATM  169  C25 GTR     2      -0.853   2.051  -4.213  1.00  0.00           C  
+HETATM  170  C26 GTR     2      -1.192   1.154   5.161  1.00  0.00           C  
+HETATM  171  C27 GTR     2       0.724   0.536  -0.277  1.00  0.00           C  
+HETATM  172  C28 GTR     2      -1.663   1.151  -3.259  1.00  0.00           C  
+HETATM  173  C29 GTR     2      -2.156   1.202   3.964  1.00  0.00           C  
+HETATM  174  C30 GTR     2       0.748   2.096  -0.250  1.00  0.00           C  
+HETATM  175  N1  GTR     2      -1.409   1.995  -5.626  1.00  0.00           N1+
+HETATM  176  N2  GTR     2      -0.936  -0.281   5.627  1.00  0.00           N1+
+HETATM  177  N3  GTR     2       2.029  -0.145  -0.373  1.00  0.00           N1+
+HETATM  178  O1  GTR     2      -1.633   1.814  -1.982  1.00  0.00           O  
+HETATM  179  O2  GTR     2      -1.315   1.214   2.779  1.00  0.00           O  
+HETATM  180  O3  GTR     2      -0.498   2.519   0.433  1.00  0.00           O  
+HETATM  181  H1  GTR     2      -3.473  -1.681   0.124  1.00  0.00           H  
+HETATM  182  H2  GTR     2      -3.185  -0.307  -1.844  1.00  0.00           H  
+HETATM  183  H3  GTR     2      -2.722  -0.926   2.305  1.00  0.00           H  
+HETATM  184  H4  GTR     2      -2.774   3.208  -7.703  1.00  0.00           H  
+HETATM  185  H5  GTR     2      -3.655   1.690  -7.304  1.00  0.00           H  
+HETATM  186  H6  GTR     2      -4.340   3.261  -6.877  1.00  0.00           H  
+HETATM  187  H7  GTR     2      -1.289   4.708  -6.429  1.00  0.00           H  
+HETATM  188  H8  GTR     2      -0.065   4.357  -5.165  1.00  0.00           H  
+HETATM  189  H9  GTR     2       0.428   4.619  -6.843  1.00  0.00           H  
+HETATM  190  H10 GTR     2       0.444   0.229  -6.767  1.00  0.00           H  
+HETATM  191  H11 GTR     2       0.155  -0.242  -5.059  1.00  0.00           H  
+HETATM  192  H12 GTR     2      -0.489  -1.222  -6.375  1.00  0.00           H  
+HETATM  193  H13 GTR     2       0.787  -2.526   5.567  1.00  0.00           H  
+HETATM  194  H14 GTR     2      -0.915  -3.032   5.238  1.00  0.00           H  
+HETATM  195  H15 GTR     2       0.264  -2.986   3.943  1.00  0.00           H  
+HETATM  196  H16 GTR     2       1.871  -0.305   5.598  1.00  0.00           H  
+HETATM  197  H17 GTR     2       1.303   1.348   6.003  1.00  0.00           H  
+HETATM  198  H18 GTR     2       2.026   0.317   7.243  1.00  0.00           H  
+HETATM  199  H19 GTR     2      -2.360   0.174   7.920  1.00  0.00           H  
+HETATM  200  H20 GTR     2      -3.393   0.793   6.580  1.00  0.00           H  
+HETATM  201  H21 GTR     2      -3.823  -0.697   7.422  1.00  0.00           H  
+HETATM  202  H22 GTR     2       2.330  -1.002  -3.112  1.00  0.00           H  
+HETATM  203  H23 GTR     2       1.080   0.267  -2.861  1.00  0.00           H  
+HETATM  204  H24 GTR     2       2.626   0.651  -3.637  1.00  0.00           H  
+HETATM  205  H25 GTR     2       1.727   1.433   2.124  1.00  0.00           H  
+HETATM  206  H26 GTR     2       1.258  -0.285   2.282  1.00  0.00           H  
+HETATM  207  H27 GTR     2       2.769   0.314   2.974  1.00  0.00           H  
+HETATM  208  H28 GTR     2       1.235  -2.228   1.402  1.00  0.00           H  
+HETATM  209  H29 GTR     2      -0.149  -1.760   0.346  1.00  0.00           H  
+HETATM  210  H30 GTR     2       0.683  -3.276   0.091  1.00  0.00           H  
+HETATM  211  H31 GTR     2      -3.434   2.146  -4.922  1.00  0.00           H  
+HETATM  212  H32 GTR     2      -2.641   3.702  -5.248  1.00  0.00           H  
+HETATM  213  H33 GTR     2       0.547   2.284  -6.395  1.00  0.00           H  
+HETATM  214  H34 GTR     2      -0.767   2.601  -7.565  1.00  0.00           H  
+HETATM  215  H35 GTR     2      -2.294   0.059  -5.428  1.00  0.00           H  
+HETATM  216  H36 GTR     2      -1.952   0.561  -7.106  1.00  0.00           H  
+HETATM  217  H37 GTR     2      -1.130  -1.109   3.674  1.00  0.00           H  
+HETATM  218  H38 GTR     2       0.517  -0.580   4.102  1.00  0.00           H  
+HETATM  219  H39 GTR     2      -0.360   0.384   7.556  1.00  0.00           H  
+HETATM  220  H40 GTR     2       0.189  -1.264   7.138  1.00  0.00           H  
+HETATM  221  H41 GTR     2      -2.856  -1.130   5.203  1.00  0.00           H  
+HETATM  222  H42 GTR     2      -1.974  -1.890   6.552  1.00  0.00           H  
+HETATM  223  H43 GTR     2       2.824   1.485  -1.452  1.00  0.00           H  
+HETATM  224  H44 GTR     2       3.799  -0.000  -1.527  1.00  0.00           H  
+HETATM  225  H45 GTR     2       3.372  -0.868   1.043  1.00  0.00           H  
+HETATM  226  H46 GTR     2       3.577   0.868   0.686  1.00  0.00           H  
+HETATM  227  H47 GTR     2       1.408  -1.809  -1.574  1.00  0.00           H  
+HETATM  228  H48 GTR     2       2.777  -2.150  -0.481  1.00  0.00           H  
+HETATM  229  H49 GTR     2       0.176   1.716  -4.200  1.00  0.00           H  
+HETATM  230  H50 GTR     2      -0.923   3.063  -3.837  1.00  0.00           H  
+HETATM  231  H51 GTR     2      -1.642   1.718   5.968  1.00  0.00           H  
+HETATM  232  H52 GTR     2      -0.272   1.615   4.825  1.00  0.00           H  
+HETATM  233  H53 GTR     2       0.111   0.237  -1.115  1.00  0.00           H  
+HETATM  234  H54 GTR     2       0.262   0.218   0.644  1.00  0.00           H  
+HETATM  235  H55 GTR     2      -2.693   1.045  -3.576  1.00  0.00           H  
+HETATM  236  H56 GTR     2      -1.205   0.166  -3.188  1.00  0.00           H  
+HETATM  237  H57 GTR     2      -2.853   0.370   3.965  1.00  0.00           H  
+HETATM  238  H58 GTR     2      -2.740   2.112   4.021  1.00  0.00           H  
+HETATM  239  H59 GTR     2       1.609   2.491   0.284  1.00  0.00           H  
+HETATM  240  H60 GTR     2       0.749   2.467  -1.271  1.00  0.00           H  
+CONECT    1    2    2
+CONECT    2    1    1    3   55
 CONECT    3    2    4    5
-CONECT    4    3   56   97   61
-CONECT    5    3   98   99    6
+CONECT    4    3   56   61   97
+CONECT    5    3    6   98   99
 CONECT    6    5    7    8
-CONECT    7    6  100   11   63
-CONECT    8    6    9   10
-CONECT    9    8
+CONECT    7    6   11   63  100
+CONECT    8    6    9    9   10
+CONECT    9    8    8
 CONECT   10    8   11   12
-CONECT   11    7   10  101   66
-CONECT   12   10  102  103   13
-CONECT   13   12   15   14
-CONECT   14   13  104   18   68
-CONECT   15   13   16   17
-CONECT   16   15
+CONECT   11    7   10   66  101
+CONECT   12   10   13  102  103
+CONECT   13   12   14   15
+CONECT   14   13   18   68  104
+CONECT   15   13   16   16   17
+CONECT   16   15   15
 CONECT   17   15   18   19
-CONECT   18   14   17  105   71
-CONECT   19   17  106  107   20
-CONECT   20   19   22   21
-CONECT   21   20  108   25   73
-CONECT   22   20   23   24
-CONECT   23   22
-CONECT   24   22   26   25
-CONECT   25   21   24  109   76
+CONECT   18   14   17   71  105
+CONECT   19   17   20  106  107
+CONECT   20   19   21   22
+CONECT   21   20   25   73  108
+CONECT   22   20   23   23   24
+CONECT   23   22   22
+CONECT   24   22   25   26
+CONECT   25   21   24   76  109
 CONECT   26   24   27  110  111
-CONECT   27   26   29   28
-CONECT   28   27   32  112   78
-CONECT   29   27   30   31
-CONECT   30   29
-CONECT   31   29   33   32
-CONECT   32   28   31  113   81
+CONECT   27   26   28   29
+CONECT   28   27   32   78  112
+CONECT   29   27   30   30   31
+CONECT   30   29   29
+CONECT   31   29   32   33
+CONECT   32   28   31   81  113
 CONECT   33   31   34  114  115
-CONECT   34   33   36   35
-CONECT   35   34   39  116   83
-CONECT   36   34   38   37
-CONECT   37   36
-CONECT   38   36   40   39
-CONECT   39   35   38  117   86
+CONECT   34   33   35   36
+CONECT   35   34   39   83  116
+CONECT   36   34   37   37   38
+CONECT   37   36   36
+CONECT   38   36   39   40
+CONECT   39   35   38   86  117
 CONECT   40   38   41  118  119
-CONECT   41   40   43   42
-CONECT   42   41   46  120   88
-CONECT   43   41   45   44
-CONECT   44   43
-CONECT   45   43   47   46
-CONECT   46   42   45  121   91
-CONECT   47   45  122  123   48
-CONECT   48   47   50   49
-CONECT   49   48   54  124   93
-CONECT   50   48   51   52
-CONECT   51   50
+CONECT   41   40   42   43
+CONECT   42   41   46   88  120
+CONECT   43   41   44   44   45
+CONECT   44   43   43
+CONECT   45   43   46   47
+CONECT   46   42   45   91  121
+CONECT   47   45   48  122  123
+CONECT   48   47   49   50
+CONECT   49   48   54   93  124
+CONECT   50   48   51   51   52
+CONECT   51   50   50
 CONECT   52   50   53   54
-CONECT   53   52  125  126   55
-CONECT   54   49   52  127   95
+CONECT   53   52   55  125  126
+CONECT   54   49   52   95  127
 CONECT   55    2   53   56
-CONECT   56    4   55  128   57
+CONECT   56    4   55   57  128
 CONECT   57   56   58   59
 CONECT   58   57   95  129  130
-CONECT   59   57   61   60
-CONECT   60   59
+CONECT   59   57   60   60   61
+CONECT   60   59   59
 CONECT   61    4   59   62
-CONECT   62   61  131  132   63
+CONECT   62   61   63  131  132
 CONECT   63    7   62   64
-CONECT   64   63   65   66
-CONECT   65   64
+CONECT   64   63   65   65   66
+CONECT   65   64   64
 CONECT   66   11   64   67
-CONECT   67   66  133  134   68
+CONECT   67   66   68  133  134
 CONECT   68   14   67   69
-CONECT   69   68   70   71
-CONECT   70   69
+CONECT   69   68   70   70   71
+CONECT   70   69   69
 CONECT   71   18   69   72
 CONECT   72   71   73  135  136
 CONECT   73   21   72   74
-CONECT   74   73   76   75
-CONECT   75   74
+CONECT   74   73   75   75   76
+CONECT   75   74   74
 CONECT   76   25   74   77
 CONECT   77   76   78  137  138
 CONECT   78   28   77   79
-CONECT   79   78   81   80
-CONECT   80   79
+CONECT   79   78   80   80   81
+CONECT   80   79   79
 CONECT   81   32   79   82
 CONECT   82   81   83  139  140
 CONECT   83   35   82   84
-CONECT   84   83   86   85
-CONECT   85   84
+CONECT   84   83   85   85   86
+CONECT   85   84   84
 CONECT   86   39   84   87
 CONECT   87   86   88  141  142
 CONECT   88   42   87   89
-CONECT   89   88   91   90
-CONECT   90   89
+CONECT   89   88   90   90   91
+CONECT   90   89   89
 CONECT   91   46   89   92
 CONECT   92   91   93  143  144
 CONECT   93   49   92   94
-CONECT   94   93   95   96
+CONECT   94   93   95   96   96
 CONECT   95   54   58   94
-CONECT   96   94
+CONECT   96   94   94
 CONECT   97    4
 CONECT   98    5
 CONECT   99    5
@@ -386,100 +384,100 @@ CONECT  141   87
 CONECT  142   87
 CONECT  143   92
 CONECT  144   92
-CONECT  146  147  148  182
-CONECT  147  146  149  183
-CONECT  148  146  150  184
-CONECT  149  147  151  179
-CONECT  150  148  151  180
-CONECT  151  149  150  181
-CONECT  152  161  185  186  187
-CONECT  153  162  188  189  190
-CONECT  154  163  191  192  193
-CONECT  155  164  194  195  196
-CONECT  156  165  197  198  199
-CONECT  157  166  200  201  202
-CONECT  158  167  203  204  205
-CONECT  159  168  206  207  208
-CONECT  160  169  209  210  211
-CONECT  161  152  176  212  213
-CONECT  162  153  176  214  215
-CONECT  163  154  176  216  217
-CONECT  164  155  177  218  219
-CONECT  165  156  177  220  221
-CONECT  166  157  177  222  223
-CONECT  167  158  178  224  225
-CONECT  168  159  178  226  227
-CONECT  169  160  178  228  229
-CONECT  170  173  176  230  231
-CONECT  171  174  177  232  233
-CONECT  172  175  178  234  235
-CONECT  173  170  179  236  237
-CONECT  174  171  180  238  239
-CONECT  175  172  181  240  241
-CONECT  176  161  162  163  170
-CONECT  177  164  165  166  171
-CONECT  178  167  168  169  172
+CONECT  145  146  146  147  181
+CONECT  146  145  145  148  182
+CONECT  147  145  149  149  183
+CONECT  148  146  150  150  178
+CONECT  149  147  147  150  179
+CONECT  150  148  148  149  180
+CONECT  151  160  184  185  186
+CONECT  152  161  187  188  189
+CONECT  153  162  190  191  192
+CONECT  154  163  193  194  195
+CONECT  155  164  196  197  198
+CONECT  156  165  199  200  201
+CONECT  157  166  202  203  204
+CONECT  158  167  205  206  207
+CONECT  159  168  208  209  210
+CONECT  160  151  175  211  212
+CONECT  161  152  175  213  214
+CONECT  162  153  175  215  216
+CONECT  163  154  176  217  218
+CONECT  164  155  176  219  220
+CONECT  165  156  176  221  222
+CONECT  166  157  177  223  224
+CONECT  167  158  177  225  226
+CONECT  168  159  177  227  228
+CONECT  169  172  175  229  230
+CONECT  170  173  176  231  232
+CONECT  171  174  177  233  234
+CONECT  172  169  178  235  236
+CONECT  173  170  179  237  238
+CONECT  174  171  180  239  240
+CONECT  175  160  161  162  169
+CONECT  176  163  164  165  170
+CONECT  177  166  167  168  171
+CONECT  178  148  172
 CONECT  179  149  173
 CONECT  180  150  174
-CONECT  181  151  175
+CONECT  181  145
 CONECT  182  146
 CONECT  183  147
-CONECT  184  148
-CONECT  185  152
-CONECT  186  152
+CONECT  184  151
+CONECT  185  151
+CONECT  186  151
 CONECT  187  152
-CONECT  188  153
-CONECT  189  153
+CONECT  188  152
+CONECT  189  152
 CONECT  190  153
-CONECT  191  154
-CONECT  192  154
+CONECT  191  153
+CONECT  192  153
 CONECT  193  154
-CONECT  194  155
-CONECT  195  155
+CONECT  194  154
+CONECT  195  154
 CONECT  196  155
-CONECT  197  156
-CONECT  198  156
+CONECT  197  155
+CONECT  198  155
 CONECT  199  156
-CONECT  200  157
-CONECT  201  157
+CONECT  200  156
+CONECT  201  156
 CONECT  202  157
-CONECT  203  158
-CONECT  204  158
+CONECT  203  157
+CONECT  204  157
 CONECT  205  158
-CONECT  206  159
-CONECT  207  159
+CONECT  206  158
+CONECT  207  158
 CONECT  208  159
-CONECT  209  160
-CONECT  210  160
+CONECT  209  159
+CONECT  210  159
 CONECT  211  160
-CONECT  212  161
+CONECT  212  160
 CONECT  213  161
-CONECT  214  162
+CONECT  214  161
 CONECT  215  162
-CONECT  216  163
+CONECT  216  162
 CONECT  217  163
-CONECT  218  164
+CONECT  218  163
 CONECT  219  164
-CONECT  220  165
+CONECT  220  164
 CONECT  221  165
-CONECT  222  166
+CONECT  222  165
 CONECT  223  166
-CONECT  224  167
+CONECT  224  166
 CONECT  225  167
-CONECT  226  168
+CONECT  226  167
 CONECT  227  168
-CONECT  228  169
+CONECT  228  168
 CONECT  229  169
-CONECT  230  170
+CONECT  230  169
 CONECT  231  170
-CONECT  232  171
+CONECT  232  170
 CONECT  233  171
-CONECT  234  172
+CONECT  234  171
 CONECT  235  172
-CONECT  236  173
+CONECT  236  172
 CONECT  237  173
-CONECT  238  174
+CONECT  238  173
 CONECT  239  174
-CONECT  240  175
-CONECT  241  175
+CONECT  240  174
 END
