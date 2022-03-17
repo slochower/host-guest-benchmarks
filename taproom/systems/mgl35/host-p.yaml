@@ -31,10 +31,6 @@ restraints:
         force_constant: 100.0
   conformational:
     - restraint:
-        atoms: ":MGL@C4 :MGL@O33 :MGL@C41 :MGL@O36"
-        force_constant: 6.0
-        target: 108.7
-    - restraint:
         atoms: ":MGL@O4 :MGL@C1 :MGL@O1 :MGL@C10"
         force_constant: 6.0
         target: 108.7
@@ -59,9 +55,9 @@ restraints:
         force_constant: 6.0
         target: 108.7
     - restraint:
-        atoms: ":MGL@C5 :MGL@C4 :MGL@O33 :MGL@C41"
+        atoms: ":MGL@O36 :MGL@C41 :MGL@O33 :MGL@C4"
         force_constant: 6.0
-        target: -112.5
+        target: 108.7
     - restraint:
         atoms: ":MGL@C1 :MGL@O1 :MGL@C10 :MGL@C11"
         force_constant: 6.0
@@ -84,6 +80,10 @@ restraints:
         target: -112.5
     - restraint:
         atoms: ":MGL@C31 :MGL@O26 :MGL@C44 :MGL@C45"
+        force_constant: 6.0
+        target: -112.5
+    - restraint:
+        atoms: ":MGL@C41 :MGL@O33 :MGL@C4 :MGL@C5"
         force_constant: 6.0
         target: -112.5
 
