@@ -1,0 +1,22 @@
+state:
+  temperature: 298 K
+  pressure: 1 atm
+  pH: 7.4
+
+substance:
+  name: "donepezil"
+  SMILES: "COc1cc2c(cc1OC)C(=O)[C@@H](C2)CC3CC[NH+](CC3)Cc4ccccc4"
+  buffer:
+  - B1(OB2OB(OB(O1)O2)O)O.[Na].[Na]: 0.025 molar
+
+measurement:
+  technique: NMR
+  delta_G: -41.25 kJ/mol
+  delta_G_uncertainty: 0.13 kJ/mol
+  stoichiometry: '1:1'
+
+provenance:
+  comment: Table 1
+  doi: 10.1007/s10822-018-0170-6
+
+unusual: false

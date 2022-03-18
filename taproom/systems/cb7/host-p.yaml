@@ -1,0 +1,101 @@
+name: cb7
+structure: cb7.mol2
+resname: CB7
+net_charge: 0
+aliases:
+  - D1: ":DM1"
+  - D2: ":DM2"
+  - D3: ":DM3"
+  - H1: ":CB7@C15"
+  - H2: ":CB7@C22"
+  - H3: ":CB7@C28"
+restraints:
+  static:
+    - restraint:
+        atoms: D1 H1
+        force_constant: 5.0
+    - restraint:
+        atoms: D2 D1 H1
+        force_constant: 100.0
+    - restraint:
+        atoms: D3 D2 D1 H1
+        force_constant: 100.0
+    - restraint:
+        atoms: D1 H1 H2
+        force_constant: 100.0
+    - restraint:
+        atoms: D2 D1 H1 H2
+        force_constant: 100.0
+    - restraint:
+        atoms: D1 H1 H2 H3
+        force_constant: 100.0
+  conformational:
+    - restraint:
+        atoms: ":CB7@N1 :CB7@N8"
+        force_constant: 15.0
+        target: 13.5
+    - restraint:
+        atoms: ":CB7@N2 :CB7@N9"
+        force_constant: 15.0
+        target: 13.5
+    - restraint:
+        atoms: ":CB7@N3 :CB7@N10"
+        force_constant: 15.0
+        target: 13.5
+    - restraint:
+        atoms: ":CB7@N4 :CB7@N11"
+        force_constant: 15.0
+        target: 13.5
+    - restraint:
+        atoms: ":CB7@N5 :CB7@N12"
+        force_constant: 15.0
+        target: 13.5
+    - restraint:
+        atoms: ":CB7@N6 :CB7@N13"
+        force_constant: 15.0
+        target: 13.5
+    - restraint:
+        atoms: ":CB7@N7 :CB7@N14"
+        force_constant: 15.0
+        target: 13.5
+    - restraint:
+        atoms: ":CB7@N15 :CB7@N22"
+        force_constant: 15.0
+        target: 13.5
+    - restraint:
+        atoms: ":CB7@N16 :CB7@N23"
+        force_constant: 15.0
+        target: 13.5
+    - restraint:
+        atoms: ":CB7@N17 :CB7@N24"
+        force_constant: 15.0
+        target: 13.5
+    - restraint:
+        atoms: ":CB7@N18 :CB7@N25"
+        force_constant: 15.0
+        target: 13.5
+    - restraint:
+        atoms: ":CB7@N19 :CB7@N26"
+        force_constant: 15.0
+        target: 13.5
+    - restraint:
+        atoms: ":CB7@N20 :CB7@N27"
+        force_constant: 15.0
+        target: 13.5
+    - restraint:
+        atoms: ":CB7@N21 :CB7@N28"
+        force_constant: 15.0
+        target: 13.5
+calculation:
+  windows:
+    attach: 15
+    pull: 46
+    release: 15
+  lambda:
+    attach: [0.0, 0.004, 0.008, 0.016, 0.024, 0.04, 0.055, 0.0865, 0.118, 0.181, 0.244, 0.37, 0.496, 0.748, 1.0]
+    release: [1.0, 0.748, 0.496, 0.37, 0.244, 0.181, 0.118, 0.0865, 0.055, 0.04, 0.024, 0.016, 0.008, 0.004, 0.0]
+  target:
+    pull: 24.0
+  system:
+    waters: 2200
+    model: "TIP3P"

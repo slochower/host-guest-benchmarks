@@ -1,0 +1,22 @@
+state:
+  temperature: 278 K
+  pressure: 1 atm
+  pH: 11.5
+
+substance:
+  name: "4-Bromo-1-adamantanecarboxylic acid"
+  SMILES: "BrC1[C@H]2CC3(C(=O)[O-])C[C@@H]1CC(C3)C2"
+  buffer:
+    - "OP(=O)(O)[O-].[Na+]": 0.05 molar
+
+measurement:
+  technique: ITC
+  delta_G: -39.20 kJ/mol
+  delta_G_uncertainty: 0.04 kJ/mol
+  stoichiometry: "1:1"
+
+provenance:
+  comment: "Table 1"
+  doi: 10.1007/s10822-016-9974-4
+
+unusual: False

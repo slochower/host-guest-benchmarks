@@ -1,0 +1,22 @@
+state:
+  temperature: 298 K
+  pressure: 1 atm
+  pH: 7.4
+
+substance:
+  name: "(1R,2S,4R)-1,7,7-trimethylbicyclo[2.2.1]heptan-2-amine)"
+  SMILES: "C[C@@]12CC[C@@H](C1(C)C)C[C@@H]2[NH3+]"
+  buffer:
+  - B1(OB2OB(OB(O1)O2)O)O.[Na].[Na]: 0.025 molar
+
+measurement:
+  technique: NMR
+  delta_G: -34.23 kJ/mol
+  delta_G_uncertainty: 0.21 kJ/mol
+  stoichiometry: '1:1'
+
+provenance:
+  comment: Table 1
+  doi: 10.1007/s10822-018-0170-6
+
+unusual: false
