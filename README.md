@@ -6,8 +6,8 @@ A repository of host-guest complexes available for benchmarking force fields use
 ![US Patent 664824](tap.png)
 
 ## Host-Guest Complexes
-Taproom includes the following host-guest complexes (131 in total) with YAML files containing information necessary to 
-perform free energy calculation with the attach-pull-release (APR) method.
+Taproom includes the following host-guest complexes (115 in total) with YAML files containing information necessary to 
+perform free energy calculation using the attach-pull-release (APR) method.
 
 * [`alpha-cyclodextrin`](taproom/systems/acd):
     * Data set from [Rekharsky et al.](https://pubs.acs.org/doi/abs/10.1021/jp962715n) - 22 host-guest complexes
@@ -16,9 +16,10 @@ perform free energy calculation with the attach-pull-release (APR) method.
     * Data set from [Rekharsky et al.](https://pubs.acs.org/doi/abs/10.1021/jp962715n) - 21 host-guest complexes
     * bCD--R-rimantadine from [SAMPL7](https://github.com/samplchallenges/SAMPL7/tree/master/host_guest/cyclodextrin_derivatives)
     * host key = `bcd`
-* `cyclodextrin derivatives`:
+<!--- * `cyclodextrin derivatives`:
     * [SAMPL7](https://github.com/samplchallenges/SAMPL7/tree/master/host_guest/cyclodextrin_derivatives) - 16 host-guest complexes (2 guest molecules with 8 host molecules)
     * host key = `[mgl8, mgl9, mgl19, mgl23, mgl24, mgl34, mgl35, mgl36]`
+--->
 * [`cucurbit[7]uril`](taproom/systems/cb7):
     * [SAMPL4](https://pubmed.ncbi.nlm.nih.gov/24599514/) - 14 host-guest complexes
     * host key = `cb7`
@@ -67,7 +68,7 @@ MIT. See [License](LICENSE) for more information.
 
 ## Copyright
 
-Copyright (c) 2021, Open Force Field Consortium
+Copyright (c) 2022, Open Force Field Consortium
 
 
 ## Contributors
