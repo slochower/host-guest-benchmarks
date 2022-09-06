@@ -5,7 +5,7 @@ state:
 
 substance:
   name: 1-adamantylazanium
-  SMILES: "C1C2CC3CC1CC(C2)(C3)[NH3+]"
+  SMILES: "C1[C@@H]2CC3C[C@H]1CC3(C2)[NH3+]"
   buffer:
     - "B1(OB2OB(OB(O1)O2)O)O.[Na].[Na]": 0.01 molar
 
