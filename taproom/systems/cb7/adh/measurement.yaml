@@ -1,0 +1,22 @@
+state:
+  temperature: 298 K
+  pressure: 1 atm
+  pH: 9.2
+
+substance:
+  name: 1-adamantanol
+  SMILES: "OC12CC3CC(CC(C3)C1)C2"
+
+measurement:
+  technique: ITC
+  delta_G: -58.99 kJ/mol
+  delta_G_uncertainty: 0.84 kJ/mol
+  delta_H: -79.50 kJ/mol
+  delta_H_uncertainty: 1.67 kJ/mol
+  stoichiometry: "1:1"
+
+provenance:
+  comment: "Table S1"
+  doi: 10.1021/ja109904u
+
+unusual: False
