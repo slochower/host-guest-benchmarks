@@ -10,7 +10,7 @@ aliases:
     - D2: :DM2
     - D3: :DM3
     - G1: :TDZ@C14
-    - G2: :TDZ@C23
+    - G2: :TDZ@C3
 restraints:
   guest:
     - restraint:
