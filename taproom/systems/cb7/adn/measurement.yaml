@@ -1,0 +1,24 @@
+state:
+  temperature: 298 K
+  pressure: 1 atm
+  pH: 9.2
+
+substance:
+  name: 1-adamantylamine
+  SMILES: "C1C2CC3CC1CC(C2)(C3)[NH3+]"
+  buffer:
+    - "B1(OB2OB(OB(O1)O2)O)O.[Na].[Na]": 0.01 molar
+
+measurement:
+  technique: NMR
+  delta_G: -81.17 kJ/mol
+  delta_G_uncertainty: 0.42 kJ/mol
+  delta_H: -80.75 kJ/mol
+  delta_H_uncertainty: 1.67 kJ/mol
+  stoichiometry: "1:1"
+
+provenance:
+  comment: "Table S1"
+  doi: 10.1021/ja109904u
+
+unusual: False
