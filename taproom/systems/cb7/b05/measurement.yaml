@@ -1,16 +1,14 @@
 state:
-  temperature: 298 K
+  temperature: 298.15 K
   pressure: 1 atm
-  pH: 9.2
+  pH: 7.0
 
 substance:
   name: 1,4-bis(aminomethyl)bicyclo[2.2.2]octane
   SMILES: "C1CC2(CCC1(CC2)C[NH3+])C[NH3+]"
-  buffer:
-    - "B1(OB2OB(OB(O1)O2)O)O.[Na].[Na]": 0.01 molar
 
 measurement:
-  technique: NMR
+  technique: ITC
   delta_G: -81.59 kJ/mol
   delta_G_uncertainty: 0.84 kJ/mol
   delta_H: -65.27 kJ/mol

@@ -1,16 +1,14 @@
 state:
-  temperature: 298 K
+  temperature: 298.15 K
   pressure: 1 atm
-  pH: 9.2
+  pH: 7.0
 
 substance:
   name: 1,4-bis(hydroxylmethyl)bicyclo[2.2.2]octane
   SMILES: "C1CC2(CCC1(CC2)CO)CO"
-  buffer:
-    - "B1(OB2OB(OB(O1)O2)O)O.[Na].[Na]": 0.01 molar
 
 measurement:
-  technique: NMR
+  technique: ITC
   delta_G: -56.07 kJ/mol
   delta_G_uncertainty: 0.42 kJ/mol
   delta_H: -66.11 kJ/mol

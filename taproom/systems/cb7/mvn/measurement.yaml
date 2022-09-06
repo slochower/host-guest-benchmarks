@@ -1,5 +1,5 @@
 state:
-  temperature: 298 K
+  temperature: 298.15 K
   pressure: 1 atm
   pH: 7.0
 
@@ -7,7 +7,7 @@ substance:
   name: 1-methyl-4-(1-methylpyridin-1-ium-4-yl)pyridin-1-ium
   SMILES: "C[n+]1ccc(cc1)c2cc[n+](cc2)C"
   buffer:
-    - "B1(OB2OB(OB(O1)O2)O)O.[Na].[Na]": 0.01 molar
+    - "B1(OB2OB(OB(O1)O2)O)O.[Na].[Na]": 0.05 molar
 
 measurement:
   technique: NMR
