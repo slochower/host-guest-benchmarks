@@ -6,7 +6,7 @@ A repository of host-guest complexes available for benchmarking force fields use
 ![US Patent 664824](tap.png)
 
 ## Host-Guest Complexes
-Taproom includes the following host-guest complexes (123 in total) with YAML files containing information necessary to 
+Taproom includes the following host-guest complexes (124 in total) with YAML files containing information necessary to 
 perform free energy calculation using the attach-pull-release (APR) method.
 
 * [`alpha-cyclodextrin`](taproom/systems/acd):
@@ -21,9 +21,9 @@ perform free energy calculation using the attach-pull-release (APR) method.
     * host key = `[mgl8, mgl9, mgl19, mgl23, mgl24, mgl34, mgl35, mgl36]`
 --->
 * [`cucurbit[7]uril`](taproom/systems/cb7):
-    * [SAMPL3](https://link.springer.com/article/10.1007/s10822-012-9554-1) - 2 host-guest complexes  
+    * [SAMPL3](https://link.springer.com/article/10.1007/s10822-012-9554-1) - 2 host-guest complexes  (g8, g9) 
     * [SAMPL4](https://pubmed.ncbi.nlm.nih.gov/24599514/) - 14 host-guest complexes
-    * A1, A2, B2, B5, B11 from [Moghaddam et al.](https://pubs.acs.org/doi/abs/10.1021/ja109904u)
+    * A1, A2, A5, B2, B5, B11 from [Moghaddam et al.](https://pubs.acs.org/doi/abs/10.1021/ja109904u)
     * 1 host-guest complex from [Kim et al.](https://www.pnas.org/doi/full/10.1073/pnas.062656699)
     * host key = `cb7`
 * [`cucurbit[8]uril`](taproom/systems/cb8):
