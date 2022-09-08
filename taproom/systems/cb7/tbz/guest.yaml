@@ -1,6 +1,6 @@
 name: tbz
 structure: tbz.mol2
-complex: cb7-tdz.pdb
+complex: cb7-tbz.pdb
 net_charge: +2
 data_set:
   SAMPL: 3
