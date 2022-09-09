@@ -1,0 +1,22 @@
+state:
+  temperature: 298.15 K
+  pressure: 1 atm
+  pH: 7.0
+
+substance:
+  name: 1,4-bis(hydroxylmethyl)bicyclo[2.2.2]octane
+  SMILES: "C1CC2(CCC1(CC2)CO)CO"
+
+measurement:
+  technique: ITC
+  delta_G: -56.07 kJ/mol
+  delta_G_uncertainty: 0.42 kJ/mol
+  delta_H: -66.11 kJ/mol
+  delta_H_uncertainty: 0.84 kJ/mol
+  stoichiometry: "1:1"
+
+provenance:
+  comment: "Table S1"
+  doi: 10.1021/ja109904u
+
+unusual: False

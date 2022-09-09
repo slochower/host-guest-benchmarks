@@ -1,0 +1,22 @@
+state:
+  temperature: 298.15 K
+  pressure: 1 atm
+  pH: 7.0
+
+substance:
+  name: 1,4-bis(aminomethyl)bicyclo[2.2.2]octane
+  SMILES: "C1CC2(CCC1(CC2)C[NH3+])C[NH3+]"
+
+measurement:
+  technique: ITC
+  delta_G: -81.59 kJ/mol
+  delta_G_uncertainty: 0.84 kJ/mol
+  delta_H: -65.27 kJ/mol
+  delta_H_uncertainty: 1.67 kJ/mol
+  stoichiometry: "1:1"
+
+provenance:
+  comment: "Table S1"
+  doi: 10.1021/ja109904u
+
+unusual: False

@@ -1,16 +1,16 @@
-name: adz
-structure: adz.mol2
-complex: cb7-adz.pdb
+name: tbz
+structure: tbz.mol2
+complex: cb8-tbz.pdb
+net_charge: +2
 data_set:
-  SAMPL: 4
-  guest_id: C13
-net_charge: +1
+  SAMPL: 3
+  guest_id: G8
 aliases:
     - D1: :DM1
     - D2: :DM2
     - D3: :DM3
-    - G1: :ADZ@C1
-    - G2: :ADZ@N1
+    - G1: :TBZ@N3
+    - G2: :TBZ@N1
 restraints:
   guest:
     - restraint:
@@ -44,61 +44,69 @@ restraints:
 
   wall_restraints:
     - restraint:
-        atoms: ":CB7@C15 G1"
+        atoms: ":CB8@C2 G1"
         force_constant: 50.0
-        target: 13.5
+        target: 15.0
     - restraint:
-        atoms: ":CB7@C17 G1"
+        atoms: ":CB8@C4 G1"
         force_constant: 50.0
-        target: 13.5
+        target: 15.0
     - restraint:
-        atoms: ":CB7@C19 G1"
+        atoms: ":CB8@C6 G1"
         force_constant: 50.0
-        target: 13.5
+        target: 15.0
     - restraint:
-        atoms: ":CB7@C20 G1"
+        atoms: ":CB8@C8 G1"
         force_constant: 50.0
-        target: 13.5
+        target: 15.0
     - restraint:
-        atoms: ":CB7@C22 G1"
+        atoms: ":CB8@C10 G1"
         force_constant: 50.0
-        target: 13.5
+        target: 15.0
     - restraint:
-        atoms: ":CB7@C23 G1"
+        atoms: ":CB8@C12 G1"
         force_constant: 50.0
-        target: 13.5
+        target: 15.0
     - restraint:
-        atoms: ":CB7@C25 G1"
+        atoms: ":CB8@C14 G1"
         force_constant: 50.0
-        target: 13.5
+        target: 15.0
     - restraint:
-        atoms: ":CB7@C26 G1"
+        atoms: ":CB8@C16 G1"
         force_constant: 50.0
-        target: 13.5
+        target: 15.0
     - restraint:
-        atoms: ":CB7@C28 G1"
+        atoms: ":CB8@C18 G1"
         force_constant: 50.0
-        target: 13.5
+        target: 15.0
     - restraint:
-        atoms: ":CB7@C29 G1"
+        atoms: ":CB8@C20 G1"
         force_constant: 50.0
-        target: 13.5
+        target: 15.0
     - restraint:
-        atoms: ":CB7@C31 G1"
+        atoms: ":CB8@C22 G1"
         force_constant: 50.0
-        target: 13.5
+        target: 15.0
     - restraint:
-        atoms: ":CB7@C32 G1"
+        atoms: ":CB8@C24 G1"
         force_constant: 50.0
-        target: 13.5
+        target: 15.0
     - restraint:
-        atoms: ":CB7@C34 G1"
+        atoms: ":CB8@C26 G1"
         force_constant: 50.0
-        target: 13.5
+        target: 15.0
     - restraint:
-        atoms: ":CB7@C35 G1"
+        atoms: ":CB8@C28 G1"
         force_constant: 50.0
-        target: 13.5
+        target: 15.0
+    - restraint:
+        atoms: ":CB8@C31 G1"
+        force_constant: 50.0
+        target: 15.0
+    - restraint:
+        atoms: ":CB8@C32 G1"
+        force_constant: 50.0
+        target: 15.0
 
 symmetry_correction:
   restraints:

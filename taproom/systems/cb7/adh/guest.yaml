@@ -1,16 +1,13 @@
-name: adz
-structure: adz.mol2
-complex: cb7-adz.pdb
-data_set:
-  SAMPL: 4
-  guest_id: C13
-net_charge: +1
+name: adh
+structure: adh.mol2
+complex: cb7-adh.pdb
+net_charge: 0
 aliases:
     - D1: :DM1
     - D2: :DM2
     - D3: :DM3
-    - G1: :ADZ@C1
-    - G2: :ADZ@N1
+    - G1: :ADH@C1
+    - G2: :ADH@C8
 restraints:
   guest:
     - restraint:
