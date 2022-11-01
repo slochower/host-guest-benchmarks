@@ -1,7 +1,7 @@
 name: oah
 structure: oah.mol2
 resname: OAH
-net_charge: -8.0
+net_charge: -8.0e
 aliases:
   - D1: ":DM1"
   - D2: ":DM2"
@@ -13,71 +13,71 @@ restraints:
   static:
     - restraint:
         atoms: D1 H1
-        force_constant: 5.0
+        force_constant: 5.0 * kilocalorie / mole / angstrom**2
     - restraint:
         atoms: D2 D1 H1
-        force_constant: 100.0
+        force_constant: 100.0 * kilocalorie / mole / radian**2
     - restraint:
         atoms: D3 D2 D1 H1
-        force_constant: 100.0
+        force_constant: 100.0 * kilocalorie / mole / radian**2
     - restraint:
         atoms: D1 H1 H2
-        force_constant: 100.0
+        force_constant: 100.0 * kilocalorie / mole / radian**2
     - restraint:
         atoms: D2 D1 H1 H2
-        force_constant: 100.0
+        force_constant: 100.0 * kilocalorie / mole / radian**2
     - restraint:
         atoms: D1 H1 H2 H3
-        force_constant: 100.0
+        force_constant: 100.0 * kilocalorie / mole / radian**2
   conformational:
     - restraint:
         atoms: ":OAH@O13 :OAH@O18"
-        force_constant: 25.0
-        target: 15.0
+        force_constant: 25.0 * kilocalorie / mole / angstrom**2
+        target: 15.0 * angstrom
     - restraint:
         atoms: ":OAH@O14 :OAH@O17"
-        force_constant: 25.0
-        target: 15.0
+        force_constant: 25.0 * kilocalorie / mole / angstrom**2
+        target: 15.0 * angstrom
     - restraint:
         atoms: ":OAH@O15 :OAH@O16"
-        force_constant: 25.0
-        target: 15.0
+        force_constant: 25.0 * kilocalorie / mole / angstrom**2
+        target: 15.0 * angstrom
     - restraint:
         atoms: ":OAH@O19 :OAH@O20"
-        force_constant: 25.0
-        target: 15.0
+        force_constant: 25.0 * kilocalorie / mole / angstrom**2
+        target: 15.0 * angstrom
     - restraint:
         atoms: ":OAH@C49 :OAH@C62"
-        force_constant: 25.0
-        target: 15.0
+        force_constant: 25.0 * kilocalorie / mole / angstrom**2
+        target: 15.0 * angstrom
     - restraint:
         atoms: ":OAH@C50 :OAH@C61"
-        force_constant: 25.0
-        target: 15.0
+        force_constant: 25.0 * kilocalorie / mole / angstrom**2
+        target: 15.0 * angstrom
     - restraint:
         atoms: ":OAH@C55 :OAH@C68"
-        force_constant: 25.0
-        target: 15.0
+        force_constant: 25.0 * kilocalorie / mole / angstrom**2
+        target: 15.0 * angstrom
     - restraint:
         atoms: ":OAH@C56 :OAH@C67"
-        force_constant: 25.0
-        target: 15.0
+        force_constant: 25.0 * kilocalorie / mole / angstrom**2
+        target: 15.0 * angstrom
     - restraint:
         atoms: ":OAH@C69 :OAH@C91"
-        force_constant: 25.0
-        target: 15.0
+        force_constant: 25.0 * kilocalorie / mole / angstrom**2
+        target: 15.0 * angstrom
     - restraint:
         atoms: ":OAH@C74 :OAH@C96"
-        force_constant: 25.0
-        target: 15.0
+        force_constant: 25.0 * kilocalorie / mole / angstrom**2
+        target: 15.0 * angstrom
     - restraint:
         atoms: ":OAH@C75 :OAH@C81"
-        force_constant: 25.0
-        target: 15.0
+        force_constant: 25.0 * kilocalorie / mole / angstrom**2
+        target: 15.0 * angstrom
     - restraint:
         atoms: ":OAH@C79 :OAH@C85"
-        force_constant: 25.0
-        target: 15.0
+        force_constant: 25.0 * kilocalorie / mole / angstrom**2
+        target: 15.0 * angstrom
 
 calculation:
   windows:
@@ -88,7 +88,7 @@ calculation:
     attach: [0.0, 0.004, 0.008, 0.016, 0.024, 0.04, 0.055, 0.0865, 0.118, 0.181, 0.244, 0.37, 0.496, 0.748, 1.0]
     release: [1.0, 0.748, 0.496, 0.37, 0.244, 0.181, 0.118, 0.0865, 0.055, 0.04, 0.024, 0.016, 0.008, 0.004, 0.0]
   target:
-    pull: 24.0
+    pull: 24.0 * angstrom
   system:
     waters: 3000
     model: "TIP3P"
