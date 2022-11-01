@@ -1,7 +1,7 @@
 name: oct
 structure: oct.mol2
 complex: a-oct.pdb
-net_charge: -1
+net_charge: -1e
 aliases:
     - D1: :DM1
     - D2: :DM2
@@ -13,87 +13,88 @@ restraints:
     - restraint:
         atoms: D1 G1
         attach:
-          # During the attach phase, the `force_constant` argument is the
+          # During the 'attach' phase, the `force_constant` argument is the
           # final force constant.
-          force_constant: 5.0
-          target: 6.0
+          force_constant: 5.0 * kilocalorie / mole / angstrom**2
+          target: 6.0 * angstrom
         pull:
-          # During the pull phase, the `target` argument is the final value of
+          # During the 'pull' phase, the `target` argument is the final value of
           # the restraint.
-          force_constant: 5.0
-          target: 24.0
+          force_constant: 5.0 * kilocalorie / mole / angstrom**2
+          target: 24.0 * angstrom
     - restraint:
         atoms: D2 D1 G1
         attach:
-          force_constant: 100.0
-          target: 180.0
+          force_constant: 100.0 * kilocalorie / mole / radians**2
+          target: 180.0 * degrees
         pull:
-          force_constant: 100.0
-          target: 180.0
+          force_constant: 100.0 * kilocalorie / mole / radians**2
+          target: 180.0 * degrees
     - restraint:
         atoms: D1 G1 G2
         attach:
-          force_constant: 100.0
-          target: 180.0
+          force_constant: 100.0 * kilocalorie / mole / radians**2
+          target: 180.0 * degrees
         pull:
-          force_constant: 100.0
-          target: 180.0
+          force_constant: 100.0 * kilocalorie / mole / radians**2
+          target: 180.0 * degrees
 
   wall_restraints:
     - restraint:
         atoms: ":1@O2 G1"
-        force_constant: 50.0
-        target: 9.3
+        force_constant: 50.0 * kilocalorie / mole / angstrom**2
+        target: 9.3 * angstrom
     - restraint:
         atoms: ":2@O2 G1"
-        force_constant: 50.0
-        target: 9.3
+        force_constant: 50.0 * kilocalorie / mole / angstrom**2
+        target: 9.3 * angstrom
     - restraint:
         atoms: ":3@O2 G1"
-        force_constant: 50.0
-        target: 9.3
+        force_constant: 50.0 * kilocalorie / mole / angstrom**2
+        target: 9.3 * angstrom
     - restraint:
         atoms: ":4@O2 G1"
-        force_constant: 50.0
-        target: 9.3
+        force_constant: 50.0 * kilocalorie / mole / angstrom**2
+        target: 9.3 * angstrom
     - restraint:
         atoms: ":5@O2 G1"
-        force_constant: 50.0
-        target: 9.3
+        force_constant: 50.0 * kilocalorie / mole / angstrom**2
+        target: 9.3 * angstrom
     - restraint:
         atoms: ":6@O2 G1"
-        force_constant: 50.0
-        target: 9.3
+        force_constant: 50.0 * kilocalorie / mole / angstrom**2
+        target: 9.3 * angstrom
     - restraint:
         atoms: ":1@O6 G1"
-        force_constant: 50.0
-        target: 11.3
+        force_constant: 50.0 * kilocalorie / mole / angstrom**2
+        target: 11.3 * angstrom
     - restraint:
         atoms: ":2@O6 G1"
-        force_constant: 50.0
-        target: 11.3
+        force_constant: 50.0 * kilocalorie / mole / angstrom**2
+        target: 11.3 * angstrom
     - restraint:
         atoms: ":3@O6 G1"
-        force_constant: 50.0
-        target: 11.3
+        force_constant: 50.0 * kilocalorie / mole / angstrom**2
+        target: 11.3 * angstrom
     - restraint:
         atoms: ":4@O6 G1"
-        force_constant: 50.0
+        force_constant: 50.0 * kilocalorie / mole / angstrom**2
         target: 11.3
     - restraint:
         atoms: ":5@O6 G1"
-        force_constant: 50.0
-        target: 11.3
+        force_constant: 50.0 * kilocalorie / mole / angstrom**2
+        target: 11.3 * angstrom
     - restraint:
         atoms: ":6@O6 G1"
-        force_constant: 50.0
-        target: 11.3
+        force_constant: 50.0 * kilocalorie / mole / angstrom**2
+        target: 11.3 * angstrom
 
 symmetry_correction:
   restraints:
-      - restraint:
+    - restraint:
         atoms: D2 G1 G2
-        force_constant: 200.0
+        force_constant: 200.0 * kilocalorie / mole / radian**2
+        target: 91 * degrees
   # Do not attempt to automatically correct for the symmetry restraint by adding -RT \ln (microstates).
   # Instead, we will apply the symmetry restraint, which locks in a particular binding orientation, and then
   # perform separate calculations.
