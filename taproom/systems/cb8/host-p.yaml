@@ -2,6 +2,7 @@ name: cb8
 structure:
   mol2: cb8.mol2
   sdf: cb8.sdf
+  pdb: cb8.pdb
 resname: CB8
 net_charge: 0e
 aliases:

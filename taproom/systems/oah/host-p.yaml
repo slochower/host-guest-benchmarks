@@ -2,6 +2,7 @@ name: oah
 structure:
   mol2: oah.mol2
   sdf: oah.sdf
+  pdb: oah.pdb
 resname: OAH
 net_charge: -8.0e
 aliases:

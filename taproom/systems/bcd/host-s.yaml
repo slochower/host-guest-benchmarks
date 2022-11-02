@@ -2,6 +2,7 @@ name: bcd
 structure:
   mol2: bcd.mol2
   sdf: bcd.sdf
+  pdb: bcd.pdb
 monomer: MGO.mol2
 net_charge: 0e
 resname: MGO

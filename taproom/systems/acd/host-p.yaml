@@ -2,6 +2,7 @@ name: acd
 structure:
   mol2: acd.mol2
   sdf: acd.sdf
+  pdb: acd.pdb
 monomer: MGO.mol2
 net_charge: 0e
 resname: MGO
