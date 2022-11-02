@@ -1,5 +1,7 @@
 name: trz
-structure: trz.mol2
+structure:
+  mol2: trz.mol2
+  sdf: trz.sdf
 complex: oah-trz.pdb
 data_set:
   SAMPL: 5

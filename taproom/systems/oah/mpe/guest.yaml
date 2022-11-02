@@ -1,5 +1,7 @@
 name: mpe
-structure: mpe.mol2
+structure:
+  mol2: mpe.mol2
+  sdf: mpe.sdf
 complex: oah-mpe.pdb
 data_set:
   SAMPL: 6

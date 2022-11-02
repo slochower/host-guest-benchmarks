@@ -1,5 +1,7 @@
 name: chx
-structure: chx.mol2
+structure:
+  mol2: chx.mol2
+  sdf: chx.sdf
 complex: oah-chx.pdb
 data_set:
   SAMPL: 4

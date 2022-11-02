@@ -1,5 +1,7 @@
 name: c7c
-structure: c7c.mol2
+structure:
+  mol2: c7c.mol2
+  sdf: c7c.sdf
 complex: oah-c7c.pdb
 data_set:
   SAMPL: 4

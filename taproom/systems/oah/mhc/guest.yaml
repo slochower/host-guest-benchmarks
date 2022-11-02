@@ -1,5 +1,7 @@
 name: mhc
-structure: mhc.mol2
+structure:
+  mol2: mhc.mol2
+  sdf: mhc.sdf
 complex: oah-mhc.pdb
 data_set:
   SAMPL: 4

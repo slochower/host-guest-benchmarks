@@ -1,5 +1,7 @@
 name: ebn
-structure: ebn.mol2
+structure:
+  mol2: ebn.mol2
+  sdf: ebn.sdf
 complex: oah-ebn.pdb
 data_set:
   SAMPL: 4

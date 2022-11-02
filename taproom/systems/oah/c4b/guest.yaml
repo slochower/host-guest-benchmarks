@@ -1,5 +1,7 @@
 name: c4b
-structure: c4b.mol2
+structure:
+  mol2: c4b.mol2
+  sdf: c4b.sdf
 complex: oah-c4b.pdb
 data_set:
   SAMPL: 4
