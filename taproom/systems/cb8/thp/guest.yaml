@@ -1,5 +1,7 @@
 name: thp
-structure: thp.mol2
+structure:
+  mol2: thp.mol2
+  sdf: thp.sdf
 complex: cb8-thp.pdb
 data_set:
   SAMPL: 6

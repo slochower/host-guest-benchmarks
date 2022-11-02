@@ -1,5 +1,7 @@
 name: gtr
-structure: gtr.mol2
+structure:
+  mol2: gtr.mol2
+  sdf: gtr.sdf
 complex: cb8-gtr.pdb
 data_set:
   SAMPL: 6

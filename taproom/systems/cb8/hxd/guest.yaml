@@ -1,5 +1,7 @@
 iname: hxd
-structure: hxd.mol2
+structure:
+  mol2: hxd.mol2
+  sdf: hxd.sdf
 complex: cb8-hxd.pdb
 data_set:
   SAMPL: 6

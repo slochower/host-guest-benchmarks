@@ -1,5 +1,7 @@
 name: con
-structure: con.mol2
+structure:
+  mol2: con.mol2
+  sdf: con.sdf
 complex: cb8-con.pdb
 data_set:
   SAMPL: 8

@@ -1,5 +1,7 @@
 name: hmo
-structure: hmo.mol2
+structure:
+  mol2: hmo.mol2
+  sdf: hmo.sdf
 complex: cb8-hmo.pdb
 data_set:
   SAMPL: 8

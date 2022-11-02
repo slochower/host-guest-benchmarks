@@ -1,5 +1,7 @@
 iname: dpz
-structure: dpz.mol2
+structure:
+  mol2: dpz.mol2
+  sdf: dpz.sdf
 complex: cb8-dpz.pdb
 data_set:
   SAMPL: 6

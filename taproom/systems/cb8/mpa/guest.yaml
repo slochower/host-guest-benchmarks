@@ -1,5 +1,7 @@
 name: mpa
-structure: mpa.mol2
+structure:
+  mol2: mpa.mol2
+  sdf: mpa.sdf
 complex: cb8-mpa.pdb
 data_set:
   SAMPL: 6

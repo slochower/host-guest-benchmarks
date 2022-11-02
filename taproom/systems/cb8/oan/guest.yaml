@@ -1,5 +1,7 @@
 name: oan
-structure: oan.mol2
+structure:
+  mol2: oan.mol2
+  sdf: oan.sdf
 complex: cb8-oan.pdb
 data_set:
   SAMPL: 6
