@@ -6,7 +6,8 @@ Below are the specification for the `host`, `guest` and `measurement` YAML files
 - name (`str`):
 - structure (`dict`):
   - mol2 (`str`)
-  - sdf(`str`)
+  - sdf (`str`)
+  - pdb (`pdb`)
 - monomer (`str`, optional)
 - resname (`str`):
 - net_charge (`int`, `unit.Quantity`):
