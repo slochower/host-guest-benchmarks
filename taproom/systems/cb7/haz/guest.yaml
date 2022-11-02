@@ -1,5 +1,7 @@
 name: haz
-structure: haz.mol2
+structure:
+  mol2: haz.mol2
+  sdf: haz.sdf
 complex: cb7-haz.pdb
 data_set:
   SAMPL: 4

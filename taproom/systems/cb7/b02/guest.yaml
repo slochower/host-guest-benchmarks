@@ -1,5 +1,7 @@
 name: b02
-structure: b02.mol2
+structure:
+  mol2: b02.mol2
+  sdf: b02.sdf
 complex: cb7-b02.pdb
 net_charge: 0e
 aliases:

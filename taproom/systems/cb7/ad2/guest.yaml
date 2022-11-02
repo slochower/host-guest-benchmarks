@@ -1,5 +1,7 @@
 name: ad2
-structure: ad2.mol2
+structure:
+  mol2: ad2.mol2
+  sdf: ad2.sdf
 complex: cb7-ad2.pdb
 net_charge: +1e
 aliases:

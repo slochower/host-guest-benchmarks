@@ -1,5 +1,7 @@
 name: cb7
-structure: cb7.mol2
+structure:
+  mol2: cb7.mol2
+  sdf: cb7.sdf
 resname: CB7
 net_charge: 0e
 aliases:

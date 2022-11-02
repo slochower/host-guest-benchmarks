@@ -1,5 +1,7 @@
 name: b05
-structure: b05.mol2
+structure:
+  mol2: b05.mol2
+  sdf: b05.sdf
 complex: cb7-b05.pdb
 net_charge: +2e
 aliases:

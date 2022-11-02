@@ -1,5 +1,7 @@
 name: hpm
-structure: hpm.mol2
+structure:
+  mol2: hpm.mol2
+  sdf: hpm.sdf
 complex: cb7-hpm.pdb
 data_set:
   SAMPL: 4

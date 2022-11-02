@@ -1,5 +1,7 @@
 name: adh
-structure: adh.mol2
+structure:
+  mol2: adh.mol2
+  sdf: adh.sdf
 complex: cb7-adh.pdb
 net_charge: 0e
 aliases:

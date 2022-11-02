@@ -1,5 +1,7 @@
 name: chm
-structure: chm.mol2
+structure:
+  mol2: chm.mol2
+  sdf: chm.sdf
 complex: cb7-chm.pdb
 data_set:
   SAMPL: 4

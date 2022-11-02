@@ -1,5 +1,7 @@
 name: phm
-structure: phm.mol2
+structure:
+  mol2: phm.mol2
+  sdf: phm.sdf
 complex: cb7-phm.pdb
 data_set:
   SAMPL: 4

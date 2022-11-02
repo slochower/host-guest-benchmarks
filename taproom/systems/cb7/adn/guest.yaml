@@ -1,5 +1,7 @@
 name: adn
-structure: adn.mol2
+structure:
+  mol2: adn.mol2
+  sdf: adn.sdf
 complex: cb7-adn.pdb
 net_charge: +1e
 aliases:
