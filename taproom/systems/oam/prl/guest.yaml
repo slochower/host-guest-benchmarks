@@ -1,5 +1,7 @@
 name: prl
-structure: prl.mol2
+structure:
+  mol2: prl.mol2
+  sdf: prl.sdf
 complex: oam-prl.pdb
 data_set:
   SAMPL: 6

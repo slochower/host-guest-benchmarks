@@ -1,5 +1,7 @@
 name: m4p
-structure: m4p.mol2
+structure:
+  mol2: m4p.mol2
+  sdf: m4p.sdf
 complex: oam-m4p.pdb
 data_set:
   SAMPL: 6

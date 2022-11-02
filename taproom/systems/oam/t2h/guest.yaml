@@ -1,5 +1,7 @@
 name: t2h
-structure: t2h.mol2
+structure:
+  mol2: t2h.mol2
+  sdf: t2h.sdf
 complex: oam-t2h.pdb
 data_set:
   SAMPL: 6

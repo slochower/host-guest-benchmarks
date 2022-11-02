@@ -1,5 +1,7 @@
 name: hxa
-structure: hxa.mol2
+structure:
+  mol2: hxa.mol2
+  sdf: hxa.sdf
 complex: oam-hxa.pdb
 data_set:
   SAMPL: 5
