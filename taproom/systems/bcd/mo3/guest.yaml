@@ -1,5 +1,7 @@
 name: mo3
-structure: mo3.mol2
+structure:
+  mol2: mo3.mol2
+  sdf: mo3.sdf
 complex: b-mo3.pdb
 net_charge: -1e
 aliases:

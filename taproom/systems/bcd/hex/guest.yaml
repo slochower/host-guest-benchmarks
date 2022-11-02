@@ -1,5 +1,7 @@
 name: hex
-structure: hex.mol2
+structure:
+  mol2: hex.mol2
+  sdf: hex.sdf
 complex: b-hex.pdb
 net_charge: -1e
 aliases:
