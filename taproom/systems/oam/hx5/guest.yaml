@@ -1,5 +1,7 @@
 name: hx5
-structure: hx5.mol2
+structure:
+  mol2: hx5.mol2
+  sdf: hx5.sdf
 complex: oam-hx5.pdb
 data_set:
   SAMPL: 6

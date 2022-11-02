@@ -1,5 +1,7 @@
 name: hxm
-structure: hxm.mol2
+structure:
+  mol2: hxm.mol2
+  sdf: hxm.sdf
 complex: cb7-hxm.pdb
 data_set:
   SAMPL: 4

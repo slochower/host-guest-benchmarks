@@ -1,5 +1,7 @@
 name: cha
-structure: cha.mol2
+structure:
+  mol2: cha.mol2
+  sdf: cha.sdf
 complex: cb7-cha.pdb
 data_set:
   SAMPL: 4

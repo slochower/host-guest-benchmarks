@@ -1,5 +1,7 @@
 name: hx3
-structure: hx3.mol2
+structure:
+  mol2: hx3.mol2
+  sdf: hx3.sdf
 complex: a-hx3.pdb
 net_charge: -1e
 aliases:

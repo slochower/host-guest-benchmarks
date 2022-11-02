@@ -1,5 +1,7 @@
 name: adz
-structure: adz.mol2
+structure:
+  mol2: adz.mol2
+  sdf: adz.sdf
 complex: cb7-adz.pdb
 data_set:
   SAMPL: 4

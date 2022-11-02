@@ -1,5 +1,7 @@
 name: cpa
-structure: cpa.mol2
+structure:
+  mol2: cpa.mol2
+  sdf: cpa.sdf
 complex: oah-cpa.pdb
 data_set:
   SAMPL: 6

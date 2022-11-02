@@ -1,5 +1,7 @@
 name: mch
-structure: mch.mol2
+structure:
+  mol2: mch.mol2
+  sdf: mch.sdf
 complex: b-mch.pdb
 net_charge: 0e
 aliases:

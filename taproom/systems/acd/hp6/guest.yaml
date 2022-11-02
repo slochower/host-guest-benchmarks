@@ -1,5 +1,7 @@
 name: hp6
-structure: hp6.mol2
+structure:
+  mol2: hp6.mol2
+  sdf: hp6.sdf
 complex: a-hp6.pdb
 net_charge: -1e
 aliases:

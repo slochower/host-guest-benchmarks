@@ -1,5 +1,7 @@
 name: trd
-structure: trd.mol2
+structure:
+  mol2: trd.mol2
+  sdf: trd.sdf
 complex: cb8-trd.pdb
 data_set:
   SAMPL: 6

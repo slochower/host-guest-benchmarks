@@ -1,5 +1,7 @@
 name: crl
-structure: crl.mol2
+structure:
+  mol2: crl.mol2
+  sdf: crl.sdf
 complex: oam-crl.pdb
 data_set:
   SAMPL: 6

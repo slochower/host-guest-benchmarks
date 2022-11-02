@@ -1,5 +1,7 @@
 name: bam
-structure: bam.mol2
+structure:
+  mol2: bam.mol2
+  sdf: bam.sdf
 complex: a-bam.pdb
 net_charge: +1e
 aliases:

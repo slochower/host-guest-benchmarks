@@ -1,5 +1,7 @@
 name: mth
-structure: mth.mol2
+structure:
+  mol2: mth.mol2
+  sdf: mth.sdf
 complex: cb8-mth.pdb
 data_set:
   SAMPL: 8

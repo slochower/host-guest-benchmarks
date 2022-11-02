@@ -1,5 +1,7 @@
 name: axm
-structure: axm.mol2
+structure:
+  mol2: axm.mol2
+  sdf: axm.sdf
 complex: cb7-axm.pdb
 data_set:
   SAMPL: 4

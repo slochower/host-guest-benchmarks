@@ -1,5 +1,7 @@
 name: rim
-structure: rim.mol2
+structure:
+  mol2: rim.mol2
+  sdf: rim.sdf
 complex: b-rim.pdb
 net_charge: +1e
 aliases:

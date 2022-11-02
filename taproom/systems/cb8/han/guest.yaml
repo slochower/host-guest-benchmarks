@@ -1,5 +1,7 @@
 name: han
-structure: han.mol2
+structure:
+  mol2: han.mol2
+  sdf: han.sdf
 complex: cb8-han.pdb
 data_set:
   SAMPL: 6

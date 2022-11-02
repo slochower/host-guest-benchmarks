@@ -1,5 +1,7 @@
 name: hxy
-structure: hxy.mol2
+structure:
+  mol2: hxy.mol2
+  sdf: hxy.sdf
 complex: oah-hxy.pdb
 data_set:
   SAMPL: 5

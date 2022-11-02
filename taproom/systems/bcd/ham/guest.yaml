@@ -1,5 +1,7 @@
 name: ham
-structure: ham.mol2
+structure:
+  mol2: ham.mol2
+  sdf: ham.sdf
 complex: b-ham.pdb
 net_charge: +1e
 aliases:

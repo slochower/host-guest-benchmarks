@@ -1,5 +1,7 @@
 name: tbz
-structure: tbz.mol2
+structure:
+  mol2: tbz.mol2
+  sdf: tbz.sdf
 complex: cb7-tbz.pdb
 net_charge: +2e
 data_set:

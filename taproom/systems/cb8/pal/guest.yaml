@@ -1,5 +1,7 @@
 name: pal
-structure: pal.mol2
+structure:
+  mol2: pal.mol2
+  sdf: pal.sdf
 complex: cb8-pal.pdb
 data_set:
   SAMPL: 6

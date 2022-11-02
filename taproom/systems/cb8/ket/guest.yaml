@@ -1,5 +1,7 @@
 name: ket
-structure: ket.mol2
+structure:
+  mol2: ket.mol2
+  sdf: ket.sdf
 complex: cb8-ket.pdb
 data_set:
   SAMPL: 8

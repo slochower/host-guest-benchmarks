@@ -1,5 +1,7 @@
 name: hx2
-structure: hx2.mol2
+structure:
+  mol2: hx2.mol2
+  sdf: hx2.sdf
 complex: a-hx2.pdb
 net_charge: -1e
 aliases:

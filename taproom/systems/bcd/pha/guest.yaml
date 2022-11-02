@@ -1,5 +1,7 @@
 name: pha
-structure: pha.mol2
+structure:
+  mol2: pha.mol2
+  sdf: pha.sdf
 complex: b-pha.pdb
 net_charge: -1e
 aliases:

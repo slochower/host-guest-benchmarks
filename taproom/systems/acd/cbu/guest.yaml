@@ -1,5 +1,7 @@
 name: cbu
-structure: cbu.mol2
+structure:
+  mol2: cbu.mol2
+  sdf: cbu.sdf
 complex: a-cbu.pdb
 net_charge: 0e
 aliases:

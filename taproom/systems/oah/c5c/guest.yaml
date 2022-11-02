@@ -1,5 +1,7 @@
 name: c5c
-structure: c5c.mol2
+structure:
+  mol2: c5c.mol2
+  sdf: c5c.sdf
 complex: oah-c5c.pdb
 data_set:
   SAMPL: 4

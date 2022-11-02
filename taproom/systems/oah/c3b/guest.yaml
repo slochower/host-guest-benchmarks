@@ -1,5 +1,7 @@
 name: c3b
-structure: c3b.mol2
+structure:
+  mol2: c3b.mol2
+  sdf: c3b.sdf
 complex: oah-c3b.pdb
 data_set:
   SAMPL: 4

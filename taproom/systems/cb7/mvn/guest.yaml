@@ -1,5 +1,7 @@
 name: mvn
-structure: mvn.mol2
+structure:
+  mol2: mvn.mol2
+  sdf: mvn.sdf
 complex: cb7-mvn.pdb
 net_charge: +2e
 aliases:

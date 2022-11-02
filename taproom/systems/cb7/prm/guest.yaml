@@ -1,5 +1,7 @@
 name: prm
-structure: prm.mol2
+structure:
+  mol2: prm.mol2
+  sdf: prm.sdf
 complex: cb7-prm.pdb
 data_set:
   SAMPL: 4

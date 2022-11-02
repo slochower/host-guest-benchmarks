@@ -1,5 +1,7 @@
 name: mp4
-structure: mp4.mol2
+structure:
+  mol2: mp4.mol2
+  sdf: mp4.sdf
 complex: b-mp4.pdb
 net_charge: -1e
 aliases:

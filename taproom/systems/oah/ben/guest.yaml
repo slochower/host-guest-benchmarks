@@ -1,5 +1,7 @@
 name: ben
-structure: ben.mol2
+structure:
+  mol2: ben.mol2
+  sdf: ben.sdf
 complex: oah-ben.pdb
 data_set:
   SAMPL: 4

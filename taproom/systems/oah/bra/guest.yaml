@@ -1,5 +1,7 @@
 name: bra
-structure: bra.mol2
+structure:
+  mol2: bra.mol2
+  sdf: bra.sdf
 complex: oah-bra.pdb
 data_set:
   SAMPL: 5

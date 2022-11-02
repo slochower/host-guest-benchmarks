@@ -1,5 +1,7 @@
 name: qui
-structure: qui.mol2
+structure:
+  mol2: qui.mol2
+  sdf: qui.sdf
 complex: cb8-qui.pdb
 data_set:
   SAMPL: 6

@@ -1,5 +1,7 @@
 name: m4c
-structure: m4c.mol2
+structure:
+  mol2: m4c.mol2
+  sdf: m4c.sdf
 complex: b-m4c.pdb
 net_charge: 0e
 aliases:

@@ -1,5 +1,7 @@
 name: mbn
-structure: mbn.mol2
+structure:
+  mol2: mbn.mol2
+  sdf: mdn.sdf
 complex: oah-mbn.pdb
 data_set:
   SAMPL: 4

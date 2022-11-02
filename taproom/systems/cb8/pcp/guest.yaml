@@ -1,5 +1,7 @@
 name: pcp
-structure: pcp.mol2
+structure:
+  mol2: pcp.mol2
+  sdf: pcp.sdf
 complex: cb8-pcp.pdb
 data_set:
   SAMPL: 8

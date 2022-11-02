@@ -1,5 +1,7 @@
 name: chp
-structure: chp.mol2
+structure:
+  mol2: chp.mol2
+  sdf: chp.sdf
 complex: a-chp.pdb
 net_charge: 0e
 aliases:

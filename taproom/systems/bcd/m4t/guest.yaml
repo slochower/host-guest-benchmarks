@@ -1,5 +1,7 @@
 name: m4t
-structure: m4t.mol2
+structure:
+  mol2: m4t.mol2
+  sdf: m4t.sdf
 complex: b-m4t.pdb
 net_charge: 0e
 aliases:

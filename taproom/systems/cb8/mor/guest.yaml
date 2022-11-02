@@ -1,5 +1,7 @@
 name: mor
-structure: mor.mol2
+structure:
+  mol2: mor.mol2
+  sdf: mor.sdf
 complex: cb8-mor.pdb
 data_set:
   SAMPL: 8

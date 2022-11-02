@@ -1,5 +1,7 @@
 name: pb4
-structure: pb4.mol2
+structure:
+  mol2: pb4.mol2
+  sdf: pb4.sdf
 complex: b-pb4.pdb
 net_charge: -1e
 aliases:

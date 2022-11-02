@@ -1,5 +1,7 @@
 name: cbn
-structure: cbn.mol2
+structure:
+  mol2: cbn.mol2
+  sdf: cbn.sdf
 complex: oam-cbn.pdb
 data_set:
   SAMPL: 5

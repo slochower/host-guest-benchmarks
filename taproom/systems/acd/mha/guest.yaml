@@ -1,5 +1,7 @@
 name: mha
-structure: mha.mol2
+structure:
+  mol2: mha.mol2
+  sdf: mha.sdf
 complex: a-mha.pdb
 net_charge: +1e
 aliases:

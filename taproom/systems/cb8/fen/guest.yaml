@@ -1,5 +1,7 @@
 name: fen
-structure: fen.mol2
+structure:
+  mol2: fen.mol2
+  sdf: fen.sdf
 complex: cb8-fen.pdb
 data_set:
   SAMPL: 8

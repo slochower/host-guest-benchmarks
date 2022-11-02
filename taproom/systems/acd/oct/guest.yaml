@@ -1,5 +1,7 @@
 name: oct
-structure: oct.mol2
+structure:
+  mol2: oct.mol2
+  sdf: oct.sdf
 complex: a-oct.pdb
 net_charge: -1e
 aliases:

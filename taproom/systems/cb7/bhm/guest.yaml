@@ -1,5 +1,7 @@
 name: bhm
-structure: bhm.mol2
+structure:
+  mol2: bhm.mol2
+  sdf: bhm.sdf
 complex: cb7-bhm.pdb
 data_set:
   SAMPL: 4

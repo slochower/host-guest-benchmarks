@@ -1,5 +1,7 @@
 name: c6m
-structure: c6m.mol2
+structure:
+  mol2: c6m.mol2
+  sdf: c6m.sdf
 complex: cb7-c6m.pdb
 data_set:
   SAMPL: 4

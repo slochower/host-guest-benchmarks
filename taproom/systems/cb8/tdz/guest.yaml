@@ -1,5 +1,7 @@
 name: tdz
-structure: tdz.mol2
+structure:
+  mol2: tdz.mol2
+  sdf: tdz.sdf
 complex: cb8-tdz.pdb
 net_charge: +2e
 data_set:

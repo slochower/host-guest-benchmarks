@@ -1,5 +1,7 @@
 name: dan
-structure: dan.mol2
+structure:
+  mol2: dan.mol2
+  sdf: dan.sdf
 complex: cb8-dan.pdb
 data_set:
   SAMPL: 6

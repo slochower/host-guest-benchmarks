@@ -1,5 +1,7 @@
 name: esc
-structure: esc.mol2
+structure:
+  mol2: esc.mol2
+  sdf: esc.sdf
 complex: cb8-esc.pdb
 data_set:
   SAMPL: 6

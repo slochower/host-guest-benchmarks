@@ -1,5 +1,7 @@
 name: pnt
-structure: pnt.mol2
+structure:
+  mol2: pnt.mol2
+  sdf: pnt.sdf
 complex: a-pnt.pdb
 net_charge: -1e
 aliases:

@@ -1,5 +1,7 @@
 name: hep
-structure: hep.mol2
+structure:
+  mol2: hep.mol2
+  sdf: hep.sdf
 complex: a-hep.pdb
 net_charge: -1e
 aliases:

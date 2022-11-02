@@ -1,5 +1,7 @@
 name: b11
-structure: b11.mol2
+structure:
+  mol2: b11.mol2
+  sdf: b11.sdf
 complex: cb7-b11.pdb
 net_charge: +4e
 aliases:

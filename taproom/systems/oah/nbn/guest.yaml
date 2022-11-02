@@ -1,5 +1,7 @@
 name: nbn
-structure: nbn.mol2
+structure:
+  mol2: nbn.mol2
+  sdf: nbn.sdf
 complex: oah-nbn.pdb
 data_set:
   SAMPL: 5

@@ -1,5 +1,7 @@
 name: but
-structure: but.mol2
+structure:
+  mol2: but.mol2
+  sdf: but.sdf
 complex: a-but.pdb
 net_charge: -1e
 aliases:

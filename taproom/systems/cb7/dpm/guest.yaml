@@ -1,5 +1,7 @@
 name: dpm
-structure: dpm.mol2
+structure:
+  mol2: dpm.mol2
+  sdf: dpm.sdf
 complex: cb7-dpm.pdb
 data_set:
   SAMPL: 4

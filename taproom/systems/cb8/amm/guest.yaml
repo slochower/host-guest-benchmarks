@@ -1,5 +1,7 @@
 name: amm
-structure: amm.mol2
+structure:
+  mol2: amm.mol2
+  sdf: amm.sdf
 complex: cb8-amm.pdb
 data_set:
   SAMPL: 6

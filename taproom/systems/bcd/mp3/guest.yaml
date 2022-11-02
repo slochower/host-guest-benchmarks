@@ -1,5 +1,7 @@
 name: mp3
-structure: mp3.mol2
+structure:
+  mol2: mp3.mol2
+  sdf: mp3.sdf
 complex: b-mp3.pdb
 net_charge: -1e
 aliases:

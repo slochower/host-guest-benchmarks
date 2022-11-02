@@ -1,5 +1,7 @@
 name: dpe
-structure: dpe.mol2
+structure:
+  mol2: dpe.mol2
+  sdf: dpe.sdf
 complex: oam-dpe.pdb
 data_set:
   SAMPL: 6

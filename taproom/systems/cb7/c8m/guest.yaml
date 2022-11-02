@@ -1,5 +1,7 @@
 name: c8m
-structure: c8m.mol2
+structure:
+  mol2: c8m.mol2
+  sdf: c8m.sdf
 complex: cb7-c8m.pdb
 data_set:
   SAMPL: 4
