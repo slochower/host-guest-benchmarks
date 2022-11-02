@@ -79,7 +79,7 @@ restraints:
     - restraint:
         atoms: ":4@O6 G1"
         force_constant: 50.0 * kilocalorie / mole / angstrom**2
-        target: 11.3
+        target: 11.3 * angstrom
     - restraint:
         atoms: ":5@O6 G1"
         force_constant: 50.0 * kilocalorie / mole / angstrom**2
