@@ -1,5 +1,7 @@
 name: mhp
-structure: mhp.mol2
+structure:
+  mol2: mhp.mol2
+  sdf: mhp.sdf
 complex: a-mhp.pdb
 net_charge: +1e
 aliases:

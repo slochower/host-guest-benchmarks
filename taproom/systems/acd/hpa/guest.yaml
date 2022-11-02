@@ -1,5 +1,7 @@
 name: hpa
-structure: hpa.mol2
+structure:
+  mol2: hpa.mol2
+  sdf: hpa.sdf
 complex: a-hpa.pdb
 net_charge: +1e
 aliases:

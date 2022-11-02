@@ -1,5 +1,7 @@
 name: oam
-structure: oam.mol2
+structure:
+  mol2: oam.mol2
+  sdf: oam.sdf
 complex: a-oam.pdb
 net_charge: +1e
 aliases:

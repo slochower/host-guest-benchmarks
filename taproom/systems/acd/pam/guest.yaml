@@ -1,5 +1,7 @@
 name: pam
-structure: pam.mol2
+structure:
+  mol2: pam.mol2
+  sdf: pam.sdf
 complex: a-pam.pdb
 net_charge: +1e
 aliases:

@@ -1,5 +1,7 @@
 name: nmb
-structure: nmb.mol2
+structure:
+  mol2: nmb.mol2
+  sdf: nmb.sdf
 complex: a-nmb.pdb
 net_charge: +1e
 aliases:

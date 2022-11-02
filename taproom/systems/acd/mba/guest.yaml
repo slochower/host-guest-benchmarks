@@ -1,5 +1,7 @@
 name: mba
-structure: mba.mol2
+structure:
+  mol2: mba.mol2
+  sdf: mba.sdf
 complex: a-mba.pdb
 net_charge: +1e
 aliases:

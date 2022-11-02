@@ -1,5 +1,7 @@
 name: cpe
-structure: cpe.mol2
+structure:
+  mol2: cpe.mol2
+  sdf: cpe.sdf
 complex: a-cpe.pdb
 net_charge: 0e
 aliases:

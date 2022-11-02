@@ -1,5 +1,7 @@
 name: coc
-structure: coc.mol2
+structure:
+  mol2: coc.mol2
+  sdf: coc.sdf
 complex: a-coc.pdb
 net_charge: 0e
 aliases:

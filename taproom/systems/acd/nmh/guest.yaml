@@ -1,5 +1,7 @@
 name: nmh
-structure: nmh.mol2
+structure:
+  mol2: nmh.mol2
+  sdf: nmh.sdf
 complex: a-nmh.pdb
 net_charge: +1e
 aliases:
