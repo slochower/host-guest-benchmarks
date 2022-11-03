@@ -30,6 +30,6 @@ keywords:
 license: "MIT"
 message: "If you use this software, please cite it using these metadata."
 repository-code: "https://github.com/slochower/host-guest-benchmarks"
-title: "Taproom - A Host-Guest Benchmark Dataset for testing force field parameters with OpenFF-Evaluator."
+title: "Taproom - A Host-Guest Benchmark Dataset for Testing Force Field Parameters with OpenFF-Evaluator."
 version: "0.3"
 ...
