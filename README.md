@@ -10,36 +10,32 @@ Taproom includes the following host-guest complexes (126 in total) with YAML fil
 perform free energy calculation using the attach-pull-release (APR) method.
 
 * [`alpha-cyclodextrin`](taproom/systems/acd):
-    * Data set from [Rekharsky et al.](https://pubs.acs.org/doi/abs/10.1021/jp962715n) - 22 host-guest complexes
     * host key = `acd`
+    * Data set from [Rekharsky et al.](https://pubs.acs.org/doi/abs/10.1021/jp962715n) - 22 host-guest complexes
 * [`beta-cyclodextrin`](taproom/systems/bcd):
+    * host key = `bcd`
     * Data set from [Rekharsky et al.](https://pubs.acs.org/doi/abs/10.1021/jp962715n) - 21 host-guest complexes
     * bCD--R-rimantadine from [SAMPL7](https://github.com/samplchallenges/SAMPL7/tree/master/host_guest/cyclodextrin_derivatives)
-    * host key = `bcd`
-<!--- * `cyclodextrin derivatives`:
-    * [SAMPL7](https://github.com/samplchallenges/SAMPL7/tree/master/host_guest/cyclodextrin_derivatives) - 16 host-guest complexes (2 guest molecules with 8 host molecules)
-    * host key = `[mgl8, mgl9, mgl19, mgl23, mgl24, mgl34, mgl35, mgl36]`
---->
 * [`cucurbit[7]uril`](taproom/systems/cb7):
+    * host key = `cb7`
     * [SAMPL3](https://link.springer.com/article/10.1007/s10822-012-9554-1) - 2 host-guest complexes  (G8 and G9) 
     * [SAMPL4](https://pubmed.ncbi.nlm.nih.gov/24599514/) - 14 host-guest complexes
     * A1, A2, A5, B2, B5, B11 from [Moghaddam et al.](https://pubs.acs.org/doi/abs/10.1021/ja109904u)
     * 1 host-guest complex from [Kim et al.](https://www.pnas.org/doi/full/10.1073/pnas.062656699)
-    * host key = `cb7`
 * [`cucurbit[8]uril`](taproom/systems/cb8):
+    * host key = `cb8`
     * [SAMPL3](https://link.springer.com/article/10.1007/s10822-012-9554-1) - 2 host-guest complexes  (G8 and G9) 
     * [SAMPL6](https://github.com/samplchallenges/SAMPL6/tree/master/host_guest/CB8AndGuests) - 13 host-guest complexes (excluding G13)
     * [SAMPL8](https://github.com/samplchallenges/SAMPL8/tree/master/host_guest/CB8) - 7 host-guest complexes
-    * host key = `cb8`
 * [`octa-acid`](taproom/systems/oah):
+    * host key = `oah`
     * [SAMPL4](https://pubmed.ncbi.nlm.nih.gov/24599514/) - 9 host-guest complexes
     * [SAMPL5](https://link.springer.com/article/10.1007/s10822-016-9974-4) - 6 host-guest complexes
     * [SAMPL6](https://github.com/samplchallenges/SAMPL6/tree/master/host_guest/OctaAcidsAndGuests) - 8 host-guest complexes
-    * host key = `oah`
 * [`tetra-endo-methyl octa-acid`](taproom/systems/oam):
+    * host key = `oam`
     * [SAMPL5](https://link.springer.com/article/10.1007/s10822-016-9974-4) - 6 host-guest complexes
     * [SAMPL6](https://github.com/samplchallenges/SAMPL6/tree/master/host_guest/OctaAcidsAndGuests) - 8 host-guest complexes
-    * host key = `oam`
 
 ## Installation
 
