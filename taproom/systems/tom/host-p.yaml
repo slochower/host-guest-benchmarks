@@ -1,0 +1,134 @@
+name: HP-236-OMe-bcd
+structure:
+  mol2: tom.mol2
+  sdf: tom.sdf
+  pdb: tom.pdb
+resname: MGO
+net_charge: 0e
+aliases:
+- D1: :DM1
+- D2: :DM2
+- D3: :DM3
+- H1: :MGO@O1
+- H2: :MGO@O11
+- H3: :MGO@O26
+restraints:
+  static:
+  - restraint:
+      atoms: D1 H1
+      force_constant: 5.0 * kilocalorie / mole / angstrom**2
+  - restraint:
+      atoms: D2 D1 H1
+      force_constant: 100.0 * kilocalorie / mole / radian**2
+  - restraint:
+      atoms: D3 D2 D1 H1
+      force_constant: 100.0 * kilocalorie / mole / radian**2
+  - restraint:
+      atoms: D1 H1 H2
+      force_constant: 100.0 * kilocalorie / mole / radian**2
+  - restraint:
+      atoms: D2 D1 H1 H2
+      force_constant: 100.0 * kilocalorie / mole / radian**2
+  - restraint:
+      atoms: D1 H1 H2 H3
+      force_constant: 100.0 * kilocalorie / mole / radian**2
+  conformational:
+  - restraint:
+      atoms: :MGO@O4 :MGO@C1 :MGO@O1 :MGO@C15
+      force_constant: 6.0 * kilocalorie / mole / radian**2
+      target: 108.7 * degrees
+  - restraint:
+      atoms: :MGO@O9 :MGO@C10 :MGO@O6 :MGO@C24
+      force_constant: 6.0 * kilocalorie / mole / radian**2
+      target: 108.7 * degrees
+  - restraint:
+      atoms: :MGO@O14 :MGO@C19 :MGO@O11 :MGO@C33
+      force_constant: 6.0 * kilocalorie / mole / radian**2
+      target: 108.7 * degrees
+  - restraint:
+      atoms: :MGO@O19 :MGO@C28 :MGO@O16 :MGO@C42
+      force_constant: 6.0 * kilocalorie / mole / radian**2
+      target: 108.7 * degrees
+  - restraint:
+      atoms: :MGO@O24 :MGO@C37 :MGO@O21 :MGO@C51
+      force_constant: 6.0 * kilocalorie / mole / radian**2
+      target: 108.7 * degrees
+  - restraint:
+      atoms: :MGO@O29 :MGO@C46 :MGO@O26 :MGO@C60
+      force_constant: 6.0 * kilocalorie / mole / radian**2
+      target: 108.7 * degrees
+  - restraint:
+      atoms: :MGO@O34 :MGO@C55 :MGO@O31 :MGO@C6
+      force_constant: 6.0 * kilocalorie / mole / radian**2
+      target: 108.7 * degrees
+  - restraint:
+      atoms: :MGO@C1 :MGO@O1 :MGO@C15 :MGO@C16
+      force_constant: 6.0 * kilocalorie / mole / radian**2
+      target: -112.5 * degrees
+  - restraint:
+      atoms: :MGO@C10 :MGO@O6 :MGO@C24 :MGO@C25
+      force_constant: 6.0 * kilocalorie / mole / radian**2
+      target: -112.5 * degrees
+  - restraint:
+      atoms: :MGO@C19 :MGO@O11 :MGO@C33 :MGO@C34
+      force_constant: 6.0 * kilocalorie / mole / radian**2
+      target: -112.5 * degrees
+  - restraint:
+      atoms: :MGO@C28 :MGO@O16 :MGO@C42 :MGO@C43
+      force_constant: 6.0 * kilocalorie / mole / radian**2
+      target: -112.5 * degrees
+  - restraint:
+      atoms: :MGO@C37 :MGO@O21 :MGO@C51 :MGO@C52
+      force_constant: 6.0 * kilocalorie / mole / radian**2
+      target: -112.5 * degrees
+  - restraint:
+      atoms: :MGO@C46 :MGO@O26 :MGO@C60 :MGO@C61
+      force_constant: 6.0 * kilocalorie / mole / radian**2
+      target: -112.5 * degrees
+  - restraint:
+      atoms: :MGO@C55 :MGO@O31 :MGO@C6 :MGO@C7
+      force_constant: 6.0 * kilocalorie / mole / radian**2
+      target: -112.5 * degrees
+calculation:
+  windows:
+    attach: 15
+    pull: 46
+    release: 15
+  lambda:
+    attach:
+    - 0.0
+    - 0.004
+    - 0.008
+    - 0.016
+    - 0.024
+    - 0.04
+    - 0.055
+    - 0.0865
+    - 0.118
+    - 0.181
+    - 0.244
+    - 0.37
+    - 0.496
+    - 0.748
+    - 1.0
+    release:
+    - 1.0
+    - 0.748
+    - 0.496
+    - 0.37
+    - 0.244
+    - 0.181
+    - 0.118
+    - 0.0865
+    - 0.055
+    - 0.04
+    - 0.024
+    - 0.016
+    - 0.008
+    - 0.004
+    - 0.0
+  target:
+    pull: 24.0 * angstrom
+  system:
+    waters: 2500
+    model: TIP3P

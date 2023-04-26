@@ -1,0 +1,16 @@
+state:
+  temperature: 298.15 K
+  pressure: 1 atm
+  pH: 7.4
+substance:
+  name: atracurium
+  SMILES: COc1ccc(CC2c3cc(OC)c(OC)cc3CC[N+]2(C)CCC(=O)OCCCCCOC(=O)CC[N+]2(C)CCc3cc(OC)c(OC)cc3C2Cc2ccc(OC)c(OC)c2)cc1OC
+measurement:
+  technique: ITC
+  delta_G: -20.4598 kJ/mol
+  delta_G_uncertainty: 2.5104 kJ/mol
+  stoichiometry: '1:1'
+provenance:
+  comment: Table 2
+  doi: 10.1007/BF03256937
+unusual: false

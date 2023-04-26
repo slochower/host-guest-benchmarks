@@ -1,7 +1,7 @@
 name: bcd
 structure:
   mol2: bcd.mol2
-  sdf: bcd.mol2
+  sdf: bcd.sdf
   pdb: bcd.pdb
 monomer: MGO.mol2
 resname: MGO
@@ -101,5 +101,5 @@ calculation:
   target:
     pull: 24.0 * angstrom
   system:
-    waters: 2210
+    waters: 2500
     model: "TIP3P"

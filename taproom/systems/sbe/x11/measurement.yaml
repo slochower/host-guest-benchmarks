@@ -1,0 +1,16 @@
+state:
+  temperature: 298.15 K
+  pressure: 1 atm
+  pH: 2.0
+substance:
+  name: warfarin
+  SMILES: CC(=O)CC(c1ccccc1)c1c(O)c2ccccc2oc1=O
+measurement:
+  technique: UV/vis
+  delta_G: -20.8363 kJ/mol
+  delta_G_uncertainty: 0.1674 kJ/mol
+  stoichiometry: '1:1'
+provenance:
+  comment: Table 2
+  doi: 10.1023/A:1007571019908
+unusual: false

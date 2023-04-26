@@ -1,0 +1,16 @@
+state:
+  temperature: 298.15 K
+  pressure: 1.0 atm
+  pH: 6.4
+substance:
+  name: cholesterol
+  SMILES: CC(C)CCCC(C)C1CCC2C3CC=C4CC(O)CCC4(C)C3CCC12C
+measurement:
+  technique: UV/vis
+  delta_G: -24.4346 kJ/mol
+  delta_G_uncertainty: 2.5104 kJ/mol
+  stoichiometry: '1:1'
+provenance:
+  comment: Table 2
+  doi: 10.1023/A:1015861719134
+unusual: false

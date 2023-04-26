@@ -1,0 +1,16 @@
+state:
+  temperature: 298.15 K
+  pressure: 1 atm
+  pH: 6.4
+substance:
+  name: cholesterol
+  SMILES: CC(C)CCCC(C)C1CCC2C3CC=C4CC(O)CCC4(C)C3CCC12C
+measurement:
+  technique: Solubility
+  delta_G: -12.0918 kJ/mol
+  delta_G_uncertainty: 0.7950 kJ/mol
+  stoichiometry: '1:1'
+provenance:
+  comment: Table 3
+  doi: 10.1248/cpb.51.1253
+unusual: false
