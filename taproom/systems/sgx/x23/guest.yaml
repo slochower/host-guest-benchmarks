@@ -10,7 +10,7 @@ aliases:
 - D2: :DM2
 - D3: :DM3
 - G1: :X23@C11x
-- G2: null
+- G2: :X23@C5x
 restraints:
   guest:
   - restraint:
@@ -30,7 +30,7 @@ restraints:
         force_constant: 100.0 * kilocalorie / mole / angstrom**2
         target: 180.0 * degrees
   - restraint:
-      atoms: :DM1 :X23@C11x None
+      atoms: :DM1 :X23@C11x :X23@C5x
       attach:
         force_constant: 100.0 * kilocalorie / mole / angstrom**2
         target: 180.0 * degrees
