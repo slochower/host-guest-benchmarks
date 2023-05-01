@@ -4,7 +4,7 @@ state:
   pH: 7.4
 substance:
   name: levofloxacin
-  SMILES: CC1COc2c(N3CCN(C)CC3)c(F)cc3c(=O)c(C(=O)O)cn1c23
+  SMILES: CC1COc2c(N3CCN(C)CC3)c(F)cc3c(=O)c(C(=O)[O-])cn1c23
 measurement:
   technique: ITC
   delta_G: -18.1586 kJ/mol

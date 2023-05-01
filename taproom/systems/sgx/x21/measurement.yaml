@@ -4,7 +4,7 @@ state:
   pH: 7.4
 substance:
   name: flucloxacillin
-  SMILES: Cc1onc(-c2c(F)cccc2Cl)c1C(=O)NC1C(=O)N2C1SC(C)(C)C2C(=O)O
+  SMILES: Cc1onc(-c2c(F)cccc2Cl)c1C(=O)NC1C(=O)N2C1SC(C)(C)C2C(=O)[O-]
 measurement:
   technique: ITC
   delta_G: -26.9450 kJ/mol

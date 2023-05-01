@@ -4,7 +4,7 @@ state:
   pH: 7.4
 substance:
   name: fusidic
-  SMILES: CC(=O)OC1CC2(C)C(CC(O)C3C4(C)CCC(O)C(C)C4CCC32C)C1=C(CCC=C(C)C)C(=O)O
+  SMILES: CC(=O)OC1CC2(C)C(CC(O)C3C4(C)CCC(O)C(C)C4CCC32C)C1=C(CCC=C(C)C)C(=O)[O-]
 measurement:
   technique: ITC
   delta_G: -31.4218 kJ/mol
