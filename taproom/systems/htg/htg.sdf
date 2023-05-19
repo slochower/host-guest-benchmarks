@@ -458,7 +458,7 @@ HTG-bcd.pymol.chimera.fixed.pdb
 112126  1  0
 113127  1  0
 M  END
->  <Partial_charges>  (1) 
+>  <atom.dprop.PartialCharge>  (1)
 0.30218125
 -0.45731875
 -0.29691875

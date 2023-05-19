@@ -388,7 +388,7 @@ HP-26-OMe-bcd.fixed.pdb
 147185  1  0
 147186  1  0
 M  END
->  <Partial_charges>  (1) 
+>  <atom.dprop.PartialCharge>  (1)
 0.3144185925925926
 0.0482185925925926
 -0.41108140740740745

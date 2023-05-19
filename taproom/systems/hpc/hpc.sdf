@@ -444,7 +444,7 @@ HP-bcd.fixed.pdb
 206210  1  0
 207211  1  0
 M  END
->  <Partial_charges>  (1) 
+>  <atom.dprop.PartialCharge>  (1)
 0.34177096774193544
 0.08857096774193549
 -0.43872903225806453

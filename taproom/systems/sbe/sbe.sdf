@@ -515,7 +515,7 @@ SBE-7-bcd.pymol.fixed.pdb
 133252  1  0
 M  CHG  7  79  -1  85  -1  91  -1  99  -1 105  -1 109  -1 117  -1
 M  END
->  <Partial_charges>  (1) 
+>  <atom.dprop.PartialCharge>  (1)
 0.2968722222222222
 -0.4056277777777778
 1.4297722222222224

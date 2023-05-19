@@ -504,7 +504,7 @@ sugammadex.pymol.fixed.pdb
 138246  1  0
 M  CHG  8   3  -1  28  -1  53  -1  97  -1 103  -1 109  -1 115  -1 121  -1
 M  END
->  <Partial_charges>  (1) 
+>  <atom.dprop.PartialCharge>  (1)
 -0.4021731930112571
 0.07612680698874294
 -0.7518287368146758

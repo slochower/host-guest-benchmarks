@@ -682,7 +682,7 @@ HTMT-bcd.fixed.pdb
 333335  1  0
 333336  1  0
 M  END
->  <Partial_charges>  (1) 
+>  <atom.dprop.PartialCharge>  (1)
 0.3411083541666667
 0.07390835416666666
 -0.41939164583333327
