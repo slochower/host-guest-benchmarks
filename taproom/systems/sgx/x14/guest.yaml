@@ -24,18 +24,18 @@ restraints:
   - restraint:
       atoms: :DM2 :DM1 :X14@C32x
       attach:
-        force_constant: 100.0 * kilocalorie / mole / angstrom**2
+        force_constant: 100.0 * kilocalorie / mole / radian**2
         target: 180.0 * degrees
       pull:
-        force_constant: 100.0 * kilocalorie / mole / angstrom**2
+        force_constant: 100.0 * kilocalorie / mole / radian**2
         target: 180.0 * degrees
   - restraint:
       atoms: :DM1 :X14@C32x :X14@C24x
       attach:
-        force_constant: 100.0 * kilocalorie / mole / angstrom**2
+        force_constant: 100.0 * kilocalorie / mole / radian**2
         target: 180.0 * degrees
       pull:
-        force_constant: 100.0 * kilocalorie / mole / angstrom**2
+        force_constant: 100.0 * kilocalorie / mole / radian**2
         target: 180.0 * degrees
   wall_restraints:
   - restraint:
