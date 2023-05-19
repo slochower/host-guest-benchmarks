@@ -35,7 +35,7 @@ restraints:
         force_constant: 100.0 * kilocalorie / mole / radian**2
         target: 180.0 * degrees
       pull:
-        force_constant: 100.0 * kilocalorie / mole / angstradianrom**2
+        force_constant: 100.0 * kilocalorie / mole / radian**2
         target: 180.0 * degrees
   wall_restraints:
   - restraint:
