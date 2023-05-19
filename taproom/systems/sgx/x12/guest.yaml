@@ -41,67 +41,67 @@ restraints:
   - restraint:
       atoms: :MGO@S1 :X12@C1x
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
-      target: 12.5
+      target: 12.5 * angstrom
   - restraint:
       atoms: :MGO@S2 :X12@C1x
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
-      target: 12.5
+      target: 12.5 * angstrom
   - restraint:
       atoms: :MGO@S3 :X12@C1x
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
-      target: 12.5
+      target: 12.5 * angstrom
   - restraint:
       atoms: :MGO@S4 :X12@C1x
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
-      target: 12.5
+      target: 12.5 * angstrom
   - restraint:
       atoms: :MGO@S5 :X12@C1x
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
-      target: 12.5
+      target: 12.5 * angstrom
   - restraint:
       atoms: :MGO@S6 :X12@C1x
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
-      target: 12.5
+      target: 12.5 * angstrom
   - restraint:
       atoms: :MGO@S7 :X12@C1x
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
-      target: 12.5
+      target: 12.5 * angstrom
   - restraint:
       atoms: :MGO@S8 :X12@C1x
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
-      target: 12.5
+      target: 12.5 * angstrom
   - restraint:
       atoms: :MGO@O40 :X12@C1x
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
-      target: 10.5
+      target: 10.5 * angstrom
   - restraint:
       atoms: :MGO@O26 :X12@C1x
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
-      target: 10.5
+      target: 10.5 * angstrom
   - restraint:
       atoms: :MGO@O28 :X12@C1x
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
-      target: 10.5
+      target: 10.5 * angstrom
   - restraint:
       atoms: :MGO@O30 :X12@C1x
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
-      target: 10.5
+      target: 10.5 * angstrom
   - restraint:
       atoms: :MGO@O32 :X12@C1x
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
-      target: 10.5
+      target: 10.5 * angstrom
   - restraint:
       atoms: :MGO@O34 :X12@C1x
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
-      target: 10.5
+      target: 10.5 * angstrom
   - restraint:
       atoms: :MGO@O36 :X12@C1x
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
-      target: 10.5
+      target: 10.5 * angstrom
   - restraint:
       atoms: :MGO@O38 :X12@C1x
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
-      target: 10.5
+      target: 10.5 * angstrom
 symmetry_correction:
   restraints:
   - restraint:
