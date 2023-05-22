@@ -36,6 +36,24 @@ perform free energy calculation using the attach-pull-release (APR) method.
     * host key = `oam`
     * [SAMPL5](https://link.springer.com/article/10.1007/s10822-016-9974-4) - 6 host-guest complexes
     * [SAMPL6](https://github.com/samplchallenges/SAMPL6/tree/master/host_guest/OctaAcidsAndGuests) - 8 host-guest complexes
+* [`heptakis(2,6-di-OMe) bcd`](taproom/systems/dom)
+    * host key = `dom`
+    * 1 complex - cholesterol
+* [`heptakis(2,3,6-tri-OMe) bcd`](taproom/systems/tom)
+    * host key = `tom`
+    * 1 complex - cholesterol
+* [`HSES-bcd`](taproom/systems/hse)
+    * host key = `hse`
+    * 7 complexes - steroids
+* [`HTG-bcd`](taproom/systems/htg)
+    * host key = `htg`
+    * 5 complexes - steroids
+* [`HTM-bcd`](taproom/systems/htm)
+    * host key = `htm`
+    * 7 complexes - steroids
+* [`sugammadex`](taproom/systems/sgx)
+    * host key = `sgx`
+    * 12 complexes - drug molecules
 
 ## Installation
 
@@ -56,6 +74,15 @@ def _get_installed_benchmarks():
     for entry_point in pkg_resources.iter_entry_points(group="taproom.benchmarks"):
         _installed_benchmarks[entry_point.name] = entry_point.load()
     return _installed_benchmarks
+```
+
+If you have pAPRika installed (version >=1.2.1) you can import taproom with
+```python
+from paprika.evaluator.utils import get_benchmarks
+
+installed_benchmarks= get_benchmarks()
+measurements = installed_benchmarks["host_guest_measurements"]
+systems = installed_benchmarks["host_guest_systems"]
 ```
 
 ## Schema
