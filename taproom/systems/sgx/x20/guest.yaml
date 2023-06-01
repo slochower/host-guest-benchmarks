@@ -4,17 +4,17 @@ structure:
   sdf: x20.sdf
   pdb: x20.pdb
 complex: b-x20.pdb
-net_charge: 0.0e
+net_charge: -1.0e
 aliases:
 - D1: :DM1
 - D2: :DM2
 - D3: :DM3
-- G1: :X20@C1x
-- G2: :X20@C30x
+- G1: :X20@C17
+- G2: :X20@C31
 restraints:
   guest:
   - restraint:
-      atoms: :DM1 :X20@C1x
+      atoms: :DM1 :X20@C17
       attach:
         force_constant: 5.0 * kilocalorie / mole / angstrom**2
         target: 6.0 * angstrom
@@ -22,7 +22,7 @@ restraints:
         force_constant: 5.0 * kilocalorie / mole / angstrom**2
         target: 24.0 * angstrom
   - restraint:
-      atoms: :DM2 :DM1 :X20@C1x
+      atoms: :DM2 :DM1 :X20@C17
       attach:
         force_constant: 100.0 * kilocalorie / mole / radian**2
         target: 180.0 * degrees
@@ -30,7 +30,7 @@ restraints:
         force_constant: 100.0 * kilocalorie / mole / radian**2
         target: 180.0 * degrees
   - restraint:
-      atoms: :DM1 :X20@C1x :X20@C30x
+      atoms: :DM1 :X20@C17 :X20@C31
       attach:
         force_constant: 100.0 * kilocalorie / mole / radian**2
         target: 180.0 * degrees
@@ -39,67 +39,67 @@ restraints:
         target: 180.0 * degrees
   wall_restraints:
   - restraint:
-      atoms: :MGO@S1 :X20@C1x
+      atoms: :MGO@S1 :X20@C17
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 12.5 * angstrom
   - restraint:
-      atoms: :MGO@S2 :X20@C1x
+      atoms: :MGO@S2 :X20@C17
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 12.5 * angstrom
   - restraint:
-      atoms: :MGO@S3 :X20@C1x
+      atoms: :MGO@S3 :X20@C17
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 12.5 * angstrom
   - restraint:
-      atoms: :MGO@S4 :X20@C1x
+      atoms: :MGO@S4 :X20@C17
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 12.5 * angstrom
   - restraint:
-      atoms: :MGO@S5 :X20@C1x
+      atoms: :MGO@S5 :X20@C17
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 12.5 * angstrom
   - restraint:
-      atoms: :MGO@S6 :X20@C1x
+      atoms: :MGO@S6 :X20@C17
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 12.5 * angstrom
   - restraint:
-      atoms: :MGO@S7 :X20@C1x
+      atoms: :MGO@S7 :X20@C17
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 12.5 * angstrom
   - restraint:
-      atoms: :MGO@S8 :X20@C1x
+      atoms: :MGO@S8 :X20@C17
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 12.5 * angstrom
   - restraint:
-      atoms: :MGO@O40 :X20@C1x
+      atoms: :MGO@O40 :X20@C17
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 10.5 * angstrom
   - restraint:
-      atoms: :MGO@O26 :X20@C1x
+      atoms: :MGO@O26 :X20@C17
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 10.5 * angstrom
   - restraint:
-      atoms: :MGO@O28 :X20@C1x
+      atoms: :MGO@O28 :X20@C17
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 10.5 * angstrom
   - restraint:
-      atoms: :MGO@O30 :X20@C1x
+      atoms: :MGO@O30 :X20@C17
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 10.5 * angstrom
   - restraint:
-      atoms: :MGO@O32 :X20@C1x
+      atoms: :MGO@O32 :X20@C17
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 10.5 * angstrom
   - restraint:
-      atoms: :MGO@O34 :X20@C1x
+      atoms: :MGO@O34 :X20@C17
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 10.5 * angstrom
   - restraint:
-      atoms: :MGO@O36 :X20@C1x
+      atoms: :MGO@O36 :X20@C17
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 10.5 * angstrom
   - restraint:
-      atoms: :MGO@O38 :X20@C1x
+      atoms: :MGO@O38 :X20@C17
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 10.5 * angstrom
 symmetry_correction:
