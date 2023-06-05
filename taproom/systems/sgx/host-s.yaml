@@ -6,95 +6,95 @@ structure:
 resname: MGO
 net_charge: -8e
 aliases:
-- D1: :DM1
-- D2: :DM2
-- D3: :DM3
-- H1: :MGO@O19
-- H2: :MGO@O7
-- H3: :MGO@O1
+- D1: '":DM1"'
+- D2: '":DM2"'
+- D3: '":DM3"'
+- H1: '":MGO@O21x"'
+- H2: '":MGO@O10x"'
+- H3: '":MGO@O1x"'
 restraints:
   static:
   - restraint:
-      atoms: D1 H1
+      atoms: '"D1 H1"'
       force_constant: 5.0 * kilocalorie / mole / angstrom**2
   - restraint:
-      atoms: D2 D1 H1
+      atoms: '"D2 D1 H1"'
       force_constant: 100.0 * kilocalorie / mole / radian**2
   - restraint:
-      atoms: D3 D2 D1 H1
+      atoms: '"D3 D2 D1 H1"'
       force_constant: 100.0 * kilocalorie / mole / radian**2
   - restraint:
-      atoms: D1 H1 H2
+      atoms: '"D1 H1 H2"'
       force_constant: 100.0 * kilocalorie / mole / radian**2
   - restraint:
-      atoms: D2 D1 H1 H2
+      atoms: '"D2 D1 H1 H2"'
       force_constant: 100.0 * kilocalorie / mole / radian**2
   - restraint:
-      atoms: D1 H1 H2 H3
+      atoms: '"D1 H1 H2 H3"'
       force_constant: 100.0 * kilocalorie / mole / radian**2
   conformational:
   - restraint:
-      atoms: :MGO@O3 :MGO@C10 :MGO@O4 :MGO@C11
+      atoms: '":MGO@O3x :MGO@C18x :MGO@O5x :MGO@C19x"'
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O6 :MGO@C14 :MGO@O7 :MGO@C15
+      atoms: '":MGO@O8x :MGO@C22x :MGO@O10x :MGO@C23x"'
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O9 :MGO@C18 :MGO@O10 :MGO@C19
+      atoms: '":MGO@O13x :MGO@C26x :MGO@O15x :MGO@C27x"'
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O12 :MGO@C22 :MGO@O13 :MGO@C23
+      atoms: '":MGO@O16x :MGO@C30x :MGO@O17x :MGO@C31x"'
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O15 :MGO@C26 :MGO@O16 :MGO@C27
+      atoms: '":MGO@O18x :MGO@C34x :MGO@O19x :MGO@C35x"'
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O18 :MGO@C30 :MGO@O19 :MGO@C31
+      atoms: '":MGO@O20x :MGO@C38x :MGO@O21x :MGO@C39x"'
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O21 :MGO@C34 :MGO@O22 :MGO@C35
+      atoms: '":MGO@O22x :MGO@C42x :MGO@O23x :MGO@C43x"'
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O24 :MGO@C6 :MGO@O1 :MGO@C7
+      atoms: '":MGO@O24x :MGO@C14x :MGO@O1x :MGO@C15x"'
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@C6 :MGO@O1 :MGO@C7 :MGO@C8
+      atoms: '":MGO@C14x :MGO@O1x :MGO@C15x :MGO@C16x"'
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C10 :MGO@O4 :MGO@C11 :MGO@C12
+      atoms: '":MGO@C18x :MGO@O5x :MGO@C19x :MGO@C20x"'
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C14 :MGO@O7 :MGO@C15 :MGO@C16
+      atoms: '":MGO@C22x :MGO@O10x :MGO@C23x :MGO@C24x"'
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C18 :MGO@O10 :MGO@C19 :MGO@C20
+      atoms: '":MGO@C26x :MGO@O15x :MGO@C27x :MGO@C28x"'
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C22 :MGO@O13 :MGO@C23 :MGO@C24
+      atoms: '":MGO@C30x :MGO@O17x :MGO@C31x :MGO@C32x"'
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C26 :MGO@O16 :MGO@C27 :MGO@C28
+      atoms: '":MGO@C34x :MGO@O19x :MGO@C35x :MGO@C36x"'
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C30 :MGO@O19 :MGO@C31 :MGO@C32
+      atoms: '":MGO@C38x :MGO@O21x :MGO@C39x :MGO@C40x"'
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C34 :MGO@O22 :MGO@C35 :MGO@C36
+      atoms: '":MGO@C42x :MGO@O23x :MGO@C43x :MGO@C44x"'
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
 calculation:

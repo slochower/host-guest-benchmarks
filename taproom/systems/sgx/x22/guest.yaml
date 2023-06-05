@@ -6,15 +6,15 @@ structure:
 complex: b-x22.pdb
 net_charge: 0.0e
 aliases:
-- D1: :DM1
-- D2: :DM2
-- D3: :DM3
-- G1: :X22@Cl1
-- G2: :X22@C26
+- D1: '":DM1"'
+- D2: '":DM2"'
+- D3: '":DM3"'
+- G1: '":X22@C1x"'
+- G2: '":X22@C26x"'
 restraints:
   guest:
   - restraint:
-      atoms: :DM1 :X22@Cl1
+      atoms: '":DM1 :X22@C1x"'
       attach:
         force_constant: 5.0 * kilocalorie / mole / angstrom**2
         target: 6.0 * angstrom
@@ -22,7 +22,7 @@ restraints:
         force_constant: 5.0 * kilocalorie / mole / angstrom**2
         target: 24.0 * angstrom
   - restraint:
-      atoms: :DM2 :DM1 :X22@Cl1
+      atoms: '":DM2 :DM1 :X22@C1x"'
       attach:
         force_constant: 100.0 * kilocalorie / mole / radian**2
         target: 180.0 * degrees
@@ -30,7 +30,7 @@ restraints:
         force_constant: 100.0 * kilocalorie / mole / radian**2
         target: 180.0 * degrees
   - restraint:
-      atoms: :DM1 :X22@Cl1 :X22@C26
+      atoms: '":DM1 :X22@C1x :X22@C26x"'
       attach:
         force_constant: 100.0 * kilocalorie / mole / radian**2
         target: 180.0 * degrees
@@ -39,73 +39,73 @@ restraints:
         target: 180.0 * degrees
   wall_restraints:
   - restraint:
-      atoms: :MGO@S1 :X22@Cl1
+      atoms: '":MGO@S1x :X22@C1x"'
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 12.5 * angstrom
   - restraint:
-      atoms: :MGO@S2 :X22@Cl1
+      atoms: '":MGO@S2x :X22@C1x"'
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 12.5 * angstrom
   - restraint:
-      atoms: :MGO@S3 :X22@Cl1
+      atoms: '":MGO@S3x :X22@C1x"'
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 12.5 * angstrom
   - restraint:
-      atoms: :MGO@S4 :X22@Cl1
+      atoms: '":MGO@S4x :X22@C1x"'
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 12.5 * angstrom
   - restraint:
-      atoms: :MGO@S5 :X22@Cl1
+      atoms: '":MGO@S5x :X22@C1x"'
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 12.5 * angstrom
   - restraint:
-      atoms: :MGO@S6 :X22@Cl1
+      atoms: '":MGO@S6x :X22@C1x"'
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 12.5 * angstrom
   - restraint:
-      atoms: :MGO@S7 :X22@Cl1
+      atoms: '":MGO@S7x :X22@C1x"'
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 12.5 * angstrom
   - restraint:
-      atoms: :MGO@S8 :X22@Cl1
+      atoms: '":MGO@S8x :X22@C1x"'
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 12.5 * angstrom
   - restraint:
-      atoms: :MGO@O40 :X22@Cl1
+      atoms: '":MGO@O40x :X22@C1x"'
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 10.5 * angstrom
   - restraint:
-      atoms: :MGO@O26 :X22@Cl1
+      atoms: '":MGO@O26x :X22@C1x"'
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 10.5 * angstrom
   - restraint:
-      atoms: :MGO@O28 :X22@Cl1
+      atoms: '":MGO@O28x :X22@C1x"'
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 10.5 * angstrom
   - restraint:
-      atoms: :MGO@O30 :X22@Cl1
+      atoms: '":MGO@O30x :X22@C1x"'
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 10.5 * angstrom
   - restraint:
-      atoms: :MGO@O32 :X22@Cl1
+      atoms: '":MGO@O32x :X22@C1x"'
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 10.5 * angstrom
   - restraint:
-      atoms: :MGO@O34 :X22@Cl1
+      atoms: '":MGO@O34x :X22@C1x"'
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 10.5 * angstrom
   - restraint:
-      atoms: :MGO@O36 :X22@Cl1
+      atoms: '":MGO@O36x :X22@C1x"'
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 10.5 * angstrom
   - restraint:
-      atoms: :MGO@O38 :X22@Cl1
+      atoms: '":MGO@O38x :X22@C1x"'
       force_constant: 50.0 * kilocalorie / mole / angstrom**2
       target: 10.5 * angstrom
 symmetry_correction:
   restraints:
   - restraint:
-      atoms: D2 G1 G2
+      atoms: '"D2 G1 G2"'
       force_constant: 200.0 * kilocalorie / mole / radian**2
       target: 91 * degrees
   microstates: 1
