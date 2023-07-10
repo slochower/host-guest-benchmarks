@@ -6,7 +6,7 @@ A repository of host-guest complexes available for benchmarking force fields use
 ![US Patent 664824](tap.png)
 
 ## Host-Guest Complexes
-Taproom includes the following host-guest complexes (126 in total) with YAML files containing information necessary to 
+Taproom includes the following host-guest complexes (158 in total) with YAML files containing information necessary to 
 perform free energy calculation using the attach-pull-release (APR) method.
 
 * [`alpha-cyclodextrin`](taproom/systems/acd):
@@ -36,24 +36,24 @@ perform free energy calculation using the attach-pull-release (APR) method.
     * host key = `oam`
     * [SAMPL5](https://link.springer.com/article/10.1007/s10822-016-9974-4) - 6 host-guest complexes
     * [SAMPL6](https://github.com/samplchallenges/SAMPL6/tree/master/host_guest/OctaAcidsAndGuests) - 8 host-guest complexes
-* [`heptakis(2,6-di-OMe) bcd`](taproom/systems/dom)
+* [`heptakis (2,6-di-OMe) bcd`](taproom/systems/dom)
     * host key = `dom`
     * 1 complex - cholesterol
-* [`heptakis(2,3,6-tri-OMe) bcd`](taproom/systems/tom)
+* [`heptakis (2,3,6-tri-OMe) bcd`](taproom/systems/tom)
     * host key = `tom`
     * 1 complex - cholesterol
-* [`HSES-bcd`](taproom/systems/hse)
+* [`heptakis (6-sulfoethylsulfanyl-6-deoxy) bcd`](taproom/systems/hse)
     * host key = `hse`
-    * 7 complexes - steroids
-* [`HTG-bcd`](taproom/systems/htg)
-    * host key = `htg`
-    * 5 complexes - steroids
-* [`HTM-bcd`](taproom/systems/htm)
+    * 7 complexes - steroid guests
+* [`heptakis (6-methylsulfanyl-6-deoxy-2-(2-(2-(2-methoxyethoxy)ethoxy)ethyl)) bcd`](taproom/systems/htm)
     * host key = `htm`
-    * 7 complexes - steroids
+    * 7 complexes - steroid guests
+* [`heptakis (6-thioglyceryl-6-deoxy) bcd`](taproom/systems/htg)
+    * host key = `htg`
+    * 5 complexes - steroid guests
 * [`sugammadex`](taproom/systems/sgx)
     * host key = `sgx`
-    * 12 complexes - drug molecules
+    * 11 complexes - small to medium size drug molecules
 
 ## Installation
 
@@ -78,7 +78,7 @@ def _get_installed_benchmarks():
 
 If you have pAPRika installed (version >=1.2.1) you can import taproom with
 ```python
-from paprika.evaluator.utils import get_benchmarks
+from paprika.taproom import get_benchmarks
 
 installed_benchmarks= get_benchmarks()
 measurements = installed_benchmarks["host_guest_measurements"]
@@ -95,7 +95,7 @@ MIT. See [License](LICENSE) for more information.
 
 ## Copyright
 
-Copyright (c) 2022, Open Force Field Consortium
+Copyright (c) 2023, Open Force Field Consortium
 
 
 ## Contributors
