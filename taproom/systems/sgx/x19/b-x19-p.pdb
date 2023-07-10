@@ -1,4 +1,4 @@
-REMARK   1 CREATED WITH OPENMM 8.0, 2023-06-04
+REMARK   1 CREATED WITH OPENMM 8.0, 2023-07-10
 HETATM    1  O1x MGO 1   1       2.932  -4.762  -1.757  1.00  0.00           O  
 HETATM    2  C1x MGO 1   1       0.621   8.524   4.851  1.00  0.00           C  
 HETATM    3  C2x MGO 1   1      -7.991   0.503   2.639  1.00  0.00           C  

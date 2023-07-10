@@ -4,7 +4,7 @@ state:
   pH: 7.4
 substance:
   name: toremifene
-  SMILES: CN(C)CCOc1ccc(C(=C(CCCl)c2ccccc2)c2ccccc2)cc1
+  SMILES: C[NH+](C)CCOc1ccc(C(=C(CCCl)c2ccccc2)c2ccccc2)cc1
 measurement:
   technique: ITC
   delta_G: -38.4928 kJ/mol

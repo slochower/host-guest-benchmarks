@@ -4,7 +4,7 @@ structure:
   sdf: x24.sdf
   pdb: x24.pdb
 complex: b-x24.pdb
-net_charge: 0.0e
+net_charge: 1.0e
 aliases:
 - D1: :DM1
 - D2: :DM2

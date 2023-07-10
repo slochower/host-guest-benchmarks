@@ -4,7 +4,7 @@ state:
   pH: 7.4
 substance:
   name: prazosin
-  SMILES: COc1cc2nc(N3CCN(C(=O)c4ccco4)CC3)nc(N)c2cc1OC
+  SMILES: COc1cc2[nH+]c(N3CCN(C(=O)c4ccco4)CC3)nc(N)c2cc1OC
 measurement:
   technique: ITC
   delta_G: -21.3802 kJ/mol

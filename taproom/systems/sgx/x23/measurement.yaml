@@ -4,7 +4,7 @@ state:
   pH: 7.4
 substance:
   name: ketamine
-  SMILES: CNC1(c2ccccc2Cl)CCCCC1=O
+  SMILES: C[NH2+]C1(c2ccccc2Cl)CCCCC1=O
 measurement:
   technique: ITC
   delta_G: -25.3132 kJ/mol

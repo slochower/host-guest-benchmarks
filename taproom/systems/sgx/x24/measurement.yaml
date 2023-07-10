@@ -4,7 +4,7 @@ state:
   pH: 7.4
 substance:
   name: remifentanil
-  SMILES: CCC(=O)N(c1ccccc1)C1(C(=O)OC)CCN(CCC(=O)OC)CC1
+  SMILES: CCC(=O)N(c1ccccc1)C1(C(=O)OC)CC[NH+](CCC(=O)OC)CC1
 measurement:
   technique: ITC
   delta_G: -26.8613 kJ/mol
