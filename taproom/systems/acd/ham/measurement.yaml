@@ -4,7 +4,7 @@ state:
   pH: 6.90
 
 substance:
-  name: 1-hyexylamine
+  name: 1-hexylamine
   SMILES: "CCCCCC[NH3+]"
   buffer:
     - "[Na+].OP(O)([O-])=O": 0.025 mol kg-1

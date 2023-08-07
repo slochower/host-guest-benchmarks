@@ -5,7 +5,7 @@ state:
 
 substance:
   name: R-rimantadine
-  SMILES: "[N+H3][C@H](C)C12CC3CC(C1)CC(C2)C3"
+  SMILES: "C[C@@H]([NH3+])C12CC3CC(CC(C3)C1)C2"
   buffer:
     - "[Na+].OP(O)([O-])=O": 0.025 mol kg-1
     - "[Na+].[Na+].OP([O-])([O-])=O": 0.025 mol kg-1

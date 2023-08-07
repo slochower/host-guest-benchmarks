@@ -101,5 +101,5 @@ calculation:
   target:
     pull: 24.0 * angstrom
   system:
-    waters: 2210
+    waters: 2500
     model: "TIP3P"
