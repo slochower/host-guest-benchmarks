@@ -6,7 +6,7 @@
 * [chp](chp) - cycloheptanol (`C1CCCC(CC1)O`)
 * [coc](coc) - cyclooctanol (`C1CCCC(CCC1)O`)
 * [cpe](cpe) - cyclopentanol (`C1CCC(C1)O`)
-* [ham](ham) - 1-hyexylamine (`CCCCCC[NH3+]`)
+* [ham](ham) - 1-hexylamine (`CCCCCC[NH3+]`)
 * [hep](hep) - heptanoate (`CCCCCCC(=O)[O-]`)
 * [hex](hex) - hexanoate (`CCCCCC(=O)[O-]`)
 * [hp6](hp6) - 6-heptenoate (`C=CCCCCC(=O)[O-]`)
