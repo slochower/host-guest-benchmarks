@@ -3,15 +3,15 @@ structure:
   mol2: tom.mol2
   sdf: tom.sdf
   pdb: tom.pdb
-resname: MGO
+resname: TOM
 net_charge: 0e
 aliases:
 - D1: :DM1
 - D2: :DM2
 - D3: :DM3
-- H1: :MGO@O1
-- H2: :MGO@O11
-- H3: :MGO@O26
+- H1: :TOM@O1
+- H2: :TOM@O11
+- H3: :TOM@O26
 restraints:
   static:
   - restraint:
@@ -34,59 +34,59 @@ restraints:
       force_constant: 100.0 * kilocalorie / mole / radian**2
   conformational:
   - restraint:
-      atoms: :MGO@O4 :MGO@C1 :MGO@O1 :MGO@C15
+      atoms: :TOM@O4 :TOM@C1 :TOM@O1 :TOM@C15
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O9 :MGO@C10 :MGO@O6 :MGO@C24
+      atoms: :TOM@O9 :TOM@C10 :TOM@O6 :TOM@C24
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O14 :MGO@C19 :MGO@O11 :MGO@C33
+      atoms: :TOM@O14 :TOM@C19 :TOM@O11 :TOM@C33
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O19 :MGO@C28 :MGO@O16 :MGO@C42
+      atoms: :TOM@O19 :TOM@C28 :TOM@O16 :TOM@C42
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O24 :MGO@C37 :MGO@O21 :MGO@C51
+      atoms: :TOM@O24 :TOM@C37 :TOM@O21 :TOM@C51
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O29 :MGO@C46 :MGO@O26 :MGO@C60
+      atoms: :TOM@O29 :TOM@C46 :TOM@O26 :TOM@C60
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O34 :MGO@C55 :MGO@O31 :MGO@C6
+      atoms: :TOM@O34 :TOM@C55 :TOM@O31 :TOM@C6
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@C1 :MGO@O1 :MGO@C15 :MGO@C16
+      atoms: :TOM@C1 :TOM@O1 :TOM@C15 :TOM@C16
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C10 :MGO@O6 :MGO@C24 :MGO@C25
+      atoms: :TOM@C10 :TOM@O6 :TOM@C24 :TOM@C25
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C19 :MGO@O11 :MGO@C33 :MGO@C34
+      atoms: :TOM@C19 :TOM@O11 :TOM@C33 :TOM@C34
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C28 :MGO@O16 :MGO@C42 :MGO@C43
+      atoms: :TOM@C28 :TOM@O16 :TOM@C42 :TOM@C43
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C37 :MGO@O21 :MGO@C51 :MGO@C52
+      atoms: :TOM@C37 :TOM@O21 :TOM@C51 :TOM@C52
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C46 :MGO@O26 :MGO@C60 :MGO@C61
+      atoms: :TOM@C46 :TOM@O26 :TOM@C60 :TOM@C61
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C55 :MGO@O31 :MGO@C6 :MGO@C7
+      atoms: :TOM@C55 :TOM@O31 :TOM@C6 :TOM@C7
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
 calculation:

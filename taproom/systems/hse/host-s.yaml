@@ -3,15 +3,15 @@ structure:
   mol2: hse.mol2
   sdf: hse.sdf
   pdb: hse.pdb
-resname: MGO
+resname: HSE
 net_charge: -7e
 aliases:
 - D1: :DM1
 - D2: :DM2
 - D3: :DM3
-- H1: :MGO@O26
-- H2: :MGO@O11
-- H3: :MGO@O1
+- H1: :HSE@O26
+- H2: :HSE@O11
+- H3: :HSE@O1
 restraints:
   static:
   - restraint:
@@ -34,59 +34,59 @@ restraints:
       force_constant: 100.0 * kilocalorie / mole / radian**2
   conformational:
   - restraint:
-      atoms: :MGO@O4 :MGO@C1 :MGO@O1 :MGO@C10
+      atoms: :HSE@O4 :HSE@C1 :HSE@O1 :HSE@C10
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O9 :MGO@C7 :MGO@O6 :MGO@C16
+      atoms: :HSE@O9 :HSE@C7 :HSE@O6 :HSE@C16
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O14 :MGO@C13 :MGO@O11 :MGO@C22
+      atoms: :HSE@O14 :HSE@C13 :HSE@O11 :HSE@C22
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O19 :MGO@C19 :MGO@O16 :MGO@C28
+      atoms: :HSE@O19 :HSE@C19 :HSE@O16 :HSE@C28
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O24 :MGO@C25 :MGO@O21 :MGO@C34
+      atoms: :HSE@O24 :HSE@C25 :HSE@O21 :HSE@C34
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O29 :MGO@C31 :MGO@O26 :MGO@C40
+      atoms: :HSE@O29 :HSE@C31 :HSE@O26 :HSE@C40
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O34 :MGO@C37 :MGO@O31 :MGO@C4
+      atoms: :HSE@O34 :HSE@C37 :HSE@O31 :HSE@C4
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@C1 :MGO@O1 :MGO@C10 :MGO@C11
+      atoms: :HSE@C1 :HSE@O1 :HSE@C10 :HSE@C11
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C7 :MGO@O6 :MGO@C16 :MGO@C17
+      atoms: :HSE@C7 :HSE@O6 :HSE@C16 :HSE@C17
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C13 :MGO@O11 :MGO@C22 :MGO@C23
+      atoms: :HSE@C13 :HSE@O11 :HSE@C22 :HSE@C23
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C19 :MGO@O16 :MGO@C28 :MGO@C29
+      atoms: :HSE@C19 :HSE@O16 :HSE@C28 :HSE@C29
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C25 :MGO@O21 :MGO@C34 :MGO@C35
+      atoms: :HSE@C25 :HSE@O21 :HSE@C34 :HSE@C35
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C31 :MGO@O26 :MGO@C40 :MGO@C41
+      atoms: :HSE@C31 :HSE@O26 :HSE@C40 :HSE@C41
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C37 :MGO@O31 :MGO@C4 :MGO@C5
+      atoms: :HSE@C37 :HSE@O31 :HSE@C4 :HSE@C5
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
 calculation:

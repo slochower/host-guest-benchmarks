@@ -3,15 +3,15 @@ structure:
   mol2: sgx.mol2
   sdf: sgx.sdf
   pdb: sgx.pdb
-resname: MGO
+resname: SGX
 net_charge: -8e
 aliases:
 - D1: :DM1
 - D2: :DM2
 - D3: :DM3
-- H1: :MGO@O1x
-- H2: :MGO@O10x
-- H3: :MGO@O21x
+- H1: :SGX@O1x
+- H2: :SGX@O10x
+- H3: :SGX@O21x
 restraints:
   static:
   - restraint:
@@ -34,67 +34,67 @@ restraints:
       force_constant: 100.0 * kilocalorie / mole / radian**2
   conformational:
   - restraint:
-      atoms: :MGO@O3x :MGO@C18x :MGO@O5x :MGO@C19x
+      atoms: :SGX@O3x :SGX@C18x :SGX@O5x :SGX@C19x
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O8x :MGO@C22x :MGO@O10x :MGO@C23x
+      atoms: :SGX@O8x :SGX@C22x :SGX@O10x :SGX@C23x
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O13x :MGO@C26x :MGO@O15x :MGO@C27x
+      atoms: :SGX@O13x :SGX@C26x :SGX@O15x :SGX@C27x
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O16x :MGO@C30x :MGO@O17x :MGO@C31x
+      atoms: :SGX@O16x :SGX@C30x :SGX@O17x :SGX@C31x
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O18x :MGO@C34x :MGO@O19x :MGO@C35x
+      atoms: :SGX@O18x :SGX@C34x :SGX@O19x :SGX@C35x
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O20x :MGO@C38x :MGO@O21x :MGO@C39x
+      atoms: :SGX@O20x :SGX@C38x :SGX@O21x :SGX@C39x
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O22x :MGO@C42x :MGO@O23x :MGO@C43x
+      atoms: :SGX@O22x :SGX@C42x :SGX@O23x :SGX@C43x
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@O24x :MGO@C14x :MGO@O1x :MGO@C15x
+      atoms: :SGX@O24x :SGX@C14x :SGX@O1x :SGX@C15x
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: 108.7 * degrees
   - restraint:
-      atoms: :MGO@C14x :MGO@O1x :MGO@C15x :MGO@C16x
+      atoms: :SGX@C14x :SGX@O1x :SGX@C15x :SGX@C16x
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C18x :MGO@O5x :MGO@C19x :MGO@C20x
+      atoms: :SGX@C18x :SGX@O5x :SGX@C19x :SGX@C20x
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C22x :MGO@O10x :MGO@C23x :MGO@C24x
+      atoms: :SGX@C22x :SGX@O10x :SGX@C23x :SGX@C24x
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C26x :MGO@O15x :MGO@C27x :MGO@C28x
+      atoms: :SGX@C26x :SGX@O15x :SGX@C27x :SGX@C28x
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C30x :MGO@O17x :MGO@C31x :MGO@C32x
+      atoms: :SGX@C30x :SGX@O17x :SGX@C31x :SGX@C32x
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C34x :MGO@O19x :MGO@C35x :MGO@C36x
+      atoms: :SGX@C34x :SGX@O19x :SGX@C35x :SGX@C36x
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C38x :MGO@O21x :MGO@C39x :MGO@C40x
+      atoms: :SGX@C38x :SGX@O21x :SGX@C39x :SGX@C40x
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
   - restraint:
-      atoms: :MGO@C42x :MGO@O23x :MGO@C43x :MGO@C44x
+      atoms: :SGX@C42x :SGX@O23x :SGX@C43x :SGX@C44x
       force_constant: 6.0 * kilocalorie / mole / radian**2
       target: -112.5 * degrees
 calculation:
